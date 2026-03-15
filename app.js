@@ -89,31 +89,67 @@ function renderSrsStats() {
   }
 }
 
+// Image preload cache
+const imgCache = new Map();
+
+function preloadImg(id) {
+  if (imgCache.has(id)) return imgCache.get(id);
+  const promise = new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+    setTimeout(() => resolve(img), 20000); // 20s fallback
+    img.src = imgUrlFor(id);
+  });
+  imgCache.set(id, promise);
+  return promise;
+}
+
 function renderCard(){
   const wrap = document.querySelector('#card'); wrap.innerHTML = '';
   if(state.i >= state.filtered.length){ wrap.textContent = '該当カードがありません'; return; }
   const c = state.filtered[state.i];
 
-  const img = new Image(); img.loading='lazy'; img.alt=c.name;
-  img.src = imgUrlFor(c.id);
-  img.onerror = ()=>{ img.remove(); ph.style.display='block'; };
+  // スケルトンローダー
+  const skeleton = document.createElement('div');
+  skeleton.className = 'img-skeleton';
+  skeleton.innerHTML = '<div class="skeleton-inner"></div>';
 
   const ph = document.createElement('div'); ph.className='placeholder'; ph.textContent='画像なし'; ph.style.display='none';
 
   const caption = document.createElement('div'); caption.className='caption';
   caption.innerHTML = `<div class="name">${c.name}</div><div class="yomi">${c.yomi||''}</div><div class="cat">${c.category||''}</div>`;
 
-  // credit
   const cr = document.createElement('div'); cr.className='credit';
   const a = state.meta[c.id];
-  if(a){
-    cr.innerHTML = `Source: ${a.source} / License: ${a.license || 'Unknown'} ${a.artist?(' / © '+a.artist):''}`;
-  }
+  if(a){ cr.innerHTML = `Source: ${a.source} / License: ${a.license||'Unknown'} ${a.artist?(' / © '+a.artist):''}`; }
 
-  wrap.append(img, ph, caption, cr);
+  wrap.append(skeleton, ph, caption, cr);
   renderCounters();
   renderSrsBadge(c.id);
   renderSrsStats();
+
+  // 画像ロード（キャッシュ使用）
+  const cardId = c.id;
+  preloadImg(cardId).then(img => {
+    if (!wrap.isConnected || state.filtered[state.i]?.id !== cardId) return;
+    skeleton.remove();
+    if (img && img.naturalWidth > 0) {
+      img.alt = c.name;
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.3s ease';
+      wrap.insertBefore(img, ph);
+      requestAnimationFrame(() => { img.style.opacity = '1'; });
+    } else {
+      ph.style.display = 'block';
+    }
+  });
+
+  // 次の2枚をバックグラウンドでプリロード
+  for (let offset = 1; offset <= 2; offset++) {
+    const next = state.filtered[state.i + offset];
+    if (next) preloadImg(next.id);
+  }
 }
 
 function applyFilter(){

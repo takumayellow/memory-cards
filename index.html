@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>芸能人 暗記カード（ローカル）</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="srs.css" />
 </head>
 <body>
 <header class="topbar">
@@ -16,8 +17,20 @@
     </select>
     <button id="shuffleBtn">シャッフル</button>
     <button id="resetBtn" title="進捗をリセット">リセット</button>
+    <label class="srs-filter-label" title="今日復習すべきカードのみ表示">
+      <input type="checkbox" id="srs-filter" />
+      今日の復習
+    </label>
   </div>
 </header>
+
+<!-- SRS 統計バー -->
+<div class="srs-stats-bar">
+  <div class="srs-stats-text" id="srs-stats">読み込み中...</div>
+  <div class="srs-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="srs-progress-fill" id="srs-progress-bar" style="width:0%"></div>
+  </div>
+</div>
 
 <main class="wrap">
   <aside class="stats">
@@ -40,6 +53,8 @@
       <div class="cat" id="cat"></div>
     </div>
   </section>
+
+  <div id="srs-badge" class="srs-badge srs-new"></div>
 
   <section class="buttons">
     <button id="flipBtn">答えを見る [Space]</button>
@@ -70,7 +85,10 @@
       </ol>
     </details>
   </section>
-</main><script id="datajs-shim">
+</main>
+<script src="srs.js"></script>
+<script src="app.js"></script>
+<script id="datajs-shim">
 /* shim: app.js が期待する DATA_TSV を必ず用意する */
 (function(w){
   // 空 TSV（ヘッダ行のみ）。本物のデータは boot スクリプトで with_images.tsv から供給する

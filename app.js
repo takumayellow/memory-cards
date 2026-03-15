@@ -90,15 +90,27 @@ function renderSrsStats() {
 }
 
 // Image preload cache
+const _SESSION_VER = Date.now().toString();
 const imgCache = new Map();
 
 function preloadImg(id) {
   if (imgCache.has(id)) return imgCache.get(id);
   const promise = new Promise(resolve => {
     const img = new Image();
-    img.onload = () => resolve(img);
-    img.onerror = () => resolve(null);
-    setTimeout(() => resolve(img), 20000); // 20s fallback
+    let timer;
+    const cleanup = (result) => {
+      clearTimeout(timer);
+      resolve(result);
+    };
+    img.onload = () => cleanup(img);
+    img.onerror = () => {
+      imgCache.delete(id); // 失敗時はキャッシュから削除して再試行可能に
+      cleanup(null);
+    };
+    timer = setTimeout(() => {
+      imgCache.delete(id); // タイムアウト時もキャッシュ削除
+      cleanup(null);
+    }, 20000);
     img.src = imgUrlFor(id);
   });
   imgCache.set(id, promise);
@@ -248,7 +260,7 @@ function srsAnswerAgain(cardId) {
     const p = location.pathname.endsWith('/') ? location.pathname : location.pathname.replace(/\/[^/]*$/, '/');
     return location.origin + p;
   }
-  function bust(u){ return u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now(); }
+  function bust(u){ return u + (u.includes('?') ? '&' : '?') + 'v=' + _SESSION_VER; }
 
   function fixImg(img){
     const s = img.getAttribute('src');

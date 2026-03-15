@@ -5,7 +5,7 @@
 
 - `index.html`: 単一ファイルのフロントエンド
 - `data/cards.tsv`: 名簿（タブ区切り）
-- `tools/*.ps1`: ビルド・画像取得・公開スクリプト
+- `tools/*.ps1`: ビルド・画像取得・公開スクリプト（**Windows 限定**）
 
 > 画像は既定ではリポジトリに含めません（`images/` は .gitignore）。
 > 必要なら Git LFS で追跡してください（`tools/publish_github.ps1 -IncludeImages`）。
@@ -33,6 +33,17 @@ python -m http.server 8080
 
 ---
 
+## tools/*.ps1 スクリプト一覧
+
+| スクリプト | 説明 |
+|---|---|
+| `tools/build.ps1` | `data/cards.tsv` を読み込み `data/data.js` を生成 |
+| `tools/fetch_images.ps1` | TSV の名前をもとに画像を取得し `images/` に保存 |
+| `tools/fetch_images_v3.ps1` | 画像取得の改良版（Wikidata 経由でQIDを解決） |
+| `tools/publish_github.ps1` | GitHub リポジトリ作成・push・GitHub Pages 公開 |
+
+---
+
 ## 画像が表示されない問題の解決策（inline loader + filename map）
 
 このサイトでは「カードの id と実ファイル名（拡張子違い・ゼロ埋め差など）」が一致しないことで
@@ -50,9 +61,22 @@ python -m http.server 8080
 > パッチは `<!-- images patch: loader + map -->` というマーカー付きで注入され、
 > 二重挿入されないようになっています（idempotent）。
 
+---
+
+## ターミナル一発実行
+
+Windows の場合、`tools/publish_github.ps1` を使って GitHub Pages への公開まで一括で行えます。
+
+```powershell
+cd tools
+.\publish_github.ps1 -RepoOwner "<your-github-username>"
+```
+
+---
+
 ### 使い方（フロー）
 
-1. **スクリプトを実行**（下の「ターミナル一発実行」の章を参照）
+1. **スクリプトを実行**（上の「ターミナル一発実行」を参照）
    - `images/` から `data/attr_map.json` を再生成
    - `index.html` にローダを注入（未挿入のときだけ）
    - 変更があれば `commit & push`
@@ -67,7 +91,7 @@ python -m http.server 8080
 ### 前提/前置き
 
 - 画像は `images/` に置く（`.jpg` / `.png` 対応）
-- GitHub Pages は `https://<user>.github.io/<repo>/` で公開
+- GitHub Pages は `https://<user>.github.io/jp-celebs-cards/` で公開
 - 画像を LFS 管理にしていない（LFS のままでも動くが HEAD 200 の検証で注意）
 
 ### 動作確認のしかた

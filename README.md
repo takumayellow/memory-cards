@@ -1,12 +1,35 @@
 # jp-celebs-cards
 
 日本の芸能人を暗記するためのローカル学習ツール。
+フラッシュカード形式で顔と名前を照合しながら覚えられます。
+
 - `index.html`: 単一ファイルのフロントエンド
 - `data/cards.tsv`: 名簿（タブ区切り）
 - `tools/*.ps1`: ビルド・画像取得・公開スクリプト（**Windows 限定**）
 
 > 画像は既定ではリポジトリに含めません（`images/` は .gitignore）。
 > 必要なら Git LFS で追跡してください（`tools/publish_github.ps1 -IncludeImages`）。
+
+---
+
+## セットアップ
+
+### 起動方法
+
+```bash
+# ブラウザで直接開く
+open index.html
+
+# またはローカルサーバーで開く
+python -m http.server 8080
+# → http://localhost:8080 にアクセス
+```
+
+### 画像の準備
+
+1. `images/` ディレクトリに `.jpg` または `.png` 形式で画像を配置します。
+2. `tools/` のスクリプトを実行して `data/attr_map.json` を自動生成します。
+3. `index.html` に画像ローダのインラインパッチが自動挿入されます。
 
 ---
 
@@ -18,18 +41,6 @@
 | `tools/fetch_images.ps1` | TSV の名前をもとに画像を取得し `images/` に保存 |
 | `tools/fetch_images_v3.ps1` | 画像取得の改良版（Wikidata 経由でQIDを解決） |
 | `tools/publish_github.ps1` | GitHub リポジトリ作成・push・GitHub Pages 公開 |
-
----
-
-## ローカルで確認する
-
-```bash
-# Python 3（推奨）
-python3 -m http.server 8080
-```
-
-ブラウザで `http://localhost:8080` を開いてください。
-（`open` / `xdg-open` / `start` コマンド、またはブラウザに URL を直接入力して開いてください。）
 
 ---
 
@@ -72,11 +83,10 @@ cd tools
    - 公開サイトでランダムサンプルを HEAD=200 で検証
 2. ページ側の **「現在のカード id」をローダへ伝える** ために、どちらかを呼ぶ
    - 方式A（イベント）：
-     `window.dispatchEvent(new CustomEvent('cards:show', { detail:{ id } }))`
+     `document.dispatchEvent(new CustomEvent('cards:show', { detail:{ id } }))`
    - 方式B（属性監視）：
      `document.body.setAttribute('data-id', id)`
 3. 以降はカード切替のたびにローダが自動で画像を解決して表示します。
-
 
 ### 前提/前置き
 
@@ -86,12 +96,36 @@ cd tools
 
 ### 動作確認のしかた
 
-- コンソールにて（任意）：
-  `window.dispatchEvent(new CustomEvent('cards:show',{detail:{id:'0001'}}))`
-- または：
-  `document.body.setAttribute('data-id','0001')`
+```js
+// コンソールで任意のカードをテスト
+document.dispatchEvent(new CustomEvent('cards:show', { detail: { id: '0001' } }))
+// または
+document.body.setAttribute('data-id', '0001')
+```
 
 ### ロールバック
 
-- `index.html` はバックアップ `index.html.bak-YYYYMMDDhhmmss` を作ってから上書きします。
-- 何かあればそのバックアップで戻せます。
+`index.html` はバックアップ `index.html.bak-YYYYMMDDhhmmss` を作ってから上書きします。
+何かあればそのバックアップで戻せます。
+
+---
+
+## 関連ゲームリポジトリ
+
+takumayellow が公開しているブラウザゲーム・インタラクティブコンテンツのリンク集です。
+
+| リポジトリ | 説明 | デモ |
+|---|---|---|
+| [slot-game](https://github.com/takumayellow/slot-game) | ネオン路地テーマの3リールスロット。招き猫ディーラー「ミケ」付き。VOICEVOX（春日部つむぎ）連携対応 | [Play](https://takumayellow.github.io/slot-game/) |
+| [memory-cards](https://github.com/takumayellow/memory-cards) | 日本の芸能人フラッシュカード学習ツール（このリポジトリ） | — |
+| [syncadence-rhythm](https://github.com/takumayellow/syncadence-rhythm) | プロセカ風リズムゲーム。MusicXML / MIDI を読み込んで斜め4レーンでプレイ | [Play](https://takumayellow.github.io/syncadence-rhythm/) |
+
+### 各ゲームの特徴比較
+
+| | slot-game | memory-cards | syncadence-rhythm |
+|---|---|---|---|
+| 技術スタック | Vanilla JS | Vanilla JS / HTML | React + TypeScript + Vite |
+| 音声 | VOICEVOX（つむぎ）| なし | MusicXML / MIDI / MP3 |
+| 入力 | マウス / タップ | マウス / タップ | キーボード（D/F/J/K） |
+| ファイル読込 | なし | TSV | MusicXML / MXL / MIDI |
+| GitHub Pages | 公開済み | 公開設定可 | 公開済み |

@@ -218,7 +218,7 @@ function srsAnswerAgain(cardId) {
   const srsFilterEl = document.querySelector('#srs-filter');
   if (srsFilterEl) srsFilterEl.addEventListener('change', applyFilter);
 
-  document.querySelector('#next').addEventListener('click', ()=>{ if(state.i<state.filtered.length-1){ state.i++; renderCard(); } });
+  document.querySelector('#next').addEventListener('click', ()=>{ if(state.filtered.length > 0){ state.i = (state.i + 1) % state.filtered.length; renderCard(); } });
   document.querySelector('#prev').addEventListener('click', ()=>{ if(state.i>0){ state.i--; renderCard(); } });
   document.querySelector('#shuffle').addEventListener('click', ()=>{
     for(let i=state.filtered.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [state.filtered[i],state.filtered[j]]=[state.filtered[j],state.filtered[i]]; }

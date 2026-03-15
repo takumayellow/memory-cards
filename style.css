@@ -23,3 +23,30 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui, -ap
 .buttons .ok{background:var(--ok)}
 .help details{background:#0f131b;border:1px solid #222;border-radius:12px;padding:10px;margin-top:10px}
 @media(min-width:800px){ .card{grid-template-columns:1fr 1fr} }
+
+/* スケルトンローダー */
+.img-skeleton {
+  width: 100%;
+  aspect-ratio: 3/4;
+  max-height: 400px;
+  background: #1a1a2e;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skeleton-inner {
+  width: 80%;
+  height: 70%;
+  background: linear-gradient(90deg, #2a2a4e 25%, #3a3a6e 50%, #2a2a4e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

@@ -12,6 +12,12 @@
 
 ---
 
+## 公開サイト
+
+**[→ サイトを開く](https://takumayellow.github.io/memory-cards/)**
+
+---
+
 ## セットアップ
 
 ### 起動方法
@@ -117,7 +123,7 @@ takumayellow が公開しているブラウザゲーム・インタラクティ�
 | リポジトリ | 説明 | デモ |
 |---|---|---|
 | [slot-game](https://github.com/takumayellow/slot-game) | ネオン路地テーマの3リールスロット。招き猫ディーラー「ミケ」付き。VOICEVOX（春日部つむぎ）連携対応 | [Play](https://takumayellow.github.io/slot-game/) |
-| [memory-cards](https://github.com/takumayellow/memory-cards) | 日本の芸能人フラッシュカード学習ツール（このリポジトリ） | — |
+| [memory-cards](https://github.com/takumayellow/memory-cards) | 日本の芸能人フラッシュカード学習ツール（このリポジトリ） | [Play](https://takumayellow.github.io/memory-cards/) |
 | [syncadence-rhythm](https://github.com/takumayellow/syncadence-rhythm) | プロセカ風リズムゲーム。MusicXML / MIDI を読み込んで斜め4レーンでプレイ | [Play](https://takumayellow.github.io/syncadence-rhythm/) |
 
 ### 各ゲームの特徴比較
@@ -128,4 +134,4 @@ takumayellow が公開しているブラウザゲーム・インタラクティ�
 | 音声 | VOICEVOX（つむぎ）| なし | MusicXML / MIDI / MP3 |
 | 入力 | マウス / タップ | マウス / タップ | キーボード（D/F/J/K） |
 | ファイル読込 | なし | TSV | MusicXML / MXL / MIDI |
-| GitHub Pages | 公開済み | 公開設定可 | 公開済み |
+| GitHub Pages | 公開済み | 公開済み | 公開済み |

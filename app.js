@@ -240,14 +240,14 @@ function srsAnswerAgain(cardId) {
     okBtn.addEventListener('click', ()=>{
       const c = state.filtered[state.i];
       if (c) srsAnswerOk(c.id);
-      if (state.i < state.filtered.length - 1) { state.i++; renderCard(); }
+      if(state.filtered.length > 0){ state.i = (state.i + 1) % state.filtered.length; renderCard(); }
     });
   }
   if (againBtn) {
     againBtn.addEventListener('click', ()=>{
       const c = state.filtered[state.i];
       if (c) srsAnswerAgain(c.id);
-      if (state.i < state.filtered.length - 1) { state.i++; renderCard(); }
+      if(state.filtered.length > 0){ state.i = (state.i + 1) % state.filtered.length; renderCard(); }
     });
   }
 

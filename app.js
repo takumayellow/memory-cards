@@ -22,13 +22,14 @@ function parseCSV(txt){
   });
 }
 async function loadData(){
-  const [tsv, csv] = await Promise.all([
+  const [tsv, csv, attrJson] = await Promise.all([
     fetchText('data/cards.tsv'),
-    fetch('data/attributions.csv',{cache:"no-store"}).then(r=>r.ok?r.text():"id,name,source,filename,license,artist,credit\n")
+    fetch('data/attributions.csv',{cache:"no-store"}).then(r=>r.ok?r.text():"id,name,source,filename,license,artist,credit\n"),
+    fetch('data/attr_map.json',{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({}))
   ]);
   const cards = parseTSV(tsv);
   const attrs = parseCSV(csv);
-  const map = {}; const meta = {};
+  const map = Object.assign({}, attrJson); const meta = {};
   for(const a of attrs){ if(a.id && a.filename){ map[a.id]=a.filename; meta[a.id]=a; } }
   return {cards, map, meta};
 }

@@ -1,6 +1,5 @@
-/* ===== SRS (Spaced Repetition) UI styles ===== */
+/* ===== SRS UI styles ===== */
 
-/* Filter checkbox in the top controls bar */
 .srs-filter-label {
   display: flex;
   align-items: center;
@@ -8,28 +7,28 @@
   cursor: pointer;
   color: var(--ink);
   font-size: 14px;
-  padding: 8px 10px;
-  background: #10131a;
-  border: 1px solid #2a2f3a;
-  border-radius: 10px;
+  padding: 7px 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
   user-select: none;
   transition: background 0.15s;
 }
 .srs-filter-label:hover {
-  background: #1a1f2a;
+  background: var(--primary-light);
 }
 .srs-filter-label input[type="checkbox"] {
-  accent-color: var(--accent);
-  width: 16px;
-  height: 16px;
+  accent-color: var(--primary);
+  width: 15px;
+  height: 15px;
   cursor: pointer;
 }
 
-/* SRS statistics bar (below header) */
+/* Stats bar */
 .srs-stats-bar {
-  background: #0e1118;
-  border-bottom: 1px solid #1e2430;
-  padding: 8px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 20px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -44,66 +43,53 @@
   gap: 16px;
   flex-wrap: wrap;
 }
-.srs-stats-text strong {
-  color: var(--ink);
-}
-.srs-mastery {
-  color: var(--ok);
-}
-.srs-mastery strong {
-  color: var(--ok);
-}
+.srs-stats-text strong { color: var(--ink); }
+.srs-mastery { color: var(--ok); }
+.srs-mastery strong { color: var(--ok); }
 
 /* Progress bar */
 .srs-progress-track {
   flex: 0 0 180px;
   height: 8px;
-  background: #1a1f2a;
+  background: #e5e7eb;
   border-radius: 999px;
   overflow: hidden;
-  border: 1px solid #2a2f3a;
 }
 .srs-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--accent), var(--ok));
+  background: linear-gradient(90deg, var(--primary), var(--ok));
   border-radius: 999px;
   transition: width 0.4s ease;
   min-width: 4px;
 }
 
-/* SRS badge on each card */
+/* SRS badge */
 .srs-badge {
   display: inline-block;
   font-size: 11px;
-  padding: 3px 10px;
+  padding: 3px 12px;
   border-radius: 999px;
-  margin: 4px auto 0;
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.03em;
 }
 .srs-new {
-  background: #1a2030;
-  color: #889;
-  border: 1px solid #2a3040;
+  background: #f3f4f6;
+  color: var(--muted);
+  border: 1px solid #e5e7eb;
 }
 .srs-due {
-  background: #2a1810;
-  color: var(--warn);
-  border: 1px solid #4a3020;
+  background: var(--warn-light);
+  color: #92400e;
+  border: 1px solid #fcd34d;
 }
 .srs-ok {
-  background: #102018;
-  color: var(--ok);
-  border: 1px solid #204030;
+  background: var(--ok-light);
+  color: #065f46;
+  border: 1px solid #6ee7b7;
 }
 
 @media (max-width: 600px) {
-  .srs-stats-bar {
-    gap: 10px;
-    padding: 6px 12px;
-  }
-  .srs-progress-track {
-    flex: 0 0 100%;
-  }
+  .srs-stats-bar { gap: 10px; padding: 6px 12px; }
+  .srs-progress-track { flex: 0 0 100%; }
 }

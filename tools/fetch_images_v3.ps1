@@ -3,7 +3,10 @@
   [string]$OutDir   = "$HOME\Downloads\jp-celebs-cards\images",
   [string]$LogFile  = "$HOME\Downloads\jp-celebs-cards\logs\fetch.log",
   [switch]$Force,
-  [int]$Limit = 0
+  [int]$Limit = 0,
+  # bad_images.txt（ブラウザの「不適切リスト出力」で生成）を渡すと
+  # そのIDのみ強制的に再スクレイプします。
+  [string]$BadList = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -87,6 +90,15 @@ New-Item -ItemType Directory -Force $OutDir | Out-Null
 New-Item -ItemType Directory -Force (Split-Path $LogFile) | Out-Null
 "" | Set-Content $LogFile -Encoding UTF8
 
+# BadList 読み込み（ブラウザの「不適切リスト出力」ボタンで生成した bad_images.txt）
+$badIds = @{}
+if($BadList -and (Test-Path $BadList)){
+  Get-Content $BadList -Encoding UTF8 |
+    Where-Object { $_ -ne "" -and $_ -ne "id" } |
+    ForEach-Object { $badIds[$_.Trim()] = $true }
+  Log "BadList loaded: $($badIds.Count) IDs を強制再スクレイプします"
+}
+
 # TSV 読み
 $raw = (Get-Content $CardsTsv -Raw) -replace "^\uFEFF",""
 $lines = $raw -split "\r?\n" | Where-Object { $_ -ne "" }
@@ -96,9 +108,16 @@ $rows = $lines | Select-Object -Skip 1 | ForEach-Object {
 }
 if($Limit -gt 0){ $rows = $rows | Select-Object -First $Limit }
 
+# BadList 指定時はそのIDのみ処理（-Force 相当）
+if($badIds.Count -gt 0 -and -not $Force){
+  $rows = $rows | Where-Object { $badIds.ContainsKey($_.id) }
+  Log "BadList モード: $($rows.Count) 件のみ処理"
+}
+
 foreach($row in $rows){
   $id = $row.id; $name = $row.name
-  Log "FETCH [$id] $name"
+  $forceThis = $Force -or $badIds.ContainsKey($id)
+  Log "FETCH [$id] $name$(if($forceThis -and $badIds.ContainsKey($id)){' [BAD→再取得]'})"
 
   # QID
   $qid = Get-QID $name $row.category
@@ -111,7 +130,7 @@ foreach($row in $rows){
     if($cm){
       $file = $cm.File
       $dest = Join-Path $OutDir $file
-      if((Test-Path $dest) -and (-not $Force)){ Log "  SKIP (exists) $file"; continue }
+      if((Test-Path $dest) -and (-not $forceThis)){ Log "  SKIP (exists) $file"; continue }
       try{
         $saved = Save-Url $cm.Url $file
         AddAttr $id $name "Commons:P18" $saved $cm.Lic $cm.Artist $cm.Credit
@@ -129,7 +148,7 @@ foreach($row in $rows){
     if($cm){
       $file = $cm.File
       $dest = Join-Path $OutDir $file
-      if((Test-Path $dest) -and (-not $Force)){ Log "  SKIP (exists) $file"; continue }
+      if((Test-Path $dest) -and (-not $forceThis)){ Log "  SKIP (exists) $file"; continue }
       try{
         $saved = Save-Url $cm.Url $file
         AddAttr $id $name "Commons:P180" $saved $cm.Lic $cm.Artist $cm.Credit

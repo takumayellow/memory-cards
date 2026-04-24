@@ -1,4 +1,4 @@
-﻿async function fetchText(url){ const r = await fetch(url,{cache:"no-store"}); if(!r.ok) throw new Error(url+" "+r.status); return await r.text(); }
+async function fetchText(url){ const r = await fetch(url,{cache:"no-store"}); if(!r.ok) throw new Error(url+" "+r.status); return await r.text(); }
 function parseTSV(txt){
   const lines = txt.replace(/^\uFEFF/,'').split(/\r?\n/).filter(Boolean);
   const [h,...rows] = lines;
@@ -32,6 +32,33 @@ async function loadData(){
   const map = Object.assign({}, attrJson); const meta = {};
   for(const a of attrs){ if(a.id && a.filename){ map[a.id]=a.filename; meta[a.id]=a; } }
   return {cards, map, meta};
+}
+
+// ── Bad image list (localStorage) ──
+const BAD_KEY = 'jpCelebsBadImages_v1';
+function loadBadSet(){
+  try { return new Set(JSON.parse(localStorage.getItem(BAD_KEY) || '[]')); }
+  catch { return new Set(); }
+}
+function saveBadSet(set){ localStorage.setItem(BAD_KEY, JSON.stringify([...set])); }
+function markBad(id){ const s = loadBadSet(); s.add(id); saveBadSet(s); }
+function isBad(id){ return loadBadSet().has(id); }
+
+// ── Toast notification ──
+function showToast(msg, duration = 2500){
+  let t = document.querySelector('#toast');
+  if(!t){ t = document.createElement('div'); t.id='toast'; document.body.appendChild(t); }
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(()=>t.classList.remove('show'), duration);
+}
+
+// ── Progress persistence (sessionStorage) ──
+const SS_KEY = 'jpCelebsCardId';
+function saveProgress(){
+  const c = state.filtered[state.i];
+  if(c) sessionStorage.setItem(SS_KEY, c.id);
 }
 
 // UI
@@ -90,6 +117,16 @@ function renderSrsStats() {
   }
 }
 
+// ── Bad image button state ──
+function updateBadBtn(cardId){
+  const btn = document.querySelector('#badImgBtn');
+  if(!btn) return;
+  const bad = isBad(cardId);
+  btn.textContent = bad ? '✓ 報告済み' : '⚠ 画像が不適切';
+  btn.disabled = bad;
+  btn.classList.toggle('reported', bad);
+}
+
 // Image preload cache
 const _SESSION_VER = Date.now().toString();
 const imgCache = new Map();
@@ -141,6 +178,8 @@ function renderCard(){
   renderCounters();
   renderSrsBadge(c.id);
   renderSrsStats();
+  updateBadBtn(c.id);
+  saveProgress();
 
   // 画像ロード（キャッシュ使用）
   const cardId = c.id;
@@ -210,6 +249,13 @@ function srsAnswerAgain(cardId) {
   state.all = cards; state.map = map; state.meta = meta;
   populateCategories(cards);
   state.filtered = [...cards];
+
+  // ── リロード位置復元 ──
+  const savedId = sessionStorage.getItem(SS_KEY);
+  if(savedId){
+    const idx = state.filtered.findIndex(c => c.id === savedId);
+    if(idx >= 0) state.i = idx;
+  }
   renderCard();
 
   // controls
@@ -252,6 +298,33 @@ function srsAnswerAgain(cardId) {
     });
   }
 
+  // ── 画像が不適切ボタン ──
+  const badImgBtn = document.querySelector('#badImgBtn');
+  if(badImgBtn){
+    badImgBtn.addEventListener('click', ()=>{
+      const c = state.filtered[state.i];
+      if(!c) return;
+      markBad(c.id);
+      updateBadBtn(c.id);
+      showToast('⚠ 不適切としてマークしました。再スクレイプ時に再取得されます。');
+    });
+  }
+
+  // ── 不適切リスト書き出しボタン ──
+  const exportBadBtn = document.querySelector('#exportBadBtn');
+  if(exportBadBtn){
+    exportBadBtn.addEventListener('click', ()=>{
+      const bad = loadBadSet();
+      if(bad.size === 0){ showToast('不適切リストは空です'); return; }
+      const lines = ['id', ...[...bad]].join('\n');
+      const blob = new Blob([lines], {type:'text/plain;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'bad_images.txt'; a.click();
+      URL.revokeObjectURL(url);
+      showToast(`📋 ${bad.size}件のリストをダウンロードしました`);
+    });
+  }
+
   renderSrsStats();
 })();
-

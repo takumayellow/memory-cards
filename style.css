@@ -253,9 +253,55 @@ body {
   color: #92400e;
 }
 
+/* ── Bad image button ── */
+.buttons .bad-img {
+  background: #fff7ed;
+  color: #92400e;
+  border: 1.5px solid #fcd34d;
+  font-size: 13px;
+  padding: 8px 18px;
+  font-weight: 600;
+}
+.buttons .bad-img:hover {
+  background: #fef3c7;
+  border-color: #f59e0b;
+}
+.buttons .bad-img.reported,
+.buttons .bad-img:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  border-color: #e5e7eb;
+  cursor: default;
+  opacity: 0.8;
+}
+
+/* ── Toast notification ── */
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #1e1b4b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.25s, transform 0.25s;
+  pointer-events: none;
+  z-index: 999;
+}
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 @media (max-width: 600px) {
   .wrap { margin: 16px auto; }
   .card { padding: 16px; min-height: 380px; }
   .name { font-size: 22px; }
   .buttons button { padding: 10px 24px; font-size: 14px; }
+  .buttons .bad-img { padding: 8px 14px; font-size: 12px; }
 }

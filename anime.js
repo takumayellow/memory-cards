@@ -20,15 +20,21 @@
     const head = lines[0].split('\t');
     const idx = (n) => head.indexOf(n);
     const I = { id: idx('id'), en: idx('title_en'), jp: idx('title_jp'),
-                cat: idx('category'), url: idx('aniwatch_url') };
+                cat: idx('category'), aw: idx('aniwatch_url'),
+                mal: idx('mal_url'), w: idx('watch_url'),
+                wp: idx('watch_provider') };
+    const get = (c, i) => (i >= 0 ? (c[i] || '') : '');
     rows = lines.slice(1).map((line) => {
       const c = line.split('\t');
       return {
         id: c[I.id],
-        en: c[I.en] || '',
-        jp: c[I.jp] || c[I.en] || '',
-        cat: c[I.cat] || '未分類',
-        url: I.url >= 0 ? (c[I.url] || '') : '',
+        en: get(c, I.en),
+        jp: get(c, I.jp) || get(c, I.en),
+        cat: get(c, I.cat) || '未分類',
+        aniwatch: get(c, I.aw),
+        mal: get(c, I.mal),
+        watch: get(c, I.w),
+        watchProvider: get(c, I.wp),
       };
     });
   } catch (e) {
@@ -89,24 +95,21 @@
 
   const openModal = (r) => {
     const q = encodeURIComponent(r.en || r.jp);
-    const mal = `https://myanimelist.net/anime.php?q=${q}&cat=anime`;
-    const anilist = `https://anilist.co/search/anime?search=${q}`;
-    // Direct aniwatch URL if resolved, otherwise show MAL as primary
-    const primary = r.url
-      ? `<a href="${r.url}" target="_blank" rel="noopener noreferrer">aniwatch で見る</a>`
-      : `<a href="${mal}" target="_blank" rel="noopener noreferrer">MyAnimeList で見る</a>`;
-    const secondary = r.url
-      ? `<a class="alt" href="${mal}" target="_blank" rel="noopener noreferrer">MAL</a>`
-      : '';
+    const malFallback = `https://myanimelist.net/anime.php?q=${q}&cat=anime`;
+    const malPage = r.mal || malFallback;
+    const links = [];
+    if (r.watch && r.watchProvider) {
+      links.push(`<a href="${r.watch}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.watchProvider)} で見る</a>`);
+    }
+    if (r.aniwatch) {
+      links.push(`<a class="alt" href="${r.aniwatch}" target="_blank" rel="noopener noreferrer">aniwatch</a>`);
+    }
+    links.push(`<a class="alt" href="${malPage}" target="_blank" rel="noopener noreferrer">MAL 情報</a>`);
     modalBody.innerHTML = `
       <h2>${escapeHtml(r.jp || r.en)}</h2>
       <div class="en">${escapeHtml(r.en)}</div>
       <div class="cat"><span class="badge">${escapeHtml(r.cat)}</span></div>
-      <div class="actions">
-        ${primary}
-        ${secondary}
-        <a class="alt" href="${anilist}" target="_blank" rel="noopener noreferrer">AniList</a>
-      </div>`;
+      <div class="actions">${links.join('\n        ')}</div>`;
     modal.hidden = false;
   };
   modalClose.onclick = () => { modal.hidden = true; };

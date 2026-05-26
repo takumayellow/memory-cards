@@ -77,14 +77,17 @@
   };
 
   const openModal = (r) => {
-    const mal = `https://myanimelist.net/anime.php?q=${encodeURIComponent(r.en || r.jp)}&cat=anime`;
-    const anilist = `https://anilist.co/search/anime?search=${encodeURIComponent(r.en || r.jp)}`;
+    const q = encodeURIComponent(r.en || r.jp);
+    const aniwatch = `https://aniwatch.to/search?keyword=${q}`;
+    const mal = `https://myanimelist.net/anime.php?q=${q}&cat=anime`;
+    const anilist = `https://anilist.co/search/anime?search=${q}`;
     modalBody.innerHTML = `
       <h2>${escapeHtml(r.jp || r.en)}</h2>
       <div class="en">${escapeHtml(r.en)}</div>
       <div class="cat"><span class="badge">${escapeHtml(r.cat)}</span></div>
       <div class="actions">
-        <a href="${mal}" target="_blank" rel="noopener noreferrer">MyAnimeList</a>
+        <a href="${aniwatch}" target="_blank" rel="noopener noreferrer">aniwatch で見る</a>
+        <a class="alt" href="${mal}" target="_blank" rel="noopener noreferrer">MAL</a>
         <a class="alt" href="${anilist}" target="_blank" rel="noopener noreferrer">AniList</a>
       </div>`;
     modal.hidden = false;

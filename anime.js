@@ -16,9 +16,20 @@
   let rows = [];
   try {
     const text = await (await fetch(TSV_URL, { cache: 'no-store' })).text();
-    rows = text.trim().split('\n').slice(1).map((line) => {
-      const [id, en, jp, cat] = line.split('\t');
-      return { id, en: en || '', jp: jp || en || '', cat: cat || '未分類' };
+    const lines = text.trim().split('\n');
+    const head = lines[0].split('\t');
+    const idx = (n) => head.indexOf(n);
+    const I = { id: idx('id'), en: idx('title_en'), jp: idx('title_jp'),
+                cat: idx('category'), url: idx('aniwatch_url') };
+    rows = lines.slice(1).map((line) => {
+      const c = line.split('\t');
+      return {
+        id: c[I.id],
+        en: c[I.en] || '',
+        jp: c[I.jp] || c[I.en] || '',
+        cat: c[I.cat] || '未分類',
+        url: I.url >= 0 ? (c[I.url] || '') : '',
+      };
     });
   } catch (e) {
     grid.innerHTML = `<div style="padding:30px;color:#c33">データ読み込みに失敗: ${e}</div>`;
@@ -78,16 +89,22 @@
 
   const openModal = (r) => {
     const q = encodeURIComponent(r.en || r.jp);
-    const aniwatch = `https://aniwatch.co.at/?s=${q}`;
     const mal = `https://myanimelist.net/anime.php?q=${q}&cat=anime`;
     const anilist = `https://anilist.co/search/anime?search=${q}`;
+    // Direct aniwatch URL if resolved, otherwise show MAL as primary
+    const primary = r.url
+      ? `<a href="${r.url}" target="_blank" rel="noopener noreferrer">aniwatch で見る</a>`
+      : `<a href="${mal}" target="_blank" rel="noopener noreferrer">MyAnimeList で見る</a>`;
+    const secondary = r.url
+      ? `<a class="alt" href="${mal}" target="_blank" rel="noopener noreferrer">MAL</a>`
+      : '';
     modalBody.innerHTML = `
       <h2>${escapeHtml(r.jp || r.en)}</h2>
       <div class="en">${escapeHtml(r.en)}</div>
       <div class="cat"><span class="badge">${escapeHtml(r.cat)}</span></div>
       <div class="actions">
-        <a href="${aniwatch}" target="_blank" rel="noopener noreferrer">aniwatch で見る</a>
-        <a class="alt" href="${mal}" target="_blank" rel="noopener noreferrer">MAL</a>
+        ${primary}
+        ${secondary}
         <a class="alt" href="${anilist}" target="_blank" rel="noopener noreferrer">AniList</a>
       </div>`;
     modal.hidden = false;

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>アニメギャラリー</title>
+<link rel="stylesheet" href="anime.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <a class="back-link" href="index.html">← celebs cards</a>
+    <h1>アニメ<span class="accent">ギャラリー</span></h1>
+    <p class="sub">観たアニメ・観たいアニメ</p>
+  </div>
+</header>
+
+<section class="controls">
+  <input id="q" type="search" placeholder="🔍 タイトル検索 (英・和どちらでも)">
+  <div id="chips" class="chips"></div>
+  <div class="stats"><span id="count"></span></div>
+</section>
+
+<main id="grid" class="grid"></main>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-inner">
+    <button class="modal-close" id="modalClose" aria-label="閉じる">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="anime.js"></script>
+</body>
+</html>

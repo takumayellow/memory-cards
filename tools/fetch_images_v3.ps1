@@ -104,7 +104,8 @@ $raw = (Get-Content $CardsTsv -Raw) -replace "^\uFEFF",""
 $lines = $raw -split "\r?\n" | Where-Object { $_ -ne "" }
 $rows = $lines | Select-Object -Skip 1 | ForEach-Object {
   $c = $_.Split("`t")
-  [pscustomobject]@{ name=$c[0]; yomi=$c[1]; category=$c[2]; id=$c[3] }
+  # cards.tsv の列順は id, name, yomi, category（BOM 付きヘッダ）
+  [pscustomobject]@{ id=$c[0]; name=$c[1]; yomi=$c[2]; category=$c[3] }
 }
 if($Limit -gt 0){ $rows = $rows | Select-Object -First $Limit }
 

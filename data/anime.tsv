@@ -1,14 +1,14 @@
 id	title_en	title_jp	category	aniwatch_url
-A0001	Pokemon		おすすめ・名作	
+A0001	Pokemon		おすすめ・名作	https://aniwatch.co.at/anime/pokemon-journeys-the-series/
 A0002	Evangelion	エヴァンゲリオン	おすすめ・名作	
 A0003	The Melancholy of Haruhi Suzumiya	涼宮ハルヒの憂鬱	おすすめ・名作	
 A0004	Puella Magi Madoka Magica	魔法少女まどか☆マギカ	おすすめ・名作	
 A0005	A Certain Magical Index	とある魔術の禁書目録	おすすめ・名作	
 A0006	The Quintessential Quintuplets	五等分の花嫁	おすすめ・名作	
 A0007	Lycoris Recoil	リコリス・リコイル	おすすめ・名作	
-A0008	JoJo’s Bizarre Adventure	ジョジョの奇妙な冒険	おすすめ・名作	
-A0009	SPY×FAMILY		おすすめ・名作	https://aniwatch.co.at/anime/spy-x-family/
-A0010	Oshi no Ko	推しの子	おすすめ・名作	
+A0008	JoJo’s Bizarre Adventure	ジョジョの奇妙な冒険	おすすめ・名作	https://aniwatch.co.at/anime/steel-ball-run-jojos-bizarre-adventure/
+A0009	SPY×FAMILY		おすすめ・名作	
+A0010	Oshi no Ko	推しの子	おすすめ・名作	https://aniwatch.co.at/anime/my-star-season-2/
 A0011	Chainsaw Man	チェンソーマン	おすすめ・名作	https://aniwatch.co.at/anime/chainsaw-man/
 A0012	I Want to Eat Your Pancreas	君の膵臓をたべたい	感動系・ドラマ	
 A0013	Clannad	クラナド	感動系・ドラマ	
@@ -29,9 +29,9 @@ A0027	The 100 Girlfriends Who Really, Really, Really, Really, Really Love You	�
 A0028	My First Girlfriend is a Gal	はじめてのギャル	学園・青春・ラブコメ	
 A0029	Love Hina	ラブひな	学園・青春・ラブコメ	
 A0030	Tonari no Seki-kun: The Master of Killing Time	となりの関くん	学園・青春・ラブコメ	
-A0031	Re:ZERO -Starting Life in Another World-	Re:ゼロから始める異世界生活	ファンタジー・異世界	
-A0032	That Time I Got Reincarnated as a Slime	転生したらスライムだった件	ファンタジー・異世界	https://aniwatch.co.at/anime/that-time-i-got-reincarnated-as-a-slime/
-A0033	Frieren	葬送のフリーレン	ファンタジー・異世界	
+A0031	Re:ZERO -Starting Life in Another World-	Re:ゼロから始める異世界生活	ファンタジー・異世界	https://aniwatch.co.at/anime/rezero-starting-life-in-another-world-season-4/
+A0032	That Time I Got Reincarnated as a Slime	転生したらスライムだった件	ファンタジー・異世界	https://aniwatch.co.at/anime/that-time-i-got-reincarnated-as-a-slime-season-4/
+A0033	Frieren	葬送のフリーレン	ファンタジー・異世界	https://aniwatch.co.at/anime/frieren-beyond-journeys-end/
 A0034	The Saga of Tanya the Evil	幼女戦記	ファンタジー・異世界	
 A0035	Chillin’ in Another World with Level 2 Super Cheat Powers	レベル2からチートだった元勇者候補のまったり異世界ライフ	ファンタジー・異世界	
 A0036	From Bureaucrat to Villainess: Dad’s Been Reincarnated!	悪役令嬢転生おじさん	ファンタジー・異世界	
@@ -40,7 +40,7 @@ A0038	Fullmetal Alchemist	鋼の錬金術師	アクション・バトル	https:/
 A0039	Hunter x Hunter		アクション・バトル	https://aniwatch.co.at/anime/hunter-x-hunter/
 A0040	Fate/stay night		アクション・バトル	
 A0041	A Certain Scientific Railgun	とある科学の超電磁砲	アクション・バトル	
-A0042	Bleach		アクション・バトル	
+A0042	Bleach		アクション・バトル	https://aniwatch.co.at/anime/bleach-thousand-year-blood-war-the-conflict/
 A0043	Death Note	デスノート	アクション・バトル	https://aniwatch.co.at/anime/death-note/
 A0044	Shakugan no Shana	灼眼のシャナ	アクション・バトル	
 A0045	The Testament of Sister New Devil	新妹魔王の契約者	アクション・バトル	
@@ -48,7 +48,7 @@ A0046	IS: Infinite Stratos		アクション・バトル
 A0047	Senran Kagura	閃乱カグラ	アクション・バトル	
 A0048	Date A Live	デート・ア・ライブ	アクション・バトル	
 A0049	Symphogear XD UNLIMITED	戦姫絶唱シンフォギアXD UNLIMITED	アクション・バトル	
-A0050	Haikyu!!	ハイキュー!!	スポーツ	https://aniwatch.co.at/anime/haikyu/
+A0050	Haikyu!!	ハイキュー!!	スポーツ	https://aniwatch.co.at/anime/haikyu-3rd-season/
 A0051	Slam Dunk	スラムダンク	スポーツ	
 A0052	Yowamushi Pedal	弱虫ペダル	スポーツ	
 A0053	K-on	けいおん！	日常・コメディ	
@@ -67,7 +67,7 @@ A0065	Mobile Suit Gundam SEED	機動戦士ガンダムSEED	SF・メカ
 A0066	Planetes	プラネテス	SF・メカ	
 A0067	Charlotte	シャーロット	SF・メカ	
 A0068	Kakegurui – Compulsive Gambler	賭ケグルイ	ギャンブル・頭脳戦	
-A0069	Classroom of the Elite	ようこそ実力至上主義の教室へ	ギャンブル・頭脳戦	https://aniwatch.co.at/anime/classroom-of-the-elite/
+A0069	Classroom of the Elite	ようこそ実力至上主義の教室へ	ギャンブル・頭脳戦	https://aniwatch.co.at/anime/classroom-of-the-elite-4th-season-second-year-first-semester/
 A0070	Medaka Kuroiwa Is Impervious to My Charms	黒岩メダカに私の可愛いが通じない	ギャンブル・頭脳戦	
 A0071	Girls und Panzer	ガールズ&パンツァー	ガールズ・美少女	
 A0072	Cardcaptor Sakura	カードキャプターさくら	ガールズ・美少女	
@@ -75,7 +75,7 @@ A0073	SHIMONETA: A Boring World Where the Concept of Dirty Jokes Doesn’t Exist
 A0074	Hensuki: Are you willing to fall in love with a pervert, as long as she’s a cutie?	可愛ければ変態でも好きになってくれますか?	ガールズ・美少女	
 A0075	Sankarea: Undying Love	さんかれあ	ホラー・ダーク	
 A0076	The Fruit of Grisaia	グリザイアの果実	ホラー・ダーク	
-A0077	One Piece	ワンピース	クラシック・長編こ	
+A0077	One Piece	ワンピース	クラシック・長編こ	https://aniwatch.co.at/anime/one-piece-vss/
 A0078	Ranma ½	らんま1/2	クラシック・長編こ	
 A0079	Urusei Yatsura	うる星やつら	クラシック・長編こ	
 A0080	ハヤテのごとく		クラシック・長編こ	

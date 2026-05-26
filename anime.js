@@ -22,7 +22,7 @@
     const I = { id: idx('id'), en: idx('title_en'), jp: idx('title_jp'),
                 cat: idx('category'), aw: idx('aniwatch_url'),
                 mal: idx('mal_url'), w: idx('watch_url'),
-                wp: idx('watch_provider') };
+                wp: idx('watch_provider'), al: idx('anilist_id') };
     const get = (c, i) => (i >= 0 ? (c[i] || '') : '');
     rows = lines.slice(1).map((line) => {
       const c = line.split('\t');
@@ -35,6 +35,7 @@
         mal: get(c, I.mal),
         watch: get(c, I.w),
         watchProvider: get(c, I.wp),
+        anilist: get(c, I.al),
       };
     });
   } catch (e) {
@@ -98,8 +99,11 @@
     const malFallback = `https://myanimelist.net/anime.php?q=${q}&cat=anime`;
     const malPage = r.mal || malFallback;
     const links = [];
+    if (r.anilist) {
+      links.push(`<a href="https://www.miruro.tv/info?id=${r.anilist}" target="_blank" rel="noopener noreferrer">Miruro で見る (Sub/Dub)</a>`);
+    }
     if (r.watch && r.watchProvider) {
-      links.push(`<a href="${r.watch}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.watchProvider)} で見る</a>`);
+      links.push(`<a class="alt" href="${r.watch}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.watchProvider)}</a>`);
     }
     if (r.aniwatch) {
       links.push(`<a class="alt" href="${r.aniwatch}" target="_blank" rel="noopener noreferrer">aniwatch</a>`);

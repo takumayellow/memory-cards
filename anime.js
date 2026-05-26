@@ -78,7 +78,7 @@
 
   const openModal = (r) => {
     const q = encodeURIComponent(r.en || r.jp);
-    const aniwatch = `https://aniwatch.to/search?keyword=${q}`;
+    const aniwatch = `https://aniwatch.co.at/?s=${q}`;
     const mal = `https://myanimelist.net/anime.php?q=${q}&cat=anime`;
     const anilist = `https://anilist.co/search/anime?search=${q}`;
     modalBody.innerHTML = `

@@ -77,15 +77,15 @@
   };
 
   const openModal = (r) => {
-    const aniwatch = `https://aniwatchtv.to/search?keyword=${encodeURIComponent(r.en || r.jp)}`;
+    const mal = `https://myanimelist.net/anime.php?q=${encodeURIComponent(r.en || r.jp)}&cat=anime`;
     const anilist = `https://anilist.co/search/anime?search=${encodeURIComponent(r.en || r.jp)}`;
     modalBody.innerHTML = `
       <h2>${escapeHtml(r.jp || r.en)}</h2>
       <div class="en">${escapeHtml(r.en)}</div>
       <div class="cat"><span class="badge">${escapeHtml(r.cat)}</span></div>
       <div class="actions">
-        <a href="${aniwatch}" target="_blank" rel="noopener noreferrer">aniwatch で開く</a>
-        <a class="alt" href="${anilist}" target="_blank" rel="noopener noreferrer">AniList で検索</a>
+        <a href="${mal}" target="_blank" rel="noopener noreferrer">MyAnimeList</a>
+        <a class="alt" href="${anilist}" target="_blank" rel="noopener noreferrer">AniList</a>
       </div>`;
     modal.hidden = false;
   };

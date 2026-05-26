@@ -24,13 +24,21 @@ def parse(text: str):
         if not s.startswith('- '):
             continue
         item = s[2:].strip()
-        m = re.match(r'^(.+?)\s*[（(]([^（）()]+)[)）]\s*(?:※.*)?$', item)
-        if m:
-            en = m.group(1).strip()
-            jp = m.group(2).strip()
+        item = re.sub(r'\s*※.*$', '', item)  # drop trailing annotations
+        # find first opening paren and last closing paren (handles nested parens)
+        open_idx = -1
+        for i, ch in enumerate(item):
+            if ch in '（(':
+                open_idx = i; break
+        close_idx = -1
+        for i in range(len(item) - 1, -1, -1):
+            if item[i] in '）)':
+                close_idx = i; break
+        if open_idx >= 0 and close_idx > open_idx:
+            en = item[:open_idx].strip()
+            jp = item[open_idx + 1:close_idx].strip()
         else:
-            en = item
-            jp = ''
+            en = item.strip(); jp = ''
         seq += 1
         rows.append((f'A{seq:04d}', en, jp, cat))
     return rows

@@ -1,7 +1,7 @@
 ﻿param(
-  [string]$CardsTsv = "$HOME\Downloads\jp-celebs-cards\data\cards.tsv",
-  [string]$OutDir   = "$HOME\Downloads\jp-celebs-cards\images",
-  [string]$LogFile  = "$HOME\Downloads\jp-celebs-cards\logs\fetch.log",
+  [string]$CardsTsv = "$PSScriptRoot\..\data\cards.tsv",
+  [string]$OutDir   = "$PSScriptRoot\..\images",
+  [string]$LogFile  = "$PSScriptRoot\..\logs\fetch.log",
   [switch]$Force,
   [int]$Limit = 0,
   # bad_images.txt（ブラウザの「不適切リスト出力」で生成）を渡すと
@@ -10,17 +10,44 @@
 )
 
 $ErrorActionPreference = "Stop"
-$UA=@{"User-Agent"="jp-celebs-cards/1.0"}
+# Wikimedia の API 規約上 User-Agent に連絡先を含めることが推奨される
+$UA=@{"User-Agent"="jp-celebs-cards/1.0 (https://github.com/takumayellow/memory-cards)"}
 
 function UrlEnc([string]$s){ [uri]::EscapeDataString($s) }
+
+# JSON API 呼び出しの共通ラッパー。
+#  - 全リクエスト間に最低 $script:ReqGapMs のスロットルを挟む（Wikimedia の 429 対策）
+#  - 429/503 はバックオフして最大 5 回リトライ
+$script:LastReq = [datetime]::MinValue
+$script:ReqGapMs = 1200
+function Get-Json([string]$url){
+  for($attempt=1; $attempt -le 5; $attempt++){
+    $sinceMs = ([datetime]::Now - $script:LastReq).TotalMilliseconds
+    if($sinceMs -lt $script:ReqGapMs){ Start-Sleep -Milliseconds ([int]($script:ReqGapMs - $sinceMs)) }
+    $script:LastReq = [datetime]::Now
+    try{
+      return Invoke-RestMethod -Headers $UA -Uri $url -TimeoutSec 60
+    }catch{
+      $code = 0
+      try{ $code = [int]$_.Exception.Response.StatusCode }catch{}
+      if(($code -eq 429 -or $code -eq 503) -and $attempt -lt 5){
+        $wait = [math]::Pow(2,$attempt)   # 2,4,8,16 秒
+        Log "    HTTP $code -> $wait 秒待って再試行 ($attempt/4)"
+        Start-Sleep -Seconds $wait
+        continue
+      }
+      throw
+    }
+  }
+}
 function Log($msg){ $ts=Get-Date -Format "yyyy-MM-dd HH:mm:ss"; "$ts  $msg" | Add-Content -Path $LogFile -Encoding UTF8 }
 function AddAttr($id,$name,$src,$file,$lic,$artist,$credit){
-  $csv = "$HOME\Downloads\jp-celebs-cards\data\attributions.csv"
+  $csv = "$PSScriptRoot\..\data\attributions.csv"
   if(-not (Test-Path $csv)){ "id,name,source,filename,license,artist,credit" | Set-Content $csv -Encoding UTF8 }
   "$id,$name,$src,$file,$lic,$artist,$credit" | Add-Content $csv -Encoding UTF8
 }
 function AddMissing($id,$name){
-  $csv = "$HOME\Downloads\jp-celebs-cards\data\missing.csv"
+  $csv = "$PSScriptRoot\..\data\missing.csv"
   if(-not (Test-Path $csv)){ "id,name" | Set-Content $csv -Encoding UTF8 }
   "$id,$name" | Add-Content $csv -Encoding UTF8
 }
@@ -38,19 +65,19 @@ function Save-Url($url,[string]$preferName){
 function Get-QID([string]$name,[string]$category){
   $q = UrlEnc($name + $(if($category){" ($category)"} else {""}))
   $url = "https://www.wikidata.org/w/api.php?action=wbsearchentities&language=ja&type=item&format=json&search=$q"
-  $res = Invoke-RestMethod -Headers $UA $url
+  $res = Get-Json $url
   return ($res.search | Select-Object -First 1).id
 }
 function Get-P18([string]$qid){
   if(-not $qid){ return $null }
   $url = "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=$qid&props=claims&format=json"
-  $ent = Invoke-RestMethod -Headers $UA $url
+  $ent = Get-Json $url
   return $ent.entities.$qid.claims.P18.mainsnak.datavalue.value | Select-Object -First 1 # "File:xxx.png"
 }
 function Commons-ImageMeta([string]$title){
   if(-not $title){ return $null }
   $t = UrlEnc($title)
-  $meta = Invoke-RestMethod -Headers $UA "https://commons.wikimedia.org/w/api.php?action=query&titles=$t&prop=imageinfo&iiprop=url|extmetadata&format=json"
+  $meta = Get-Json "https://commons.wikimedia.org/w/api.php?action=query&titles=$t&prop=imageinfo&iiprop=url|extmetadata&format=json"
   $p = $meta.query.pages.PSObject.Properties.Value | Select-Object -First 1
   if(-not $p){ return $null }
   $ii = $p.imageinfo | Select-Object -First 1
@@ -67,17 +94,18 @@ function Commons-ImageMeta([string]$title){
 function Get-CommonsByP180([string]$qid){
   if(-not $qid){ return $null }
   $q = UrlEnc("haswbstatement:P180=$qid filetype:bitmap -svg")
-  $search = Invoke-RestMethod -Headers $UA "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=$q&srnamespace=6&srlimit=5&format=json"
+  $search = Get-Json "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=$q&srnamespace=6&srlimit=5&format=json"
   return ($search.query.search | Select-Object -First 1).title
 }
 function Get-WikipediaThumb([string]$name){
-  foreach($host in @("ja.wikipedia.org","en.wikipedia.org")){
+  # NOTE: $host は PowerShell の自動変数（読み取り専用）なので使わない
+  foreach($wikiHost in @("ja.wikipedia.org","en.wikipedia.org")){
     $t = UrlEnc($name)
-    $sr = Invoke-RestMethod -Headers $UA "https://$host/w/api.php?action=query&list=search&srsearch=$t&format=json&srlimit=1"
-    $pid = ($sr.query.search | Select-Object -First 1).pageid
-    if($pid){
-      $pi = Invoke-RestMethod -Headers $UA "https://$host/w/api.php?action=query&pageids=$pid&prop=pageimages&piprop=original|thumbnail&pithumbsize=800&format=json"
-      $pg = $pi.query.pages.$pid
+    $sr = Get-Json "https://$wikiHost/w/api.php?action=query&list=search&srsearch=$t&format=json&srlimit=1"
+    $pageId = ($sr.query.search | Select-Object -First 1).pageid
+    if($pageId){
+      $pi = Get-Json "https://$wikiHost/w/api.php?action=query&pageids=$pageId&prop=pageimages&piprop=original|thumbnail&pithumbsize=800&format=json"
+      $pg = $pi.query.pages.$pageId
       $src = $pg.thumbnail.source
       if($src){ return $src }
     }
@@ -119,6 +147,7 @@ foreach($row in $rows){
   $id = $row.id; $name = $row.name
   $forceThis = $Force -or $badIds.ContainsKey($id)
   Log "FETCH [$id] $name$(if($forceThis -and $badIds.ContainsKey($id)){' [BAD→再取得]'})"
+ try{
 
   # QID
   $qid = Get-QID $name $row.category
@@ -174,6 +203,11 @@ foreach($row in $rows){
 
   Log "FAIL [$id] $name"
   AddMissing $id $name
+ }catch{
+   # 1件の Web エラー等で全体を止めない（$ErrorActionPreference=Stop 対策）
+   Log "  ERROR [$id] $name : $($_.Exception.Message)"
+   AddMissing $id $name
+ }
 }
 Log "Done."
 

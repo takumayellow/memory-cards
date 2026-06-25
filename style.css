@@ -725,6 +725,7 @@ body {
 .ds-card--tier-medium   { border-top-color: #d97706; }
 .ds-card--tier-hard     { border-top-color: #ea580c; }
 .ds-card--tier-expert   { border-top-color: #dc2626; }
+.ds-card--tier-c2       { border-top-color: #7c3aed; }   /* C2: 最難関（💎） */
 
 /* sub 行を「難易度帯ピル + メーター」の横並びに */
 .ds-card__sub--diff {
@@ -748,6 +749,7 @@ body {
 .ds-tier--medium   { background: #fef3c7; color: #92400e; }
 .ds-tier--hard     { background: #ffedd5; color: #9a3412; }
 .ds-tier--expert   { background: #fee2e2; color: #991b1b; }
+.ds-tier--c2       { background: #ede9fe; color: #5b21b6; }
 
 /* 難易度メーター（5 ドット、level 個が点灯） */
 .ds-meter {
@@ -766,6 +768,7 @@ body {
 .ds-card--tier-medium   .ds-dot--on { background: #d97706; }
 .ds-card--tier-hard     .ds-dot--on { background: #ea580c; }
 .ds-card--tier-expert   .ds-dot--on { background: #dc2626; }
+.ds-card--tier-c2       .ds-dot--on { background: #7c3aed; }
 
 /* "学習中" absolute badge */
 .ds-card__active {

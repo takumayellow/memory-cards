@@ -1,0 +1,810 @@
+[
+ {
+  "id": "ev_purveyors",
+  "name": "供給者、業者",
+  "yomi": "purveyors",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "These companies are purveyors of fine goods."
+ },
+ {
+  "id": "ev_animus",
+  "name": "敵意、悪意",
+  "yomi": "animus",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He has a deep animus toward his former colleague."
+ },
+ {
+  "id": "ev_eschewed",
+  "name": "避けた、慎んだ",
+  "yomi": "eschewed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He eschewed the limelight and lived a private life."
+ },
+ {
+  "id": "ev_locution",
+  "name": "言い回し、語法",
+  "yomi": "locution",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "That's an unusual locution."
+ },
+ {
+  "id": "ev_extant",
+  "name": "現存する、残っている",
+  "yomi": "extant",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The original manuscript is no longer extant."
+ },
+ {
+  "id": "ev_triumphalism",
+  "name": "勝利主義",
+  "yomi": "triumphalism",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The president's speech was filled with triumphalism."
+ },
+ {
+  "id": "ev_molego",
+  "name": "～を動かす",
+  "yomi": "molego",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Molego is a rare Latin verb meaning to set in motion."
+ },
+ {
+  "id": "ev_yore",
+  "name": "昔、古",
+  "yomi": "yore",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "In days of yore, travel was much more difficult."
+ },
+ {
+  "id": "ev_immorality",
+  "name": "不道徳",
+  "yomi": "immorality",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His behavior was seen as a sign of immorality."
+ },
+ {
+  "id": "ev_dexamethasone",
+  "name": "デキサメタゾン",
+  "yomi": "dexamethasone",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Dexamethasone is a potent anti-inflammatory steroid."
+ },
+ {
+  "id": "ev_reefers",
+  "name": "大麻たばこ",
+  "yomi": "reefers",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was caught with a couple of reefers."
+ },
+ {
+  "id": "ev_selfaggrandizing",
+  "name": "自己顕示欲の強い",
+  "yomi": "selfaggrandizing",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His selfaggrandizing behavior annoyed his colleagues."
+ },
+ {
+  "id": "ev_endosymbionts",
+  "name": "細胞内共生生物",
+  "yomi": "endosymbionts",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Mitochondria are thought to have originated as endosymbionts."
+ },
+ {
+  "id": "ev_menarcheal",
+  "name": "初潮の",
+  "yomi": "menarcheal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The menarcheal age varies among different populations."
+ },
+ {
+  "id": "ev_thermonuclear",
+  "name": "熱核の",
+  "yomi": "thermonuclear",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Thermonuclear weapons are incredibly destructive."
+ },
+ {
+  "id": "ev_lengthdependence",
+  "name": "長さ依存性",
+  "yomi": "lengthdependence",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The length dependence of muscle contraction is well documented."
+ },
+ {
+  "id": "ev_verisimilitude",
+  "name": "真実らしさ、リアリティ",
+  "yomi": "verisimilitude",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The novel has a high degree of verisimilitude."
+ },
+ {
+  "id": "ev_virucidal",
+  "name": "殺ウイルス性の",
+  "yomi": "virucidal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The agent has virucidal properties."
+ },
+ {
+  "id": "ev_subjugation",
+  "name": "征服、服従",
+  "yomi": "subjugation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The subjugation of the native population was brutal."
+ },
+ {
+  "id": "ev_sybaritic",
+  "name": "快楽主義的な、贅沢な",
+  "yomi": "sybaritic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He led a sybaritic life of indulgence."
+ },
+ {
+  "id": "ev_trotskyites",
+  "name": "トロツキー派",
+  "yomi": "trotskyites",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The Trotskyites were critical of Stalin's policies."
+ },
+ {
+  "id": "ev_mitzvah",
+  "name": "ミツワー（ユダヤ教の戒律）",
+  "yomi": "mitzvah",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Performing a mitzvah is considered a good deed in Judaism."
+ },
+ {
+  "id": "ev_apostasy",
+  "name": "背教、離脱",
+  "yomi": "apostasy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His apostasy from the church caused a scandal."
+ },
+ {
+  "id": "ev_glutathione",
+  "name": "グルタチオン",
+  "yomi": "glutathione",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Glutathione is a powerful antioxidant."
+ },
+ {
+  "id": "ev_ineffable",
+  "name": "言葉にできない、言い表せない",
+  "yomi": "ineffable",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The beauty of the sunset was ineffable."
+ },
+ {
+  "id": "ev_labyrinthine",
+  "name": "迷路のような、複雑な",
+  "yomi": "labyrinthine",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The building had a labyrinthine design."
+ },
+ {
+  "id": "ev_autocatalytic",
+  "name": "自己触媒的な",
+  "yomi": "autocatalytic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The reaction is autocatalytic, meaning it is accelerated by its product."
+ },
+ {
+  "id": "ev_nonlds",
+  "name": "非線形動的システム",
+  "yomi": "nonlds",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The dynamics of this system are described by nonlds."
+ },
+ {
+  "id": "ev_achiasmatic",
+  "name": "キアズマを形成しない",
+  "yomi": "achiasmatic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Achiasmatic meiosis is common in some species."
+ },
+ {
+  "id": "ev_predilection",
+  "name": "偏愛",
+  "yomi": "predilection",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He has a predilection for classical music."
+ },
+ {
+  "id": "ev_blandishments",
+  "name": "甘言",
+  "yomi": "blandishments",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "They tried to persuade him with blandishments."
+ },
+ {
+  "id": "ev_anaphase",
+  "name": "後期",
+  "yomi": "anaphase",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "During anaphase, sister chromatids separate."
+ },
+ {
+  "id": "ev_trivializing",
+  "name": "軽視する",
+  "yomi": "trivializing",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was accused of trivializing the problem."
+ },
+ {
+  "id": "ev_emasculated",
+  "name": "去勢された",
+  "yomi": "emasculated",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The king felt emasculated by the loss of power."
+ },
+ {
+  "id": "ev_gpcrs",
+  "name": "Gタンパク質共役受容体",
+  "yomi": "gpcrs",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "GPCRs are involved in many physiological processes."
+ },
+ {
+  "id": "ev_untranscendent",
+  "name": "超越的でない",
+  "yomi": "untranscendent",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The artwork was described as untranscendent and mundane."
+ },
+ {
+  "id": "ev_snaggletoothed",
+  "name": "歯がでこぼこした",
+  "yomi": "snaggletoothed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The old man had a snaggletoothed grin."
+ },
+ {
+  "id": "ev_obfuscation",
+  "name": "曖昧化",
+  "yomi": "obfuscation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The politician used obfuscation to avoid answering the question."
+ },
+ {
+  "id": "ev_prostrata",
+  "name": "匍匐性の",
+  "yomi": "prostrata",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The plant has a prostrata growth habit."
+ },
+ {
+  "id": "ev_jatropha",
+  "name": "ヤトロファ",
+  "yomi": "jatropha",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Jatropha is used as a biofuel crop."
+ },
+ {
+  "id": "ev_minence",
+  "name": "突出",
+  "yomi": "minence",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The minence of the mountain was breathtaking."
+ },
+ {
+  "id": "ev_solanum",
+  "name": "ナス属",
+  "yomi": "solanum",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Solanum is a large genus of flowering plants."
+ },
+ {
+  "id": "ev_bivariate",
+  "name": "二変量の",
+  "yomi": "bivariate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "A bivariate analysis was used to explore the relationship."
+ },
+ {
+  "id": "ev_eclipta",
+  "name": "タカサブロウ",
+  "yomi": "eclipta",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Eclipta is a genus of plants in the sunflower family."
+ },
+ {
+  "id": "ev_clades",
+  "name": "クレード",
+  "yomi": "clades",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Clades represent groups of organisms descended from a common ancestor."
+ },
+ {
+  "id": "ev_vintner",
+  "name": "ワイン醸造業者",
+  "yomi": "vintner",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The vintner carefully tended to the grapes."
+ },
+ {
+  "id": "ev_axonal",
+  "name": "軸索の",
+  "yomi": "axonal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Axonal transport is crucial for neuronal function."
+ },
+ {
+  "id": "ev_explicitness",
+  "name": "明確さ",
+  "yomi": "explicitness",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Explicitness is important for clear communication."
+ },
+ {
+  "id": "ev_intuitionist",
+  "name": "直観主義者",
+  "yomi": "intuitionist",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The intuitionist believes in innate knowledge."
+ },
+ {
+  "id": "ev_unbowed",
+  "name": "屈しない",
+  "yomi": "unbowed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He remained unbowed despite the adversity."
+ },
+ {
+  "id": "ev_unmaking",
+  "name": "解体",
+  "yomi": "unmaking",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The unmaking of the old regime was necessary for progress."
+ },
+ {
+  "id": "ev_constitutive",
+  "name": "構成的な",
+  "yomi": "constitutive",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The constitutive activity of the promoter is always present."
+ },
+ {
+  "id": "ev_antisera",
+  "name": "抗血清",
+  "yomi": "antisera",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Antisera are used for passive immunization."
+ },
+ {
+  "id": "ev_decoherence",
+  "name": "デコヒーレンス",
+  "yomi": "decoherence",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Decoherence is a key concept in quantum mechanics."
+ },
+ {
+  "id": "ev_phylogenies",
+  "name": "系統",
+  "yomi": "phylogenies",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Phylogenies are used to understand evolutionary relationships."
+ },
+ {
+  "id": "ev_zonafree",
+  "name": "透明帯のない",
+  "yomi": "zonafree",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Zonafree embryos can be created by removing the zona pellucida."
+ },
+ {
+  "id": "ev_fourparameter",
+  "name": "4パラメータ",
+  "yomi": "fourparameter",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The fourparameter model was used to fit the data."
+ },
+ {
+  "id": "ev_interna",
+  "name": "内側",
+  "yomi": "interna",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The tunica interna is the innermost layer of an artery."
+ },
+ {
+  "id": "ev_tautological",
+  "name": "同語反復の",
+  "yomi": "tautological",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The statement was tautological and provided no new information."
+ },
+ {
+  "id": "ev_foist",
+  "name": "押し付ける",
+  "yomi": "foist",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "They tried to foist their ideas on the rest of the group."
+ },
+ {
+  "id": "ev_oogenesis",
+  "name": "卵形成",
+  "yomi": "oogenesis",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Oogenesis is the process of female gamete production."
+ },
+ {
+  "id": "ev_flutamide",
+  "name": "フルタミド",
+  "yomi": "flutamide",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Flutamide is an anti-androgen medication."
+ },
+ {
+  "id": "ev_preantral",
+  "name": "前胞状の",
+  "yomi": "preantral",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Preantral follicles are in an early stage of development."
+ },
+ {
+  "id": "ev_oxldl",
+  "name": "酸化LDL",
+  "yomi": "oxldl",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "OxLDL plays a role in the development of atherosclerosis."
+ },
+ {
+  "id": "ev_malondialdehyde",
+  "name": "マロンジアルデヒド",
+  "yomi": "malondialdehyde",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Malondialdehyde is a marker of lipid peroxidation."
+ },
+ {
+  "id": "ev_subjacent",
+  "name": "下にある",
+  "yomi": "subjacent",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The layer was subjacent to the epidermis."
+ },
+ {
+  "id": "ev_chiasmata",
+  "name": "キアズマ",
+  "yomi": "chiasmata",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Chiasmata are points of crossover during meiosis."
+ },
+ {
+  "id": "ev_folliculogenesis",
+  "name": "卵胞形成",
+  "yomi": "folliculogenesis",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Folliculogenesis is the process of follicle development."
+ },
+ {
+  "id": "ev_keloid",
+  "name": "ケロイド",
+  "yomi": "keloid",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "A keloid is a type of raised scar."
+ },
+ {
+  "id": "ev_afferents",
+  "name": "求心性神経",
+  "yomi": "afferents",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Afferents carry sensory information to the central nervous system."
+ },
+ {
+  "id": "ev_ligature",
+  "name": "結紮",
+  "yomi": "ligature",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The surgeon used a ligature to stop the bleeding."
+ },
+ {
+  "id": "ev_laparotomy",
+  "name": "開腹術",
+  "yomi": "laparotomy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "A laparotomy was performed to examine the abdominal organs."
+ },
+ {
+  "id": "ev_swedge",
+  "name": "圧着する",
+  "yomi": "swedge",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The metal parts were swedged together to form a tight seal."
+ },
+ {
+  "id": "ev_hidebound",
+  "name": "頑迷な",
+  "yomi": "hidebound",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was hidebound and unwilling to change his opinions."
+ },
+ {
+  "id": "ev_casuarina",
+  "name": "モクマオウ",
+  "yomi": "casuarina",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Casuarina trees are commonly used as windbreaks."
+ },
+ {
+  "id": "ev_etymologically",
+  "name": "語源的に",
+  "yomi": "etymologically",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Etymologically, the word comes from Latin."
+ },
+ {
+  "id": "ev_commoditization",
+  "name": "商品化",
+  "yomi": "commoditization",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Commoditization has led to lower prices for the product."
+ },
+ {
+  "id": "ev_mechanistically",
+  "name": "機構的に",
+  "yomi": "mechanistically",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The process was mechanistically explained in the paper."
+ },
+ {
+  "id": "ev_fusty",
+  "name": "古くさい",
+  "yomi": "fusty",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The old house smelled fusty and damp."
+ },
+ {
+  "id": "ev_miscegenation",
+  "name": "混血",
+  "yomi": "miscegenation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The term miscegenation is now considered offensive."
+ },
+ {
+  "id": "ev_agitprop",
+  "name": "扇動宣伝",
+  "yomi": "agitprop",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The government used agitprop to spread its ideology."
+ },
+ {
+  "id": "ev_statutorily",
+  "name": "法令上",
+  "yomi": "statutorily",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The company is statutorily required to report its emissions."
+ },
+ {
+  "id": "ev_supersentence",
+  "name": "超文",
+  "yomi": "supersentence",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The researcher analyzed the supersentence to understand the discourse structure."
+ },
+ {
+  "id": "ev_proliferator",
+  "name": "拡散者",
+  "yomi": "proliferator",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He is known as a nuclear proliferator for his work in weapons development."
+ },
+ {
+  "id": "ev_witticism",
+  "name": "機知に富んだ言葉",
+  "yomi": "witticism",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His speech was full of witticisms, which kept the audience entertained."
+ },
+ {
+  "id": "ev_ontological",
+  "name": "存在論的な",
+  "yomi": "ontological",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The question of the meaning of existence is an ontological one."
+ },
+ {
+  "id": "ev_anachronistic",
+  "name": "時代錯誤的な",
+  "yomi": "anachronistic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His views on women were anachronistic and unacceptable."
+ },
+ {
+  "id": "ev_invidious",
+  "name": "不快な",
+  "yomi": "invidious",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The task of choosing a winner from among such talented candidates was invidious."
+ },
+ {
+  "id": "ev_achbp",
+  "name": "アセチルコリン結合タンパク質",
+  "yomi": "achbp",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The experiment focused on the binding of ligands to achbp."
+ },
+ {
+  "id": "ev_erudite",
+  "name": "博学な",
+  "yomi": "erudite",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The professor was an erudite scholar of ancient history."
+ },
+ {
+  "id": "ev_uncontaminated",
+  "name": "汚染されていない",
+  "yomi": "uncontaminated",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The water source was tested to ensure it was uncontaminated."
+ },
+ {
+  "id": "ev_rectification",
+  "name": "修正",
+  "yomi": "rectification",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Rectification of the error was completed quickly."
+ },
+ {
+  "id": "ev_masturbation",
+  "name": "自慰行為",
+  "yomi": "masturbation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Masturbation is a normal and healthy sexual activity."
+ },
+ {
+  "id": "ev_grammarian",
+  "name": "文法学者",
+  "yomi": "grammarian",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The grammarian studied the structure of the language."
+ },
+ {
+  "id": "ev_virile",
+  "name": "男らしい",
+  "yomi": "virile",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was a virile young man with great ambition."
+ },
+ {
+  "id": "ev_communitarian",
+  "name": "共同体主義の",
+  "yomi": "communitarian",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The communitarian approach emphasizes the importance of community."
+ },
+ {
+  "id": "ev_acumen",
+  "name": "洞察力",
+  "yomi": "acumen",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Her business acumen led to the success of the company."
+ },
+ {
+  "id": "ev_convolution",
+  "name": "畳み込み",
+  "yomi": "convolution",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The convolutions of the brain provide increased surface area."
+ },
+ {
+  "id": "ev_echoic",
+  "name": "反響の",
+  "yomi": "echoic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The echoic sound made it difficult to understand the speaker."
+ },
+ {
+  "id": "ev_heteronyms",
+  "name": "同綴異音異義語",
+  "yomi": "heteronyms",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The English language has many heteronyms."
+ },
+ {
+  "id": "ev_afferent",
+  "name": "求心性の",
+  "yomi": "afferent",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Afferent neurons carry signals towards the central nervous system."
+ }
+]

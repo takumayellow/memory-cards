@@ -1,0 +1,810 @@
+[
+ {
+  "id": "ev_phenomenology",
+  "name": "現象学",
+  "yomi": "phenomenology",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Phenomenology is the study of experience."
+ },
+ {
+  "id": "ev_treacly",
+  "name": "甘ったるい",
+  "yomi": "treacly",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The movie was a bit treacly."
+ },
+ {
+  "id": "ev_intransigent",
+  "name": "非妥協的な",
+  "yomi": "intransigent",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was an intransigent negotiator."
+ },
+ {
+  "id": "ev_teleological",
+  "name": "目的論的な",
+  "yomi": "teleological",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The argument is based on a teleological view."
+ },
+ {
+  "id": "ev_atavistic",
+  "name": "隔世遺伝的な",
+  "yomi": "atavistic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The trait is atavistic."
+ },
+ {
+  "id": "ev_equivalency",
+  "name": "同等性",
+  "yomi": "equivalency",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The equivalency of the two methods was demonstrated."
+ },
+ {
+  "id": "ev_limn",
+  "name": "描く",
+  "yomi": "limn",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The artist carefully limned the landscape."
+ },
+ {
+  "id": "ev_pantocrator",
+  "name": "全能者",
+  "yomi": "pantocrator",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Christ is often depicted as the Pantocrator."
+ },
+ {
+  "id": "ev_acceded",
+  "name": "同意した",
+  "yomi": "acceded",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The company acceded to the demands of the workers."
+ },
+ {
+  "id": "ev_toponymy",
+  "name": "地名学",
+  "yomi": "toponymy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Toponymy studies the origins of place names."
+ },
+ {
+  "id": "ev_execrable",
+  "name": "ひどい",
+  "yomi": "execrable",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The restaurant served execrable food."
+ },
+ {
+  "id": "ev_impinge",
+  "name": "侵害する",
+  "yomi": "impinge",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The new law may impinge on individual rights."
+ },
+ {
+  "id": "ev_fboxes",
+  "name": "Fボックス",
+  "yomi": "fboxes",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "F-boxes are components of ubiquitin ligases."
+ },
+ {
+  "id": "ev_verbum",
+  "name": "言葉",
+  "yomi": "verbum",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "In the beginning was the verbum."
+ },
+ {
+  "id": "ev_revelatory",
+  "name": "啓示的な",
+  "yomi": "revelatory",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The dream had a revelatory message."
+ },
+ {
+  "id": "ev_hewn",
+  "name": "切り出された",
+  "yomi": "hewn",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The statue was hewn from stone."
+ },
+ {
+  "id": "ev_vulgate",
+  "name": "通俗版",
+  "yomi": "vulgate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The vulgate was the common language of the time."
+ },
+ {
+  "id": "ev_plasminogen",
+  "name": "プラスミノーゲン",
+  "yomi": "plasminogen",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Plasminogen is a precursor to plasmin."
+ },
+ {
+  "id": "ev_desecration",
+  "name": "冒涜",
+  "yomi": "desecration",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The act was a desecration of the temple."
+ },
+ {
+  "id": "ev_presage",
+  "name": "前兆",
+  "yomi": "presage",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The dark clouds were a presage of the storm."
+ },
+ {
+  "id": "ev_ergodic",
+  "name": "エルゴード的な",
+  "yomi": "ergodic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The system is ergodic."
+ },
+ {
+  "id": "ev_helms",
+  "name": "舵",
+  "yomi": "helms",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He helms the project."
+ },
+ {
+  "id": "ev_espouse",
+  "name": "支持する",
+  "yomi": "espouse",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He espouses the cause of environmental protection."
+ },
+ {
+  "id": "ev_chastises",
+  "name": "叱責する",
+  "yomi": "chastises",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The teacher chastises the student."
+ },
+ {
+  "id": "ev_anthropic",
+  "name": "人間原理の",
+  "yomi": "anthropic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The anthropic principle is a philosophical concept."
+ },
+ {
+  "id": "ev_fortiori",
+  "name": "ましてや",
+  "yomi": "fortiori",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The argument is valid a fortiori if we consider the additional evidence."
+ },
+ {
+  "id": "ev_bayesian",
+  "name": "ベイズの",
+  "yomi": "bayesian",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "We used a Bayesian approach to analyze the data."
+ },
+ {
+  "id": "ev_flayed",
+  "name": "皮を剥がれた",
+  "yomi": "flayed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The animal was found flayed and abandoned in the woods."
+ },
+ {
+  "id": "ev_paean",
+  "name": "賛歌",
+  "yomi": "paean",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The crowd sang a paean to the victorious team."
+ },
+ {
+  "id": "ev_eschews",
+  "name": "避ける",
+  "yomi": "eschews",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He eschews all forms of violence."
+ },
+ {
+  "id": "ev_voyeurism",
+  "name": "のぞき見行為",
+  "yomi": "voyeurism",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Voyeurism is a form of sexual perversion."
+ },
+ {
+  "id": "ev_exhumation",
+  "name": "発掘",
+  "yomi": "exhumation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The exhumation of the body was ordered by the court."
+ },
+ {
+  "id": "ev_myotubes",
+  "name": "筋管",
+  "yomi": "myotubes",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Myotubes are the precursors to mature muscle fibers."
+ },
+ {
+  "id": "ev_voluptuous",
+  "name": "官能的な",
+  "yomi": "voluptuous",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "She had a voluptuous figure that attracted attention."
+ },
+ {
+  "id": "ev_transcendent",
+  "name": "超越的な",
+  "yomi": "transcendent",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The music had a transcendent quality that moved everyone."
+ },
+ {
+  "id": "ev_segregationist",
+  "name": "人種隔離主義者",
+  "yomi": "segregationist",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The segregationist policies were eventually overturned."
+ },
+ {
+  "id": "ev_disjunctive",
+  "name": "分離的な",
+  "yomi": "disjunctive",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The two events were disjunctive and had no causal relationship."
+ },
+ {
+  "id": "ev_grandiose",
+  "name": "壮大な",
+  "yomi": "grandiose",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The project had grandiose aims, but lacked the resources to realize them."
+ },
+ {
+  "id": "ev_rabbinical",
+  "name": "ラビの",
+  "yomi": "rabbinical",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The student studied rabbinical texts for many years."
+ },
+ {
+  "id": "ev_manueline",
+  "name": "マヌエル様式の",
+  "yomi": "manueline",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The architecture of the building is an example of Manueline style."
+ },
+ {
+  "id": "ev_posttetanic",
+  "name": "後強縮の",
+  "yomi": "posttetanic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Posttetanic potentiation is a temporary increase in synaptic strength."
+ },
+ {
+  "id": "ev_aggregation",
+  "name": "凝集",
+  "yomi": "aggregation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The aggregation of platelets is an important step in blood clotting."
+ },
+ {
+  "id": "ev_scatological",
+  "name": "排泄物に関する",
+  "yomi": "scatological",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The play contained scatological humor that some found offensive."
+ },
+ {
+  "id": "ev_polity",
+  "name": "政治組織",
+  "yomi": "polity",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The polity was built on principles of democracy."
+ },
+ {
+  "id": "ev_excrement",
+  "name": "排泄物",
+  "yomi": "excrement",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The farmer collected animal excrement for fertilizer."
+ },
+ {
+  "id": "ev_apparatchik",
+  "name": "活動家",
+  "yomi": "apparatchik",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The apparatchik followed the party line without question."
+ },
+ {
+  "id": "ev_gobbledygook",
+  "name": "意味不明の言葉",
+  "yomi": "gobbledygook",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The instructions were written in bureaucratic gobbledygook."
+ },
+ {
+  "id": "ev_haut",
+  "name": "高級な",
+  "yomi": "haut",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The fashion house produced haute couture garments."
+ },
+ {
+  "id": "ev_thermoplasma",
+  "name": "サーモプラズマ",
+  "yomi": "thermoplasma",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Thermoplasma are a genus of archaea that live in extreme environments."
+ },
+ {
+  "id": "ev_sotavento",
+  "name": "風下",
+  "yomi": "sotavento",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The boat sailed to the sotavento side of the island."
+ },
+ {
+  "id": "ev_demagoguery",
+  "name": "扇動政治",
+  "yomi": "demagoguery",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The politician used demagoguery to gain support."
+ },
+ {
+  "id": "ev_percutaneous",
+  "name": "経皮的な",
+  "yomi": "percutaneous",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The percutaneous procedure is less invasive than traditional surgery."
+ },
+ {
+  "id": "ev_proselytizing",
+  "name": "改宗させる",
+  "yomi": "proselytizing",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The missionaries were proselytizing the local population."
+ },
+ {
+  "id": "ev_ameliorated",
+  "name": "改善された",
+  "yomi": "ameliorated",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The new medication ameliorated his symptoms."
+ },
+ {
+  "id": "ev_nonce",
+  "name": "一度きり",
+  "yomi": "nonce",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "This is a nonce word that has not been used before."
+ },
+ {
+  "id": "ev_aristolochia",
+  "name": "ウマノスズクサ",
+  "yomi": "aristolochia",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Aristolochia is a genus of flowering plants."
+ },
+ {
+  "id": "ev_nbcs",
+  "name": "NBCS（非経口血液細胞供給）",
+  "yomi": "nbcs",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The use of NBCS in the procedure has been shown to be effective."
+ },
+ {
+  "id": "ev_scuttle",
+  "name": "急いで逃げる",
+  "yomi": "scuttle",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The mouse scuttled under the cupboard."
+ },
+ {
+  "id": "ev_twolocus",
+  "name": "二遺伝子座",
+  "yomi": "twolocus",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The study involves two-locus analysis of the genetic traits."
+ },
+ {
+  "id": "ev_bigotry",
+  "name": "偏見",
+  "yomi": "bigotry",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Bigotry has no place in a just society."
+ },
+ {
+  "id": "ev_imprimatur",
+  "name": "許可",
+  "yomi": "imprimatur",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The project received the imprimatur of the government."
+ },
+ {
+  "id": "ev_magnanimity",
+  "name": "寛大さ",
+  "yomi": "magnanimity",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His magnanimity toward his enemies was impressive."
+ },
+ {
+  "id": "ev_circumlocution",
+  "name": "遠回しな言い方",
+  "yomi": "circumlocution",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He avoided direct answers by using circumlocution."
+ },
+ {
+  "id": "ev_neddylation",
+  "name": "ネディル化",
+  "yomi": "neddylation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Neddylation is a post-translational modification process."
+ },
+ {
+  "id": "ev_claptrap",
+  "name": "たわごと",
+  "yomi": "claptrap",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His speech was full of political claptrap."
+ },
+ {
+  "id": "ev_disingenuousness",
+  "name": "不誠実さ",
+  "yomi": "disingenuousness",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His disingenuousness was obvious to everyone."
+ },
+ {
+  "id": "ev_subterfuge",
+  "name": "ごまかし",
+  "yomi": "subterfuge",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He used subterfuge to avoid answering the questions."
+ },
+ {
+  "id": "ev_vasoconstrictors",
+  "name": "血管収縮薬",
+  "yomi": "vasoconstrictors",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Vasoconstrictors can increase blood pressure."
+ },
+ {
+  "id": "ev_indistinguishable",
+  "name": "見分けがつかない",
+  "yomi": "indistinguishable",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The twins were almost indistinguishable from each other."
+ },
+ {
+  "id": "ev_actin",
+  "name": "アクチン",
+  "yomi": "actin",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Actin filaments are a component of the cytoskeleton."
+ },
+ {
+  "id": "ev_oxlip",
+  "name": "オクスリップ",
+  "yomi": "oxlip",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The oxlip is a flowering plant in the primrose family."
+ },
+ {
+  "id": "ev_unreconstructed",
+  "name": "未改造の",
+  "yomi": "unreconstructed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The old house was left unreconstructed for decades."
+ },
+ {
+  "id": "ev_bleedingheart",
+  "name": "タイツリソウ",
+  "yomi": "bleedingheart",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The bleeding heart is a beautiful flowering plant."
+ },
+ {
+  "id": "ev_castigates",
+  "name": "厳しく非難する",
+  "yomi": "castigates",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The newspaper castigates the government's economic policies."
+ },
+ {
+  "id": "ev_consummation",
+  "name": "完成",
+  "yomi": "consummation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The consummation of the project was a great success."
+ },
+ {
+  "id": "ev_teratogenic",
+  "name": "催奇形の",
+  "yomi": "teratogenic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Certain chemicals can have teratogenic effects on developing fetuses."
+ },
+ {
+  "id": "ev_roundly",
+  "name": "完全に",
+  "yomi": "roundly",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The proposal was roundly rejected by the committee."
+ },
+ {
+  "id": "ev_nonpalmoplantar",
+  "name": "非手掌足底の",
+  "yomi": "nonpalmoplantar",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The rash was located on non-palmoplantar surfaces."
+ },
+ {
+  "id": "ev_arogenate",
+  "name": "アロゲン酸",
+  "yomi": "arogenate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Arogenate is an intermediate in the biosynthesis of phenylalanine and tyrosine."
+ },
+ {
+  "id": "ev_palmoplantar",
+  "name": "手掌足底の",
+  "yomi": "palmoplantar",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Palmoplantar keratoderma is a skin condition affecting the palms and soles."
+ },
+ {
+  "id": "ev_chorismate",
+  "name": "コリスミ酸",
+  "yomi": "chorismate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Chorismate is a key intermediate in the shikimate pathway."
+ },
+ {
+  "id": "ev_micturition",
+  "name": "排尿",
+  "yomi": "micturition",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Micturition is the process of emptying the bladder."
+ },
+ {
+  "id": "ev_escapements",
+  "name": "エスケープメント",
+  "yomi": "escapements",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The escapement is a mechanism in a clock that releases gears."
+ },
+ {
+  "id": "ev_subrepeats",
+  "name": "サブリピート",
+  "yomi": "subrepeats",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Subrepeats are smaller units within larger repetitive sequences."
+ },
+ {
+  "id": "ev_fetish",
+  "name": "フェチ",
+  "yomi": "fetish",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Some people have a fetish for certain objects or body parts."
+ },
+ {
+  "id": "ev_banditry",
+  "name": "盗賊行為",
+  "yomi": "banditry",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The region was plagued by banditry and lawlessness."
+ },
+ {
+  "id": "ev_spatiotemporal",
+  "name": "時空間",
+  "yomi": "spatiotemporal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The model describes the spatiotemporal dynamics of the system."
+ },
+ {
+  "id": "ev_chytridiomycetes",
+  "name": "ツボカビ類",
+  "yomi": "chytridiomycetes",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Chytridiomycetes are a group of aquatic fungi."
+ },
+ {
+  "id": "ev_ineluctable",
+  "name": "避けられない",
+  "yomi": "ineluctable",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The ineluctable approach of death filled him with dread."
+ },
+ {
+  "id": "ev_shtick",
+  "name": "得意の芸",
+  "yomi": "shtick",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His comedy routine relied on his usual shtick."
+ },
+ {
+  "id": "ev_prepositional",
+  "name": "前置詞的な",
+  "yomi": "prepositional",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The prepositional phrase modified the noun."
+ },
+ {
+  "id": "ev_formulary",
+  "name": "処方集",
+  "yomi": "formulary",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The hospital followed the national formulary."
+ },
+ {
+  "id": "ev_calque",
+  "name": "翻訳借用",
+  "yomi": "calque",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The word 'skyscraper' is a calque from English."
+ },
+ {
+  "id": "ev_solecism",
+  "name": "文法上の誤り",
+  "yomi": "solecism",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The sentence contained a solecism."
+ },
+ {
+  "id": "ev_conflates",
+  "name": "混同する",
+  "yomi": "conflates",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The author often conflates two different concepts."
+ },
+ {
+  "id": "ev_revocation",
+  "name": "取り消し",
+  "yomi": "revocation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The revocation of his license was unexpected."
+ },
+ {
+  "id": "ev_inexorable",
+  "name": "冷酷な",
+  "yomi": "inexorable",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The inexorable march of time cannot be stopped."
+ },
+ {
+  "id": "ev_edification",
+  "name": "啓発",
+  "yomi": "edification",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The lecture was aimed at the edification of the audience."
+ },
+ {
+  "id": "ev_sodomy",
+  "name": "男色",
+  "yomi": "sodomy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Sodomy was a criminal offense in many countries."
+ },
+ {
+  "id": "ev_copulation",
+  "name": "交尾",
+  "yomi": "copulation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The birds engaged in copulation during the breeding season."
+ },
+ {
+  "id": "ev_malapropism",
+  "name": "言い間違い",
+  "yomi": "malapropism",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His malapropism made everyone laugh."
+ }
+]

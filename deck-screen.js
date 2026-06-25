@@ -87,7 +87,7 @@
     if (deck.id === BUILTIN) {
       word.textContent = '芸能人カード';
     } else if (stageInfo) {
-      word.textContent = 'ステージ ' + stageInfo.stage;
+      word.textContent = (stageInfo.isC2 ? 'C2 ステージ ' : 'ステージ ') + stageInfo.stage;
     } else if (mode === 'vocab' && preview?.yomi) {
       word.textContent = preview.yomi;
     } else {

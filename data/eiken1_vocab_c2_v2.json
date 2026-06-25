@@ -1,0 +1,810 @@
+[
+ {
+  "id": "ev_aliquots",
+  "name": "アリコート",
+  "yomi": "aliquots",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The sample was divided into several aliquots."
+ },
+ {
+  "id": "ev_decipherment",
+  "name": "解読",
+  "yomi": "decipherment",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The decipherment of hieroglyphs took many years."
+ },
+ {
+  "id": "ev_rvesvi",
+  "name": "右室終末収縮期容量指標",
+  "yomi": "rvesvi",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "RVEVSI is an index of the right ventricular end-systolic volume."
+ },
+ {
+  "id": "ev_rvedvi",
+  "name": "右室拡張末期容量指標",
+  "yomi": "rvedvi",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "RVEDVI is an index of the right ventricular end-diastolic volume."
+ },
+ {
+  "id": "ev_selfimmolation",
+  "name": "自己犠牲",
+  "yomi": "selfimmolation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His self-immolation was a dramatic act of protest."
+ },
+ {
+  "id": "ev_etymon",
+  "name": "語源",
+  "yomi": "etymon",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The etymon of the word 'computer' is 'compute'."
+ },
+ {
+  "id": "ev_inordinately",
+  "name": "過度に",
+  "yomi": "inordinately",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was inordinately proud of his accomplishments."
+ },
+ {
+  "id": "ev_farrago",
+  "name": "ごたまぜ",
+  "yomi": "farrago",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The book was a farrago of different ideas."
+ },
+ {
+  "id": "ev_maxima",
+  "name": "極大値",
+  "yomi": "maxima",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The maxima of the function are at x=1 and x=3."
+ },
+ {
+  "id": "ev_diminutives",
+  "name": "指小辞",
+  "yomi": "diminutives",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The use of diminutives can add a sense of intimacy."
+ },
+ {
+  "id": "ev_philological",
+  "name": "文献学的な",
+  "yomi": "philological",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Philological analysis revealed the origins of the text."
+ },
+ {
+  "id": "ev_apposition",
+  "name": "並置",
+  "yomi": "apposition",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The two nouns are in apposition."
+ },
+ {
+  "id": "ev_cavil",
+  "name": "難癖をつける",
+  "yomi": "cavil",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was always quick to cavil at minor details."
+ },
+ {
+  "id": "ev_castration",
+  "name": "去勢",
+  "yomi": "castration",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Castration is a surgical procedure that removes the testicles."
+ },
+ {
+  "id": "ev_depolarization",
+  "name": "脱分極",
+  "yomi": "depolarization",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Depolarization of the neuron causes an action potential."
+ },
+ {
+  "id": "ev_apolipoprotein",
+  "name": "アポリポタンパク質",
+  "yomi": "apolipoprotein",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Apolipoproteins are involved in lipid transport."
+ },
+ {
+  "id": "ev_supersentences",
+  "name": "超文",
+  "yomi": "supersentences",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The analysis focuses on supersentences and their relationships."
+ },
+ {
+  "id": "ev_resolutely",
+  "name": "断固として",
+  "yomi": "resolutely",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "She resolutely refused to accept defeat."
+ },
+ {
+  "id": "ev_erudition",
+  "name": "博識",
+  "yomi": "erudition",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His erudition was evident in his writings."
+ },
+ {
+  "id": "ev_urogenital",
+  "name": "泌尿生殖器の",
+  "yomi": "urogenital",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The urogenital system is responsible for reproduction and waste excretion."
+ },
+ {
+  "id": "ev_photoperiod",
+  "name": "日長",
+  "yomi": "photoperiod",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Photoperiod is important for plant flowering."
+ },
+ {
+  "id": "ev_operons",
+  "name": "オペロン",
+  "yomi": "operons",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Operons are a common feature of bacterial genomes."
+ },
+ {
+  "id": "ev_plangent",
+  "name": "悲しげな",
+  "yomi": "plangent",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The plangent sound of the church bells echoed through the village."
+ },
+ {
+  "id": "ev_brassed",
+  "name": "真鍮製の",
+  "yomi": "brassed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The instrument was made of brassed metal."
+ },
+ {
+  "id": "ev_brimstone",
+  "name": "硫黄",
+  "yomi": "brimstone",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The smell of brimstone filled the air."
+ },
+ {
+  "id": "ev_consilience",
+  "name": "一致",
+  "yomi": "consilience",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Consilience between different lines of evidence is important."
+ },
+ {
+  "id": "ev_pomposity",
+  "name": "大げささ",
+  "yomi": "pomposity",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His speech was full of pomposity and empty rhetoric."
+ },
+ {
+  "id": "ev_recondite",
+  "name": "難解な",
+  "yomi": "recondite",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The recondite subject matter was difficult to understand."
+ },
+ {
+  "id": "ev_arcana",
+  "name": "秘儀",
+  "yomi": "arcana",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The arcana of the ancient cult were shrouded in secrecy."
+ },
+ {
+  "id": "ev_flubber",
+  "name": "粘弾性物質",
+  "yomi": "flubber",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The toy was made of a flubber-like material."
+ },
+ {
+  "id": "ev_intersex",
+  "name": "間性",
+  "yomi": "intersex",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The individual displayed intersex characteristics."
+ },
+ {
+  "id": "ev_prephenate",
+  "name": "プレフェネート",
+  "yomi": "prephenate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Prephenate is an intermediate in the biosynthesis of phenylalanine."
+ },
+ {
+  "id": "ev_trophozoite",
+  "name": "栄養体",
+  "yomi": "trophozoite",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The trophozoite stage of the parasite is motile."
+ },
+ {
+  "id": "ev_smarmy",
+  "name": "なれなれしい",
+  "yomi": "smarmy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His smarmy manner made me feel uncomfortable."
+ },
+ {
+  "id": "ev_fecundity",
+  "name": "多産性",
+  "yomi": "fecundity",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The fecundity of the queen bee ensures the hive's survival."
+ },
+ {
+  "id": "ev_heparinase",
+  "name": "ヘパリナーゼ",
+  "yomi": "heparinase",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Heparinase is used to break down heparin in clinical settings."
+ },
+ {
+  "id": "ev_genotypephenotype",
+  "name": "遺伝子型表現型",
+  "yomi": "genotypephenotype",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The study investigates the relationship between genotypephenotype."
+ },
+ {
+  "id": "ev_federalist",
+  "name": "連邦主義者",
+  "yomi": "federalist",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The federalist argued for a strong central government."
+ },
+ {
+  "id": "ev_exegesis",
+  "name": "解釈",
+  "yomi": "exegesis",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The exegesis of the ancient text required meticulous attention to detail."
+ },
+ {
+  "id": "ev_pittance",
+  "name": "わずかな金額",
+  "yomi": "pittance",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "They received only a pittance for their hard work."
+ },
+ {
+  "id": "ev_perforce",
+  "name": "必然的に",
+  "yomi": "perforce",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "They had to leave the area perforce due to the storm."
+ },
+ {
+  "id": "ev_castigated",
+  "name": "厳しく非難された",
+  "yomi": "castigated",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The politician was castigated for their unethical behavior."
+ },
+ {
+  "id": "ev_homeostasis",
+  "name": "恒常性",
+  "yomi": "homeostasis",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The body maintains homeostasis through various regulatory mechanisms."
+ },
+ {
+  "id": "ev_biogeography",
+  "name": "生物地理学",
+  "yomi": "biogeography",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Biogeography studies the distribution of species across the globe."
+ },
+ {
+  "id": "ev_namcs",
+  "name": "ナムクス",
+  "yomi": "namcs",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "NAMCS is a national survey of ambulatory care."
+ },
+ {
+  "id": "ev_exhorted",
+  "name": "強く勧めた",
+  "yomi": "exhorted",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The coach exhorted the team to give their best effort."
+ },
+ {
+  "id": "ev_subfamilies",
+  "name": "亜科",
+  "yomi": "subfamilies",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The plant kingdom is divided into many families and subfamilies."
+ },
+ {
+  "id": "ev_ribald",
+  "name": "わいせつな",
+  "yomi": "ribald",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The comedian's jokes were often ribald and offensive."
+ },
+ {
+  "id": "ev_pairedend",
+  "name": "ペアエンド",
+  "yomi": "pairedend",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Pairedend sequencing provides more accurate mapping of reads."
+ },
+ {
+  "id": "ev_risible",
+  "name": "笑いを誘う",
+  "yomi": "risible",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His attempts to speak the local dialect were risible."
+ },
+ {
+  "id": "ev_bolls",
+  "name": "綿のさや",
+  "yomi": "bolls",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The cotton bolls were ready for harvesting."
+ },
+ {
+  "id": "ev_trituration",
+  "name": "粉砕",
+  "yomi": "trituration",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Trituration of the solid material is necessary for analysis."
+ },
+ {
+  "id": "ev_heritabilities",
+  "name": "遺伝率",
+  "yomi": "heritabilities",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Heritabilities of behavioral traits vary widely."
+ },
+ {
+  "id": "ev_trehalose",
+  "name": "トレハロース",
+  "yomi": "trehalose",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Trehalose acts as a protectant under stressful conditions."
+ },
+ {
+  "id": "ev_adulterers",
+  "name": "不倫者",
+  "yomi": "adulterers",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The scandal involved several prominent adulterers."
+ },
+ {
+  "id": "ev_genespecific",
+  "name": "遺伝子特異的",
+  "yomi": "genespecific",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The primer was designed for genespecific amplification."
+ },
+ {
+  "id": "ev_alphatocopherol",
+  "name": "α-トコフェロール",
+  "yomi": "alphatocopherol",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Alphatocopherol is a form of vitamin E."
+ },
+ {
+  "id": "ev_opprobrium",
+  "name": "不名誉",
+  "yomi": "opprobrium",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The politician faced public opprobrium after the scandal."
+ },
+ {
+  "id": "ev_effrontery",
+  "name": "厚かましさ",
+  "yomi": "effrontery",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His effrontery shocked everyone in the room."
+ },
+ {
+  "id": "ev_interdisciplinary",
+  "name": "学際的",
+  "yomi": "interdisciplinary",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The project required an interdisciplinary approach."
+ },
+ {
+  "id": "ev_quasispeciation",
+  "name": "準種分化",
+  "yomi": "quasispeciation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Quasispeciation can be seen in rapidly evolving populations."
+ },
+ {
+  "id": "ev_allencompassing",
+  "name": "包括的な",
+  "yomi": "allencompassing",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The study aimed to provide an allencompassing overview of the topic."
+ },
+ {
+  "id": "ev_machiavellian",
+  "name": "マキャベリ的",
+  "yomi": "machiavellian",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His machiavellian tactics made him successful but unpopular."
+ },
+ {
+  "id": "ev_comity",
+  "name": "礼儀",
+  "yomi": "comity",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The neighboring countries established comity between them."
+ },
+ {
+  "id": "ev_encomium",
+  "name": "賛辞",
+  "yomi": "encomium",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "She received encomium for her outstanding achievement."
+ },
+ {
+  "id": "ev_coevolutionary",
+  "name": "共進化的",
+  "yomi": "coevolutionary",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The two species have a coevolutionary relationship."
+ },
+ {
+  "id": "ev_eviscerated",
+  "name": "内臓を取り出した",
+  "yomi": "eviscerated",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The animal was eviscerated during the dissection."
+ },
+ {
+  "id": "ev_nonergodic",
+  "name": "非エルゴード的",
+  "yomi": "nonergodic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The process is nonergodic, so time averages do not equal ensemble averages."
+ },
+ {
+  "id": "ev_nonspontaneous",
+  "name": "自発的でない",
+  "yomi": "nonspontaneous",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The reaction is nonspontaneous and requires energy input."
+ },
+ {
+  "id": "ev_bootstrap",
+  "name": "ブートストラップ",
+  "yomi": "bootstrap",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Bootstrap analysis was used to assess the reliability of the phylogenetic tree."
+ },
+ {
+  "id": "ev_exapting",
+  "name": "適応的に再利用",
+  "yomi": "exapting",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The structure was exapting for a new function."
+ },
+ {
+  "id": "ev_striatum",
+  "name": "線条体",
+  "yomi": "striatum",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The striatum plays a key role in movement and reward."
+ },
+ {
+  "id": "ev_adenosine",
+  "name": "アデノシン",
+  "yomi": "adenosine",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Adenosine is a nucleoside involved in energy transfer."
+ },
+ {
+  "id": "ev_winnowed",
+  "name": "ふるいにかけられた",
+  "yomi": "winnowed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The large amount of data was winnowed down to the most relevant information."
+ },
+ {
+  "id": "ev_libitum",
+  "name": "随意に",
+  "yomi": "libitum",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The animals were allowed to eat ad libitum."
+ },
+ {
+  "id": "ev_patrician",
+  "name": "貴族",
+  "yomi": "patrician",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The patrician class held significant political power."
+ },
+ {
+  "id": "ev_rankled",
+  "name": "いらだたせた",
+  "yomi": "rankled",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His rude comments rankled her for the rest of the day."
+ },
+ {
+  "id": "ev_lexicographical",
+  "name": "辞書編集の",
+  "yomi": "lexicographical",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Lexicographical analysis is used to study the evolution of language."
+ },
+ {
+  "id": "ev_centroids",
+  "name": "重心",
+  "yomi": "centroids",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The algorithm computes the centroids of the clusters."
+ },
+ {
+  "id": "ev_unvarnished",
+  "name": "ありのままの",
+  "yomi": "unvarnished",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He provided an unvarnished account of the events."
+ },
+ {
+  "id": "ev_flacks",
+  "name": "広報担当者",
+  "yomi": "flacks",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The flacks worked to improve the company's image."
+ },
+ {
+  "id": "ev_willynilly",
+  "name": "いやおうなしに",
+  "yomi": "willynilly",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "They were forced to accept the agreement willynilly."
+ },
+ {
+  "id": "ev_awash",
+  "name": "水浸し",
+  "yomi": "awash",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The town was awash with floodwaters after the heavy rain."
+ },
+ {
+  "id": "ev_galactose",
+  "name": "ガラクトース",
+  "yomi": "galactose",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Galactose is a monosaccharide sugar that is less sweet than glucose."
+ },
+ {
+  "id": "ev_calliphora",
+  "name": "クロバエ",
+  "yomi": "calliphora",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Calliphora is a genus of blowflies."
+ },
+ {
+  "id": "ev_mannitol",
+  "name": "マンニトール",
+  "yomi": "mannitol",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Mannitol is a sugar alcohol used as a diuretic."
+ },
+ {
+  "id": "ev_iridocorneal",
+  "name": "虹彩角膜の",
+  "yomi": "iridocorneal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The iridocorneal angle is located at the periphery of the anterior chamber."
+ },
+ {
+  "id": "ev_corneal",
+  "name": "角膜の",
+  "yomi": "corneal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The corneal layer protects the eye."
+ },
+ {
+  "id": "ev_covariation",
+  "name": "共変動",
+  "yomi": "covariation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Covariation analysis reveals the association between two variables."
+ },
+ {
+  "id": "ev_synovial",
+  "name": "滑液の",
+  "yomi": "synovial",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Synovial fluid lubricates the joints."
+ },
+ {
+  "id": "ev_pilloried",
+  "name": "さらし台にかけられた",
+  "yomi": "pilloried",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was pilloried for his controversial remarks."
+ },
+ {
+  "id": "ev_dowager",
+  "name": "未亡人",
+  "yomi": "dowager",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The dowager countess lived in the old manor."
+ },
+ {
+  "id": "ev_cyclase",
+  "name": "シクラーゼ",
+  "yomi": "cyclase",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Adenylyl cyclase converts ATP to cAMP."
+ },
+ {
+  "id": "ev_molestation",
+  "name": "迷惑行為",
+  "yomi": "molestation",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The molestation was reported to the authorities."
+ },
+ {
+  "id": "ev_canonical",
+  "name": "標準的な",
+  "yomi": "canonical",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The canonical sequence is the most commonly observed sequence."
+ },
+ {
+  "id": "ev_artifactual",
+  "name": "人工的な",
+  "yomi": "artifactual",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The findings might be artifactual due to experimental error."
+ },
+ {
+  "id": "ev_editorialized",
+  "name": "社説風に書かれた",
+  "yomi": "editorialized",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The report was editorialized, expressing a particular viewpoint."
+ },
+ {
+  "id": "ev_subclade",
+  "name": "亜系統",
+  "yomi": "subclade",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "A subclade represents a distinct lineage within a larger clade."
+ },
+ {
+  "id": "ev_gastrocnemius",
+  "name": "腓腹筋",
+  "yomi": "gastrocnemius",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The gastrocnemius muscle is located in the calf."
+ },
+ {
+  "id": "ev_exculpate",
+  "name": "免罪する",
+  "yomi": "exculpate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The evidence exculpated the suspect."
+ },
+ {
+  "id": "ev_demographers",
+  "name": "人口統計学者",
+  "yomi": "demographers",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Demographers study population trends and characteristics."
+ }
+]

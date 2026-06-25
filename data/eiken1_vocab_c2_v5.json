@@ -1,0 +1,802 @@
+[
+ {
+  "id": "ev_scintillating",
+  "name": "きらめく",
+  "yomi": "scintillating",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The jewelry was scintillating under the lights."
+ },
+ {
+  "id": "ev_nous",
+  "name": "知性",
+  "yomi": "nous",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He had a remarkable nous for understanding complex issues."
+ },
+ {
+  "id": "ev_lexicographers",
+  "name": "辞書編集者",
+  "yomi": "lexicographers",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Lexicographers are responsible for creating dictionaries."
+ },
+ {
+  "id": "ev_ineluctably",
+  "name": "避けられなく",
+  "yomi": "ineluctably",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The outcome was ineluctably determined by prior events."
+ },
+ {
+  "id": "ev_nebbishes",
+  "name": "弱虫",
+  "yomi": "nebbishes",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The film is about a group of nebbishes who become heroes."
+ },
+ {
+  "id": "ev_endothelium",
+  "name": "内皮細胞",
+  "yomi": "endothelium",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The endothelium lines the inside of blood vessels."
+ },
+ {
+  "id": "ev_morphogenesis",
+  "name": "形態形成",
+  "yomi": "morphogenesis",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Morphogenesis is the biological process that causes an organism to develop its shape."
+ },
+ {
+  "id": "ev_lobula",
+  "name": "小葉",
+  "yomi": "lobula",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The cerebellum is composed of multiple lobula."
+ },
+ {
+  "id": "ev_expropriated",
+  "name": "収用された",
+  "yomi": "expropriated",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The land was expropriated by the government for development."
+ },
+ {
+  "id": "ev_termini",
+  "name": "末端",
+  "yomi": "termini",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The termini of the chromosomes are called telomeres."
+ },
+ {
+  "id": "ev_indoleamine",
+  "name": "インドールアミン",
+  "yomi": "indoleamine",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Indoleamine neurotransmitters play a crucial role in mood regulation."
+ },
+ {
+  "id": "ev_calamitous",
+  "name": "悲惨な",
+  "yomi": "calamitous",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The earthquake caused calamitous damage to the city."
+ },
+ {
+  "id": "ev_dysphemistic",
+  "name": "不快な婉曲表現の",
+  "yomi": "dysphemistic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The use of dysphemistic language was seen as offensive."
+ },
+ {
+  "id": "ev_abstruse",
+  "name": "難解な",
+  "yomi": "abstruse",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The philosopher's ideas were abstruse and difficult to understand."
+ },
+ {
+  "id": "ev_backformed",
+  "name": "逆成された",
+  "yomi": "backformed",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The word 'edit' is backformed from 'editor'."
+ },
+ {
+  "id": "ev_etymologica",
+  "name": "語源的な",
+  "yomi": "etymologica",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The study included an etymological analysis of the word."
+ },
+ {
+  "id": "ev_inflectional",
+  "name": "屈折の",
+  "yomi": "inflectional",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "English is less inflectional than Latin."
+ },
+ {
+  "id": "ev_synonymy",
+  "name": "同義性",
+  "yomi": "synonymy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The synonymy of words like 'happy' and 'joyful' is not perfect."
+ },
+ {
+  "id": "ev_macrostructure",
+  "name": "巨視的構造",
+  "yomi": "macrostructure",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The macrostructure of the text was well-organized."
+ },
+ {
+  "id": "ev_referents",
+  "name": "指示対象",
+  "yomi": "referents",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The referents of the pronouns were not always clear."
+ },
+ {
+  "id": "ev_polysemy",
+  "name": "多義性",
+  "yomi": "polysemy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The word 'bank' exhibits polysemy."
+ },
+ {
+  "id": "ev_reduplication",
+  "name": "重複",
+  "yomi": "reduplication",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Reduplication can indicate plurality in some languages."
+ },
+ {
+  "id": "ev_lacerated",
+  "name": "切り裂かれた",
+  "yomi": "lacerated",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The victim's skin was lacerated by sharp objects."
+ },
+ {
+  "id": "ev_euthanized",
+  "name": "安楽死させられた",
+  "yomi": "euthanized",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The animal was euthanized due to its severe condition."
+ },
+ {
+  "id": "ev_rapamycin",
+  "name": "ラパマイシン",
+  "yomi": "rapamycin",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Rapamycin is an immunosuppressant used in organ transplants."
+ },
+ {
+  "id": "ev_periplasmic",
+  "name": "ペリプラズムの",
+  "yomi": "periplasmic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The periplasmic space is found between the inner and outer membranes."
+ },
+ {
+  "id": "ev_impugn",
+  "name": "異議を唱える",
+  "yomi": "impugn",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "His integrity was impugned by his political opponents."
+ },
+ {
+  "id": "ev_achrs",
+  "name": "アセチルコリン受容体",
+  "yomi": "achrs",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "AChRs are important for neurotransmission."
+ },
+ {
+  "id": "ev_effluents",
+  "name": "排出物",
+  "yomi": "effluents",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The factory was fined for releasing harmful effluents into the river."
+ },
+ {
+  "id": "ev_reproached",
+  "name": "非難された",
+  "yomi": "reproached",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was reproached for his careless behavior."
+ },
+ {
+  "id": "ev_pernicious",
+  "name": "有害な",
+  "yomi": "pernicious",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The spread of misinformation can be pernicious to society."
+ },
+ {
+  "id": "ev_mgbe",
+  "name": "膜貫通型グアニン結合タンパク質",
+  "yomi": "mgbe",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Mgbe is involved in transmembrane signaling pathways."
+ },
+ {
+  "id": "ev_lopped",
+  "name": "切り落とされた",
+  "yomi": "lopped",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The branches were lopped from the tree."
+ },
+ {
+  "id": "ev_espy",
+  "name": "見つける",
+  "yomi": "espy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "I espied a deer in the woods."
+ },
+ {
+  "id": "ev_heterogeneity",
+  "name": "異質性",
+  "yomi": "heterogeneity",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The heterogeneity of the data made it difficult to analyze."
+ },
+ {
+  "id": "ev_supraspinal",
+  "name": "脊髄上の",
+  "yomi": "supraspinal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Supraspinal control of movement involves the brain."
+ },
+ {
+  "id": "ev_chemiluminescence",
+  "name": "化学発光",
+  "yomi": "chemiluminescence",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Chemiluminescence is used in many analytical techniques."
+ },
+ {
+  "id": "ev_activators",
+  "name": "活性化因子",
+  "yomi": "activators",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Activators increase the rate of a chemical reaction."
+ },
+ {
+  "id": "ev_amplifluor",
+  "name": "アンプリフルオール",
+  "yomi": "amplifluor",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Amplifluor assays are used in high-throughput screening."
+ },
+ {
+  "id": "ev_clitoris",
+  "name": "陰核",
+  "yomi": "clitoris",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The clitoris is a sensitive organ of the female reproductive system."
+ },
+ {
+  "id": "ev_segregants",
+  "name": "分離株",
+  "yomi": "segregants",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The segregants showed different phenotypes."
+ },
+ {
+  "id": "ev_chalice",
+  "name": "聖杯",
+  "yomi": "chalice",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The chalice was used in the religious ceremony."
+ },
+ {
+  "id": "ev_gaud",
+  "name": "けばけばしい装飾",
+  "yomi": "gaud",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The gaud on her dress was quite noticeable."
+ },
+ {
+  "id": "ev_briticism",
+  "name": "英国主義",
+  "yomi": "briticism",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Briticism is the use of British words or phrases."
+ },
+ {
+  "id": "ev_obscenely",
+  "name": "わいせつに",
+  "yomi": "obscenely",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He spoke obscenely in public."
+ },
+ {
+  "id": "ev_pejoration",
+  "name": "意味の悪化",
+  "yomi": "pejoration",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Pejoration is the process of a word's meaning becoming more negative."
+ },
+ {
+  "id": "ev_kantian",
+  "name": "カントの",
+  "yomi": "kantian",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Kantian ethics emphasizes the importance of duty."
+ },
+ {
+  "id": "ev_algorithmic",
+  "name": "アルゴリズム的な",
+  "yomi": "algorithmic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The algorithmic approach solved the problem efficiently."
+ },
+ {
+  "id": "ev_deltadistance",
+  "name": "デルタ距離",
+  "yomi": "deltadistance",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Deltadistance measures the separation between features."
+ },
+ {
+  "id": "ev_biovars",
+  "name": "生物型",
+  "yomi": "biovars",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Biovars are strains of a species that differ biochemically."
+ },
+ {
+  "id": "ev_dcip",
+  "name": "DCIP",
+  "yomi": "dcip",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "DCIP is an indicator dye used in redox reactions."
+ },
+ {
+  "id": "ev_conceptus",
+  "name": "受胎産物",
+  "yomi": "conceptus",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The conceptus develops into a fetus."
+ },
+ {
+  "id": "ev_microcosms",
+  "name": "小宇宙",
+  "yomi": "microcosms",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Microcosms are small-scale ecosystems used in research."
+ },
+ {
+  "id": "ev_wrought",
+  "name": "作り上げられた",
+  "yomi": "wrought",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The metal was wrought into a beautiful sculpture."
+ },
+ {
+  "id": "ev_metaphysical",
+  "name": "形而上学的な",
+  "yomi": "metaphysical",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Metaphysical questions deal with the nature of reality."
+ },
+ {
+  "id": "ev_tonometry",
+  "name": "眼圧測定",
+  "yomi": "tonometry",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Tonometry is used to measure intraocular pressure."
+ },
+ {
+  "id": "ev_myofibroblasts",
+  "name": "筋線維芽細胞",
+  "yomi": "myofibroblasts",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Myofibroblasts play a role in wound healing."
+ },
+ {
+  "id": "ev_directorate",
+  "name": "理事会",
+  "yomi": "directorate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The directorate is responsible for the management of the organization."
+ },
+ {
+  "id": "ev_diapause",
+  "name": "休眠",
+  "yomi": "diapause",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Diapause is a period of dormancy in some insects."
+ },
+ {
+  "id": "ev_maledicta",
+  "name": "呪詛",
+  "yomi": "maledicta",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Maledicta are words used to curse or swear."
+ },
+ {
+  "id": "ev_capitalistic",
+  "name": "資本主義的な",
+  "yomi": "capitalistic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The capitalistic system is based on private ownership."
+ },
+ {
+  "id": "ev_triumphalist",
+  "name": "勝利至上主義者",
+  "yomi": "triumphalist",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He is a triumphalist in political debates."
+ },
+ {
+  "id": "ev_imago",
+  "name": "成虫",
+  "yomi": "imago",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The imago is the adult stage of an insect."
+ },
+ {
+  "id": "ev_impermissible",
+  "name": "許されない",
+  "yomi": "impermissible",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "It is impermissible to break the law."
+ },
+ {
+  "id": "ev_momenta",
+  "name": "勢い",
+  "yomi": "momenta",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The political momenta was in favor of the candidate."
+ },
+ {
+  "id": "ev_monotonically",
+  "name": "単調に",
+  "yomi": "monotonically",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The data monotonically increased over time."
+ },
+ {
+  "id": "ev_levator",
+  "name": "挙筋",
+  "yomi": "levator",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The levator muscle raises the eyelid."
+ },
+ {
+  "id": "ev_bromide",
+  "name": "臭化物",
+  "yomi": "bromide",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Potassium bromide is used as an anticonvulsant."
+ },
+ {
+  "id": "ev_dihydropteroate",
+  "name": "ジヒドロプテロ酸",
+  "yomi": "dihydropteroate",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Dihydropteroate is a precursor in folate synthesis."
+ },
+ {
+  "id": "ev_zamir",
+  "name": "ザミル",
+  "yomi": "zamir",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Zamir is a scientific term with several meanings in biology."
+ },
+ {
+  "id": "ev_nosocomial",
+  "name": "院内感染の",
+  "yomi": "nosocomial",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Nosocomial infections are acquired in hospitals."
+ },
+ {
+  "id": "ev_excoriating",
+  "name": "皮を剥ぐような",
+  "yomi": "excoriating",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The criticism was excoriating in its intensity."
+ },
+ {
+  "id": "ev_riddling",
+  "name": "穴だらけの",
+  "yomi": "riddling",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The cheese was riddled with holes."
+ },
+ {
+  "id": "ev_insouciance",
+  "name": "無頓着",
+  "yomi": "insouciance",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He displayed an air of insouciance."
+ },
+ {
+  "id": "ev_nigh",
+  "name": "近い",
+  "yomi": "nigh",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The end of the semester was nigh."
+ },
+ {
+  "id": "ev_verdant",
+  "name": "緑色の",
+  "yomi": "verdant",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The field was verdant and lush."
+ },
+ {
+  "id": "ev_ephemera",
+  "name": "一時的なもの",
+  "yomi": "ephemera",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The ephemera of the day were quickly forgotten."
+ },
+ {
+  "id": "ev_maniacal",
+  "name": "狂的な",
+  "yomi": "maniacal",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He had a maniacal obsession with his work."
+ },
+ {
+  "id": "ev_interoperability",
+  "name": "相互運用性",
+  "yomi": "interoperability",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Interoperability between different systems is crucial for data exchange."
+ },
+ {
+  "id": "ev_obstetricians",
+  "name": "産科医",
+  "yomi": "obstetricians",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Obstetricians specialize in pregnancy and childbirth."
+ },
+ {
+  "id": "ev_genteel",
+  "name": "上品な",
+  "yomi": "genteel",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "She had a genteel manner and a refined taste."
+ },
+ {
+  "id": "ev_hector",
+  "name": "脅しつける",
+  "yomi": "hector",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He was hectoring the employees to finish the work quickly."
+ },
+ {
+  "id": "ev_postprandial",
+  "name": "食後の",
+  "yomi": "postprandial",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He experienced postprandial drowsiness after lunch."
+ },
+ {
+  "id": "ev_dyspepsia",
+  "name": "消化不良",
+  "yomi": "dyspepsia",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Dyspepsia can be caused by various factors, including stress and diet."
+ },
+ {
+  "id": "ev_jottings",
+  "name": "走り書き",
+  "yomi": "jottings",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "She had many jottings in her notebook from the meeting."
+ },
+ {
+  "id": "ev_scion",
+  "name": "後継者",
+  "yomi": "scion",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "He is the scion of a wealthy family."
+ },
+ {
+  "id": "ev_sequester",
+  "name": "隔離する",
+  "yomi": "sequester",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The court ordered to sequester the jury during the trial."
+ },
+ {
+  "id": "ev_kanamycin",
+  "name": "カナマイシン",
+  "yomi": "kanamycin",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Kanamycin is an antibiotic used to treat bacterial infections."
+ },
+ {
+  "id": "ev_kolmogorov",
+  "name": "コルモゴロフ",
+  "yomi": "kolmogorov",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The Kolmogorov–Smirnov test is a non-parametric test."
+ },
+ {
+  "id": "ev_effigy",
+  "name": "似姿",
+  "yomi": "effigy",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The crowd burned an effigy of the dictator."
+ },
+ {
+  "id": "ev_mendelian",
+  "name": "メンデルの",
+  "yomi": "mendelian",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Mendelian inheritance follows the principles of genetics proposed by Gregor Mendel."
+ },
+ {
+  "id": "ev_dimensionality",
+  "name": "次元性",
+  "yomi": "dimensionality",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Dimensionality reduction is a key technique in machine learning."
+ },
+ {
+  "id": "ev_flogging",
+  "name": "鞭打ち",
+  "yomi": "flogging",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Flogging was a common punishment in the past."
+ },
+ {
+  "id": "ev_farnesyl",
+  "name": "ファルネシル",
+  "yomi": "farnesyl",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Farnesyl is a terpene commonly found in biological systems."
+ },
+ {
+  "id": "ev_detectably",
+  "name": "検出可能に",
+  "yomi": "detectably",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The chemical was detectably present in the sample."
+ },
+ {
+  "id": "ev_glomerular",
+  "name": "糸球体の",
+  "yomi": "glomerular",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Glomerular filtration is a crucial process in kidney function."
+ },
+ {
+  "id": "ev_flit",
+  "name": "ひらめく",
+  "yomi": "flit",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Butterflies flit from flower to flower."
+ },
+ {
+  "id": "ev_brahmanic",
+  "name": "バラモン教の",
+  "yomi": "brahmanic",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "Brahmanic traditions have deeply influenced Indian culture."
+ },
+ {
+  "id": "ev_frailties",
+  "name": "虚弱さ",
+  "yomi": "frailties",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "We all have our frailties and weaknesses."
+ },
+ {
+  "id": "ev_generalizability",
+  "name": "一般化可能性",
+  "yomi": "generalizability",
+  "category": "C2",
+  "imageUrl": "",
+  "example": "The generalizability of the study's findings is limited by the sample size."
+ }
+]

@@ -187,18 +187,32 @@
       });
     },
 
-    saveCustomDeck(label, cards) {
+    saveCustomDeck(label, cards, mode = 'image', { activate = true } = {}) {
       if (!label) throw new Error('ラベルが必要です');
       if (!Array.isArray(cards) || cards.length === 0) throw new Error('カードが空です');
       const decks = loadDecks();
       const id = 'deck_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
-      const newDeck = { id, label, cards, createdAt: new Date().toISOString() };
+      const newDeck = { id, label, cards, mode, createdAt: new Date().toISOString() };
       const updated = [...decks, newDeck];
       saveDecks(updated);
-      this.setActiveDeck(id);
-      document.dispatchEvent(new CustomEvent('dataset:change'));
+      if (activate) {
+        this.setActiveDeck(id);
+        document.dispatchEvent(new CustomEvent('dataset:change'));
+      }
       return id;
     },
+
+    getActiveDeckMode() {
+      const VALID_MODES = ['image', 'vocab'];
+      const id = this.getActiveDeckId();
+      if (id === BUILTIN_ID) return 'image';
+      const decks = loadDecks();
+      const deck = decks.find(d => d.id === id);
+      const mode = deck?.mode ?? 'image';
+      return VALID_MODES.includes(mode) ? mode : 'image';
+    },
+
+    refreshDeckPicker() { refreshDeckPicker(); },
 
     deleteCustomDeck(id) {
       if (id === BUILTIN_ID) throw new Error('組み込みデッキは削除できません');

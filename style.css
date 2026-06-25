@@ -482,3 +482,71 @@ body {
 @media (max-width: 600px) {
   .wrap { margin: 16px auto; }
 }
+
+/* ── Vocab Quiz Mode ── */
+
+.vocab-word {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  text-align: center;
+  line-height: 1.2;
+  padding: 16px 0 8px;
+  word-break: break-word;
+}
+
+.vocab-example {
+  font-size: 14px;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 480px;
+  padding: 0 8px 16px;
+}
+
+.emoji-display {
+  font-size: 72px;
+  line-height: 1;
+  text-align: center;
+  padding: 16px 0 8px;
+  user-select: none;
+}
+
+#card[data-mode="vocab"] {
+  min-height: 360px;
+}
+
+#card[data-mode="vocab"]::before {
+  content: "EN→JA";
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  padding: 2px 8px;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 480px) {
+  .vocab-word { font-size: 30px; }
+  .emoji-display { font-size: 56px; }
+}
+@media (max-width: 360px) {
+  .vocab-word { font-size: 24px; }
+  .emoji-display { font-size: 48px; }
+}
+
+/* English word confirmation label on vocab answer side */
+.vocab-confirm {
+  font-size: 14px;
+  color: var(--primary);
+  font-style: italic;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}

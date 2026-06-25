@@ -63,13 +63,22 @@ function saveProgress(){
 }
 
 // UI
-const state = { all:[], filtered:[], i:0, map:{}, meta:{}, srsMode:false };
+const state = { all:[], filtered:[], i:0, map:{}, meta:{}, srsMode:false, deckMode:'image' };
 
 function imgUrlFor(id){
   const file = state.map[id];
   if (!file) return null;
   if (/^https?:\/\//.test(file)) return file;
+  // Emoji or short decorative text — not a file path
+  if (!file.includes('/') && !file.match(/\.[a-zA-Z]{2,5}$/)) return null;
   return 'images/' + encodeURIComponent(file);
+}
+function getCardEmoji(id){
+  const file = state.map[id];
+  if (!file) return null;
+  if (/^https?:\/\//.test(file)) return null;
+  if (file.includes('/') || file.match(/\.[a-zA-Z]{2,5}$/)) return null;
+  return file; // emoji or short decorative text
 }
 function renderCounters(){
   const total = state.filtered.length;
@@ -160,12 +169,7 @@ function preloadImg(id) {
   return promise;
 }
 
-function renderCard(){
-  const wrap = document.querySelector('#card'); wrap.innerHTML = '';
-  wrap.dataset.flipped = 'false';
-  if(state.i >= state.filtered.length){ wrap.textContent = '該当カードがありません'; return; }
-  const c = state.filtered[state.i];
-
+function renderImageCard(wrap, c) {
   // card-front
   const front = document.createElement('div'); front.className = 'card-front';
 
@@ -196,11 +200,6 @@ function renderCard(){
   back.append(caption, cr);
 
   wrap.append(front, back);
-  renderCounters();
-  renderSrsBadge(c.id);
-  renderSrsStats();
-  updateBadBtn(c.id);
-  saveProgress();
 
   // 画像ロード（キャッシュ使用）
   const cardId = c.id;
@@ -230,6 +229,73 @@ function renderCard(){
     const next = state.filtered[state.i + offset];
     if (next) preloadImg(next.id);
   }
+}
+
+function renderVocabCard(wrap, c) {
+  // card-front: English word + example sentence
+  const front = document.createElement('div');
+  front.className = 'card-front';
+
+  const wordEl = document.createElement('div');
+  wordEl.className = 'vocab-word';
+  wordEl.textContent = c.yomi || '(word missing)'; // English word stored in yomi
+
+  const exampleEl = document.createElement('div');
+  exampleEl.className = 'vocab-example';
+  exampleEl.textContent = c.example ? `"${c.example}"` : '';
+
+  const flipHint = document.createElement('div');
+  flipHint.className = 'flip-hint';
+  flipHint.textContent = 'タップして意味を確認 ▼';
+
+  front.append(wordEl, exampleEl, flipHint);
+
+  // card-back: emoji + Japanese meaning + English confirmation
+  const back = document.createElement('div');
+  back.className = 'card-back';
+
+  const emoji = getCardEmoji(c.id);
+  if (emoji) {
+    const emojiEl = document.createElement('div');
+    emojiEl.className = 'emoji-display';
+    emojiEl.textContent = emoji;
+    back.appendChild(emojiEl);
+  }
+
+  const caption = document.createElement('div'); caption.className = 'caption';
+  const nameEl    = document.createElement('div'); nameEl.className = 'name'; nameEl.textContent = c.name;
+  const confirmEl = document.createElement('div'); confirmEl.className = 'vocab-confirm'; confirmEl.textContent = c.yomi || '';
+  const catEl     = document.createElement('div'); catEl.className = 'cat';  catEl.textContent = c.category || '';
+  caption.append(nameEl, confirmEl, catEl);
+  back.appendChild(caption);
+
+  wrap.append(front, back);
+
+  // Preload next cards
+  for (let offset = 1; offset <= 2; offset++) {
+    const next = state.filtered[state.i + offset];
+    if (next) preloadImg(next.id); // no-op for emoji cards since imgUrlFor returns null
+  }
+}
+
+function renderCard(){
+  const wrap = document.querySelector('#card'); wrap.innerHTML = '';
+  wrap.dataset.flipped = 'false';
+  wrap.dataset.mode = state.deckMode; // for CSS targeting
+  if(state.i >= state.filtered.length){ wrap.textContent = '該当カードがありません'; return; }
+  const c = state.filtered[state.i];
+
+  if (state.deckMode === 'vocab') {
+    renderVocabCard(wrap, c);
+  } else {
+    renderImageCard(wrap, c);
+  }
+
+  renderCounters();
+  renderSrsBadge(c.id);
+  renderSrsStats();
+  updateBadBtn(c.id);
+  saveProgress();
 }
 
 function applyFilter(){
@@ -275,6 +341,32 @@ function srsAnswerAgain(cardId) {
 
 // Initialize
 (async ()=>{
+  // Register dataset:change handler synchronously BEFORE any await,
+  // so deck switches fired during async init are never missed.
+  document.addEventListener('dataset:change', async () => {
+    imgCache.clear();
+    const deckId = window.DatasetManager?.getActiveDeckId() ?? '__builtin__';
+    let cards, map, meta;
+    if (deckId === '__builtin__') {
+      ({ cards, map, meta } = await loadData());
+    } else {
+      const customCards = window.DatasetManager.getActiveDeckCards();
+      cards = customCards;
+      map = Object.fromEntries(customCards.filter(c => c.imageUrl).map(c => [c.id, c.imageUrl]));
+      meta = {};
+    }
+    state.all = cards; state.map = map; state.meta = meta;
+    state.deckMode = window.DatasetManager?.getActiveDeckMode?.() ?? 'image';
+    populateCategories(state.all);
+    state.filtered = [...state.all];
+    state.i = 0;
+    document.querySelector('#q').value = '';
+    document.querySelector('#cat').value = '__ALL__';
+    const srsEl = document.querySelector('#srs-filter');
+    if (srsEl) srsEl.checked = false;
+    renderCard();
+  });
+
   // Determine active deck
   const activeDeckId = window.DatasetManager?.getActiveDeckId() ?? '__builtin__';
 
@@ -288,6 +380,7 @@ function srsAnswerAgain(cardId) {
     meta = {};
   }
   state.all = cards; state.map = map; state.meta = meta;
+  state.deckMode = window.DatasetManager?.getActiveDeckMode?.() ?? 'image';
   populateCategories(state.all);
   state.filtered = [...cards];
 
@@ -375,27 +468,4 @@ function srsAnswerAgain(cardId) {
     card.dataset.flipped = card.dataset.flipped === 'true' ? 'false' : 'true';
   });
 
-  // ── Dataset change handler ──
-  document.addEventListener('dataset:change', async () => {
-    imgCache.clear();
-    const deckId = window.DatasetManager?.getActiveDeckId() ?? '__builtin__';
-    let cards, map, meta;
-    if (deckId === '__builtin__') {
-      ({ cards, map, meta } = await loadData());
-    } else {
-      const customCards = window.DatasetManager.getActiveDeckCards();
-      cards = customCards;
-      map = Object.fromEntries(customCards.filter(c => c.imageUrl).map(c => [c.id, c.imageUrl]));
-      meta = {};
-    }
-    state.all = cards; state.map = map; state.meta = meta;
-    populateCategories(state.all);
-    state.filtered = [...state.all];
-    state.i = 0;
-    document.querySelector('#q').value = '';
-    document.querySelector('#cat').value = '__ALL__';
-    const srsEl = document.querySelector('#srs-filter');
-    if (srsEl) srsEl.checked = false;
-    renderCard();
-  });
 })();

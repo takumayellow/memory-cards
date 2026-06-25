@@ -80,10 +80,22 @@
 <div class="deck-bar">
   <span class="deck-bar-label">デッキ</span>
   <select id="deck-picker"></select>
+  <button id="deck-screen-open-btn" class="deck-btn">📚 デッキ選択</button>
   <button id="deck-import-btn" class="deck-btn">＋ インポート</button>
   <input id="deck-file-input" type="file" accept=".tsv,.csv,.json" style="display:none" />
   <button id="deck-delete-btn" class="deck-btn deck-btn-danger" disabled>🗑 削除</button>
   <a id="template-dl-tsv" class="deck-btn deck-btn-link" download="template.tsv">↓ テンプレ</a>
+</div>
+
+<!-- Deck Selection Screen -->
+<div id="deck-screen" class="deck-screen">
+  <div class="deck-screen__panel">
+    <div class="deck-screen__header">
+      <h2>📚 デッキを選ぶ</h2>
+      <button id="deck-screen-close-btn" class="deck-screen__close" aria-label="閉じる">✕</button>
+    </div>
+    <div id="deck-screen-grid" class="deck-screen__grid"></div>
+  </div>
 </div>
 
 <!-- SRS 統計バー -->
@@ -111,16 +123,17 @@
 
   <section class="buttons">
     <button id="okBtn" class="ok">わかった [→]</button>
-    <button id="againBtn">あとで [←]</button>
+    <button id="againBtn">わからない [←]</button>
     <button id="badImgBtn" class="bad-img">⚠ 画像が不適切</button>
   </section>
 </main>
 
-<script>window.APP_VERSION = '20260625c';</script>
-<script src="dataset-manager.js?v=20260625c"></script>
-<script src="srs.js?v=20260625c"></script>
-<script src="app.js?v=20260625c"></script>
-<script src="vocab-deck-init.js?v=20260625c"></script>
-<script src="keyboard.js?v=20260625c"></script>
+<script>window.APP_VERSION = '20260625d';</script>
+<script src="dataset-manager.js?v=20260625d"></script>
+<script src="srs.js?v=20260625d"></script>
+<script src="app.js?v=20260625d"></script>
+<script src="vocab-deck-init.js?v=20260625d"></script>
+<script src="deck-screen.js?v=20260625d"></script>
+<script src="keyboard.js?v=20260625d"></script>
 </body>
 </html>

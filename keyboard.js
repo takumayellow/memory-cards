@@ -11,6 +11,8 @@
       case 'ArrowRight':
       case 'l':
       case 'L':
+      case 'k':
+      case 'K':
         e.preventDefault();
         document.querySelector('#okBtn')?.click();
         break;
@@ -18,20 +20,18 @@
       case 'ArrowLeft':
       case 'h':
       case 'H':
+      case 'j':
+      case 'J':
         e.preventDefault();
         document.querySelector('#againBtn')?.click();
         break;
 
       case 'ArrowUp':
-      case 'k':
-      case 'K':
         e.preventDefault();
         document.querySelector('#prev')?.click();
         break;
 
       case 'ArrowDown':
-      case 'j':
-      case 'J':
         e.preventDefault();
         document.querySelector('#next')?.click();
         break;

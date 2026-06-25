@@ -202,6 +202,22 @@
       return id;
     },
 
+    getDeckCards(id) {
+      if (id === BUILTIN_ID) return null;
+      const decks = loadDecks();
+      const deck = decks.find(d => d.id === id);
+      return deck ? deck.cards : null;
+    },
+
+    getDeckMode(id) {
+      const VALID_MODES = ['image', 'vocab'];
+      if (id === BUILTIN_ID) return 'image';
+      const decks = loadDecks();
+      const deck = decks.find(d => d.id === id);
+      const mode = deck?.mode ?? 'image';
+      return VALID_MODES.includes(mode) ? mode : 'image';
+    },
+
     getActiveDeckMode() {
       const VALID_MODES = ['image', 'vocab'];
       const id = this.getActiveDeckId();

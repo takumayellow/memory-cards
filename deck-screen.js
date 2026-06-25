@@ -49,12 +49,20 @@
       ? 'image'
       : (window.DatasetManager.getDeckMode?.(deck.id) || 'image');
 
-    // Get sample card data for preview
+    // 英単語デッキは Vol 番号を「ステージ + 難易度帯」に解釈する。
+    // 解釈できないデッキ（任意の vocab 等）は info=null で従来表示へ。
+    const stageInfo = mode === 'vocab'
+      ? (window.DeckDifficulty?.getStageInfo(deck.label) ?? null)
+      : null;
+
+    // ステージ表示できないデッキ（任意 vocab / 画像）のみ先頭カードをプレビュー用に取得。
     let preview = null;
-    if (deck.id !== BUILTIN) {
+    if (!stageInfo && deck.id !== BUILTIN) {
       const cards = window.DatasetManager.getDeckCards?.(deck.id);
       if (cards && cards.length > 0) preview = cards[0];
     }
+
+    if (stageInfo) btn.classList.add('ds-card--tier-' + stageInfo.cls);
 
     // ── Emoji / visual area ──
     const visual = document.createElement('div');
@@ -62,6 +70,9 @@
 
     if (deck.id === BUILTIN) {
       visual.textContent = '🎭';
+    } else if (stageInfo) {
+      // 難易度帯のアイコン（最初の単語ではなく分類を表す）
+      visual.textContent = stageInfo.icon;
     } else if (mode === 'vocab' && preview?.imageUrl) {
       visual.textContent = preview.imageUrl;
     } else if (mode === 'image') {
@@ -75,6 +86,8 @@
     word.className = 'ds-card__word';
     if (deck.id === BUILTIN) {
       word.textContent = '芸能人カード';
+    } else if (stageInfo) {
+      word.textContent = 'ステージ ' + stageInfo.stage;
     } else if (mode === 'vocab' && preview?.yomi) {
       word.textContent = preview.yomi;
     } else {
@@ -86,6 +99,23 @@
     sub.className = 'ds-card__sub';
     if (deck.id === BUILTIN) {
       sub.textContent = '日本の芸能人を覚える';
+    } else if (stageInfo) {
+      // 難易度帯ピル + 難易度メーター（●○○○○）
+      sub.classList.add('ds-card__sub--diff');
+      const tier = document.createElement('span');
+      tier.className = 'ds-tier ds-tier--' + stageInfo.cls;
+      tier.textContent = stageInfo.tier;
+      const meter = document.createElement('span');
+      meter.className = 'ds-meter';
+      meter.setAttribute('aria-label',
+        '難易度 ' + stageInfo.level + '/' + stageInfo.totalLevels);
+      for (let i = 0; i < stageInfo.totalLevels; i++) {
+        const dot = document.createElement('span');
+        dot.className = 'ds-dot' + (i < stageInfo.level ? ' ds-dot--on' : '');
+        meter.appendChild(dot);
+      }
+      sub.appendChild(tier);
+      sub.appendChild(meter);
     } else if (mode === 'vocab' && preview?.name) {
       sub.textContent = preview.name;
     } else {

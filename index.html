@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>芸能人 暗記カード</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="srs.css" />
+  <!-- Cache bust: update APP_VERSION and all ?v= params on each deploy -->
+  <link rel="stylesheet" href="style.css?v=20260625" />
+  <link rel="stylesheet" href="srs.css?v=20260625" />
   <style>
 .deck-bar {
   display: flex;
@@ -44,6 +48,15 @@
 .deck-btn-danger:disabled { opacity: 0.4; cursor: default; pointer-events: none; }
 .deck-btn-link { border-color: #86efac; background: #f0fdf4; color: #16a34a; }
 .deck-btn-link:hover { background: #16a34a; color: #fff; }
+.deck-bar--highlight {
+  background: #eef2ff;
+  border-bottom-color: #c7d2fe;
+  animation: deck-bar-pulse 1s ease-in-out 3;
+}
+@keyframes deck-bar-pulse {
+  0%, 100% { background: #eef2ff; }
+  50% { background: #dde4ff; }
+}
   </style>
 </head>
 <body>
@@ -103,10 +116,11 @@
   </section>
 </main>
 
-<script src="dataset-manager.js"></script>
-<script src="srs.js"></script>
-<script src="app.js"></script>
-<script src="vocab-deck-init.js"></script>
-<script src="keyboard.js"></script>
+<script>window.APP_VERSION = '20260625';</script>
+<script src="dataset-manager.js?v=20260625"></script>
+<script src="srs.js?v=20260625"></script>
+<script src="app.js?v=20260625"></script>
+<script src="vocab-deck-init.js?v=20260625"></script>
+<script src="keyboard.js?v=20260625"></script>
 </body>
 </html>

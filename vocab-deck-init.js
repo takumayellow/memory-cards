@@ -9,11 +9,12 @@
     if (window.DatasetManager.getDecks().some(d => d.label === VOCAB_LABEL)) return;
 
     try {
-      const resp = await fetch('data/eiken1_vocab.json', { cache: 'no-store' });
+      const resp = await fetch('data/eiken1_vocab.json?v=' + (window.APP_VERSION || '1'), { cache: 'no-store' });
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
       const data = await resp.json();
 
       if (!Array.isArray(data) || data.length === 0) throw new Error('empty data');
+      if (data.length > 500) throw new Error(`エントリ数が多すぎます: ${data.length}`);
 
       const cards = data.map(w => ({
         id: 'ev_' + (w.word || '').toLowerCase().replace(/[^a-z0-9]/g, '_'),
@@ -24,13 +25,24 @@
         example: typeof w.example_en === 'string' ? w.example_en : '',
       }));
 
-      if (data.length > 500) throw new Error(`エントリ数が多すぎます: ${data.length}`);
-
       // Register without activating (activate: false) so active deck doesn't change
       window.DatasetManager.saveCustomDeck(VOCAB_LABEL, cards, 'vocab', { activate: false });
 
       // Refresh the picker via the shared DatasetManager helper
       window.DatasetManager.refreshDeckPicker?.();
+
+      // Discoverability: pulse deck bar and show toast on first-time registration
+      const bar = document.querySelector('.deck-bar');
+      if (bar) {
+        bar.classList.add('deck-bar--highlight');
+        setTimeout(() => bar.classList.remove('deck-bar--highlight'), 4000);
+      }
+      setTimeout(() => {
+        window.showToast?.(
+          '✨ 英検1級 英単語デッキが使えます！「デッキ」セレクタから切り替えてみてください',
+          5000
+        );
+      }, 800);
     } catch (e) {
       console.warn('[vocab-deck-init] 英単語デッキの読み込みをスキップ:', e.message);
     }

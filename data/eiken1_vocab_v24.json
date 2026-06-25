@@ -1,0 +1,802 @@
+[
+  {
+    "id": "ev_gestation",
+    "name": "妊娠期間、形成期間",
+    "yomi": "gestation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The gestation period for elephants is about 22 months."
+  },
+  {
+    "id": "ev_nondescript",
+    "name": "特徴のない、平凡な",
+    "yomi": "nondescript",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The building was a nondescript structure."
+  },
+  {
+    "id": "ev_contrite",
+    "name": "悔恨の念に満ちた、後悔している",
+    "yomi": "contrite",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was contrite after realizing his mistake."
+  },
+  {
+    "id": "ev_quash",
+    "name": "鎮圧する",
+    "yomi": "quash",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The government tried to quash the rebellion."
+  },
+  {
+    "id": "ev_opulent",
+    "name": "豪華な",
+    "yomi": "opulent",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The mansion was decorated in an opulent style."
+  },
+  {
+    "id": "ev_speculators",
+    "name": "投機家",
+    "yomi": "speculators",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Speculators often take high risks in the market."
+  },
+  {
+    "id": "ev_proliferation",
+    "name": "増殖、拡散",
+    "yomi": "proliferation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The proliferation of cell phones has changed how people communicate."
+  },
+  {
+    "id": "ev_overtones",
+    "name": "含み",
+    "yomi": "overtones",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Her voice had overtones of sadness."
+  },
+  {
+    "id": "ev_parochial",
+    "name": "偏狭な、視野の狭い",
+    "yomi": "parochial",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His parochial views were not well received."
+  },
+  {
+    "id": "ev_discernible",
+    "name": "識別できる",
+    "yomi": "discernible",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "There was a discernible change in her attitude."
+  },
+  {
+    "id": "ev_transcendence",
+    "name": "超越、卓越",
+    "yomi": "transcendence",
+    "category": "C1",
+    "imageUrl": "🔮",
+    "example": "The music had a feeling of transcendence."
+  },
+  {
+    "id": "ev_versatility",
+    "name": "多才さ、多様性",
+    "yomi": "versatility",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She is admired for her versatility as an actress."
+  },
+  {
+    "id": "ev_ingestion",
+    "name": "摂取",
+    "yomi": "ingestion",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Ingestion of the chemical caused an allergic reaction."
+  },
+  {
+    "id": "ev_pyrotechnics",
+    "name": "花火",
+    "yomi": "pyrotechnics",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The fireworks display was an amazing show of pyrotechnics."
+  },
+  {
+    "id": "ev_capillaries",
+    "name": "毛細血管",
+    "yomi": "capillaries",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "Capillaries are the smallest blood vessels in the body."
+  },
+  {
+    "id": "ev_ensues",
+    "name": "結果として起こる",
+    "yomi": "ensues",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "If you don't pay your bills, legal action ensues."
+  },
+  {
+    "id": "ev_anthropological",
+    "name": "人類学の",
+    "yomi": "anthropological",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The research was based on anthropological studies."
+  },
+  {
+    "id": "ev_duality",
+    "name": "二重性、二元性",
+    "yomi": "duality",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The duality of human nature is often debated."
+  },
+  {
+    "id": "ev_hydroponic",
+    "name": "水耕栽培の",
+    "yomi": "hydroponic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "They are growing lettuce hydroponically in the greenhouse."
+  },
+  {
+    "id": "ev_secretion",
+    "name": "分泌、分泌物",
+    "yomi": "secretion",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Insulin is a secretion from the pancreas."
+  },
+  {
+    "id": "ev_berated",
+    "name": "叱責した",
+    "yomi": "berated",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The manager berated the employee for making a mistake."
+  },
+  {
+    "id": "ev_berating",
+    "name": "叱責する",
+    "yomi": "berating",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was berating his staff for the mistakes."
+  },
+  {
+    "id": "ev_berates",
+    "name": "叱責する、厳しく非難する",
+    "yomi": "berates",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The coach berated the players after the loss."
+  },
+  {
+    "id": "ev_reorganization",
+    "name": "再編",
+    "yomi": "reorganization",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company underwent a major reorganization to improve efficiency."
+  },
+  {
+    "id": "ev_annuities",
+    "name": "年金",
+    "yomi": "annuities",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Annuities provide a steady income in retirement."
+  },
+  {
+    "id": "ev_scathing",
+    "name": "痛烈な",
+    "yomi": "scathing",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The critic gave the play a scathing review."
+  },
+  {
+    "id": "ev_centrifugal",
+    "name": "遠心性の",
+    "yomi": "centrifugal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The centrifuge creates a centrifugal force."
+  },
+  {
+    "id": "ev_nightmarish",
+    "name": "悪夢のような",
+    "yomi": "nightmarish",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The journey was a nightmarish experience."
+  },
+  {
+    "id": "ev_instrumentation",
+    "name": "計装、楽器編成",
+    "yomi": "instrumentation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The instrumentation of the orchestra was impressive."
+  },
+  {
+    "id": "ev_machiavellian",
+    "name": "マキャベリ的",
+    "yomi": "machiavellian",
+    "category": "C2",
+    "imageUrl": "♟️",
+    "example": "His machiavellian tactics made him successful but unpopular."
+  },
+  {
+    "id": "ev_efficacy",
+    "name": "有効性",
+    "yomi": "efficacy",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The efficacy of the drug was demonstrated in clinical trials."
+  },
+  {
+    "id": "ev_puritanical",
+    "name": "ピューリタン的な",
+    "yomi": "puritanical",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His puritanical views on art and culture were often met with criticism."
+  },
+  {
+    "id": "ev_icc",
+    "name": "国際商業会議所",
+    "yomi": "icc",
+    "category": "C1",
+    "imageUrl": "🏛️",
+    "example": "ICC is an international organization that promotes trade."
+  },
+  {
+    "id": "ev_eradication",
+    "name": "根絶",
+    "yomi": "eradication",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The goal is the eradication of poverty."
+  },
+  {
+    "id": "ev_bungling",
+    "name": "しくじる",
+    "yomi": "bungling",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His bungling caused a lot of problems."
+  },
+  {
+    "id": "ev_exude",
+    "name": "にじみ出る、発散する",
+    "yomi": "exude",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The flowers exuded a sweet fragrance."
+  },
+  {
+    "id": "ev_neuter",
+    "name": "中性にする",
+    "yomi": "neuter",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The animal was neutered."
+  },
+  {
+    "id": "ev_exhilaration",
+    "name": "高揚感",
+    "yomi": "exhilaration",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The victory brought a feeling of exhilaration."
+  },
+  {
+    "id": "ev_alkaline",
+    "name": "アルカリ性の",
+    "yomi": "alkaline",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The soil in this area is alkaline."
+  },
+  {
+    "id": "ev_neurotoxin",
+    "name": "神経毒",
+    "yomi": "neurotoxin",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "Neurotoxins can damage the nervous system."
+  },
+  {
+    "id": "ev_extraneous",
+    "name": "余分な",
+    "yomi": "extraneous",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The report contained a lot of extraneous information that was not relevant to the main topic."
+  },
+  {
+    "id": "ev_augment",
+    "name": "増強する",
+    "yomi": "augment",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company plans to augment its workforce next year."
+  },
+  {
+    "id": "ev_repatriation",
+    "name": "本国送還",
+    "yomi": "repatriation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The refugees were offered repatriation to their home country."
+  },
+  {
+    "id": "ev_insofar",
+    "name": "～する限りにおいて",
+    "yomi": "insofar",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Insofar as we know, this is the first time it has happened."
+  },
+  {
+    "id": "ev_unknowable",
+    "name": "知ることができない",
+    "yomi": "unknowable",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The mysteries of the universe are often unknowable."
+  },
+  {
+    "id": "ev_lamentable",
+    "name": "嘆かわしい",
+    "yomi": "lamentable",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The situation was lamentable and required immediate action."
+  },
+  {
+    "id": "ev_contemptuous",
+    "name": "軽蔑的な",
+    "yomi": "contemptuous",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He spoke in a contemptuous tone."
+  },
+  {
+    "id": "ev_dispossessed",
+    "name": "財産を奪われた",
+    "yomi": "dispossessed",
+    "category": "C1",
+    "imageUrl": "💰",
+    "example": "The war left many people dispossessed and homeless."
+  },
+  {
+    "id": "ev_inhumanity",
+    "name": "非人道性",
+    "yomi": "inhumanity",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The world was shocked by the inhumanity of the war crimes."
+  },
+  {
+    "id": "ev_fosse",
+    "name": "濠",
+    "yomi": "fosse",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The castle was surrounded by a deep fosse."
+  },
+  {
+    "id": "ev_cosmological",
+    "name": "宇宙論の",
+    "yomi": "cosmological",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The scientist is working on cosmological theories."
+  },
+  {
+    "id": "ev_wafting",
+    "name": "漂う、たなびく",
+    "yomi": "wafting",
+    "category": "C1",
+    "imageUrl": "🏃",
+    "example": "The scent of flowers was wafting in the air."
+  },
+  {
+    "id": "ev_cavorting",
+    "name": "戯れる",
+    "yomi": "cavorting",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The children were cavorting in the park."
+  },
+  {
+    "id": "ev_plaintively",
+    "name": "悲しげに",
+    "yomi": "plaintively",
+    "category": "C1",
+    "imageUrl": "💭",
+    "example": "The child cried plaintively for his mother."
+  },
+  {
+    "id": "ev_ophthalmologist",
+    "name": "眼科医",
+    "yomi": "ophthalmologist",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "He consulted an ophthalmologist about his vision."
+  },
+  {
+    "id": "ev_claptrap",
+    "name": "たわごと",
+    "yomi": "claptrap",
+    "category": "C2",
+    "imageUrl": "🗑️",
+    "example": "His speech was full of political claptrap."
+  },
+  {
+    "id": "ev_dour",
+    "name": "気難しい",
+    "yomi": "dour",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He has a dour personality."
+  },
+  {
+    "id": "ev_cursory",
+    "name": "ぞんざいな",
+    "yomi": "cursory",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He gave the report a cursory glance and dismissed it."
+  },
+  {
+    "id": "ev_congestive",
+    "name": "鬱血性の",
+    "yomi": "congestive",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "The patient suffered from congestive heart failure."
+  },
+  {
+    "id": "ev_interred",
+    "name": "埋葬された",
+    "yomi": "interred",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The remains were interred in the family tomb."
+  },
+  {
+    "id": "ev_rehashes",
+    "name": "焼き直し",
+    "yomi": "rehashes",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The report just rehashes old arguments."
+  },
+  {
+    "id": "ev_preconceptions",
+    "name": "先入観",
+    "yomi": "preconceptions",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "We need to approach the problem without any preconceptions."
+  },
+  {
+    "id": "ev_monopolizing",
+    "name": "独占する",
+    "yomi": "monopolizing",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company was accused of monopolizing the market."
+  },
+  {
+    "id": "ev_fizzled",
+    "name": "失敗した",
+    "yomi": "fizzled",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The project fizzled out after a few weeks."
+  },
+  {
+    "id": "ev_indoctrination",
+    "name": "洗脳",
+    "yomi": "indoctrination",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "The political party used indoctrination to gain support."
+  },
+  {
+    "id": "ev_reimbursements",
+    "name": "払い戻し",
+    "yomi": "reimbursements",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company provided reimbursements for travel expenses."
+  },
+  {
+    "id": "ev_regenerative",
+    "name": "再生の,再生可能な",
+    "yomi": "regenerative",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The starfish has remarkable regenerative abilities."
+  },
+  {
+    "id": "ev_furrow",
+    "name": "溝",
+    "yomi": "furrow",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The plow made a deep furrow in the field."
+  },
+  {
+    "id": "ev_wherewithal",
+    "name": "資金力",
+    "yomi": "wherewithal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company lacks the wherewithal to pursue such a large project."
+  },
+  {
+    "id": "ev_nonviolence",
+    "name": "非暴力",
+    "yomi": "nonviolence",
+    "category": "C1",
+    "imageUrl": "⚔️",
+    "example": "Nonviolence was the core principle of his movement."
+  },
+  {
+    "id": "ev_farfetched",
+    "name": "こじつけの",
+    "yomi": "farfetched",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His explanation was farfetched."
+  },
+  {
+    "id": "ev_welt",
+    "name": "みみず腫れ",
+    "yomi": "welt",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The blow left a red welt on his arm."
+  },
+  {
+    "id": "ev_orthodoxy",
+    "name": "正統性、正統主義",
+    "yomi": "orthodoxy",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The new research challenges the established orthodoxy."
+  },
+  {
+    "id": "ev_dint",
+    "name": "力によって",
+    "yomi": "dint",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He achieved his success by dint of hard work."
+  },
+  {
+    "id": "ev_mitochondrial",
+    "name": "ミトコンドリアの",
+    "yomi": "mitochondrial",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Mitochondrial DNA is passed down through the mother."
+  },
+  {
+    "id": "ev_filibuster",
+    "name": "議事妨害",
+    "yomi": "filibuster",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The senator used a filibuster to delay the vote."
+  },
+  {
+    "id": "ev_sterility",
+    "name": "不妊、不毛",
+    "yomi": "sterility",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The land suffered from prolonged sterility."
+  },
+  {
+    "id": "ev_frivolity",
+    "name": "軽薄さ",
+    "yomi": "frivolity",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Her frivolity was not appropriate for the situation."
+  },
+  {
+    "id": "ev_transplantation",
+    "name": "移植",
+    "yomi": "transplantation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Organ transplantation is a complex medical procedure."
+  },
+  {
+    "id": "ev_oratory",
+    "name": "演説術、雄弁",
+    "yomi": "oratory",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was known for his powerful oratory."
+  },
+  {
+    "id": "ev_languish",
+    "name": "衰える",
+    "yomi": "languish",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The plant will languish if it doesn't get enough light."
+  },
+  {
+    "id": "ev_loath",
+    "name": "嫌がって",
+    "yomi": "loath",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was loath to admit his mistake."
+  },
+  {
+    "id": "ev_machinations",
+    "name": "陰謀",
+    "yomi": "machinations",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The political machinations were clearly visible."
+  },
+  {
+    "id": "ev_pithy",
+    "name": "簡潔な",
+    "yomi": "pithy",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He delivered a pithy speech that captured everyone’s attention."
+  },
+  {
+    "id": "ev_congeniality",
+    "name": "親しみやすさ",
+    "yomi": "congeniality",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The atmosphere was filled with congeniality and good cheer."
+  },
+  {
+    "id": "ev_expend",
+    "name": "費やす、消費する",
+    "yomi": "expend",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Do not expend too much energy on unimportant tasks."
+  },
+  {
+    "id": "ev_proffer",
+    "name": "申し出る",
+    "yomi": "proffer",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He proffered his assistance to the stranded motorist."
+  },
+  {
+    "id": "ev_salacious",
+    "name": "わいせつな",
+    "yomi": "salacious",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The gossip was filled with salacious details."
+  },
+  {
+    "id": "ev_anathema",
+    "name": "破門、忌み嫌われるもの",
+    "yomi": "anathema",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The idea of socialized medicine was anathema to many conservatives."
+  },
+  {
+    "id": "ev_antagonism",
+    "name": "敵意",
+    "yomi": "antagonism",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "There was a deep-seated antagonism between the two families."
+  },
+  {
+    "id": "ev_deplore",
+    "name": "嘆き悲しむ",
+    "yomi": "deplore",
+    "category": "C1",
+    "imageUrl": "💭",
+    "example": "We deplore the violence that occurred in the city."
+  },
+  {
+    "id": "ev_inexorably",
+    "name": "容赦なく",
+    "yomi": "inexorably",
+    "category": "C2",
+    "imageUrl": "⏳",
+    "example": "The disease spread inexorably throughout the body."
+  },
+  {
+    "id": "ev_enslavement",
+    "name": "奴隷化",
+    "yomi": "enslavement",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The enslavement of Africans was a dark period in history."
+  },
+  {
+    "id": "ev_darwinism",
+    "name": "ダーウィニズム",
+    "yomi": "darwinism",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Darwinism explains the theory of natural selection."
+  },
+  {
+    "id": "ev_precipitate",
+    "name": "引き起こす、沈殿させる",
+    "yomi": "precipitate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The incident precipitated a crisis."
+  },
+  {
+    "id": "ev_indeterminate",
+    "name": "不確定な、あいまいな",
+    "yomi": "indeterminate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The future of the project is still indeterminate."
+  },
+  {
+    "id": "ev_psychobabble",
+    "name": "心理学用語の乱用",
+    "yomi": "psychobabble",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The article was full of psychobabble."
+  },
+  {
+    "id": "ev_sainthood",
+    "name": "聖人の地位",
+    "yomi": "sainthood",
+    "category": "C1",
+    "imageUrl": "✝️",
+    "example": "The path to sainthood requires a life of exceptional piety and virtue."
+  },
+  {
+    "id": "ev_forfeiture",
+    "name": "没収、喪失",
+    "yomi": "forfeiture",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company faced the forfeiture of its assets."
+  },
+  {
+    "id": "ev_constancy",
+    "name": "不変",
+    "yomi": "constancy",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His constancy in his beliefs was admirable."
+  }
+]

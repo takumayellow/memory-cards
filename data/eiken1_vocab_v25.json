@@ -1,0 +1,658 @@
+[
+  {
+    "id": "ev_sequentially",
+    "name": "連続的に",
+    "yomi": "sequentially",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The steps must be followed sequentially for the experiment to work."
+  },
+  {
+    "id": "ev_lubrication",
+    "name": "潤滑",
+    "yomi": "lubrication",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The engine requires proper lubrication."
+  },
+  {
+    "id": "ev_mammograms",
+    "name": "マンモグラフィー",
+    "yomi": "mammograms",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Regular mammograms are essential for early detection of breast cancer."
+  },
+  {
+    "id": "ev_cessation",
+    "name": "停止、中断",
+    "yomi": "cessation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The cessation of hostilities brought relief to the region."
+  },
+  {
+    "id": "ev_ceaselessly",
+    "name": "絶え間なく",
+    "yomi": "ceaselessly",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She worked ceaselessly on her project."
+  },
+  {
+    "id": "ev_deputized",
+    "name": "代理に任命された",
+    "yomi": "deputized",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The police officer deputized the civilian to assist with traffic control."
+  },
+  {
+    "id": "ev_embittered",
+    "name": "恨みを抱いた、苦々しい思いの",
+    "yomi": "embittered",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He became embittered after losing his job."
+  },
+  {
+    "id": "ev_appropriation",
+    "name": "流用、盗用",
+    "yomi": "appropriation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was accused of appropriation of funds."
+  },
+  {
+    "id": "ev_rigidity",
+    "name": "硬直性,厳格さ",
+    "yomi": "rigidity",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The rigidity of the old system prevented progress."
+  },
+  {
+    "id": "ev_effusion",
+    "name": "流出",
+    "yomi": "effusion",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The eruption caused a large effusion of lava."
+  },
+  {
+    "id": "ev_balderdash",
+    "name": "たわごと",
+    "yomi": "balderdash",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "That's just a lot of balderdash."
+  },
+  {
+    "id": "ev_basalt",
+    "name": "玄武岩",
+    "yomi": "basalt",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The cliffs were made of basalt."
+  },
+  {
+    "id": "ev_banalities",
+    "name": "陳腐な言葉",
+    "yomi": "banalities",
+    "category": "C1",
+    "imageUrl": "💬",
+    "example": "His speech was full of banalities."
+  },
+  {
+    "id": "ev_abstraction",
+    "name": "抽象化",
+    "yomi": "abstraction",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Abstraction is a key concept in software design."
+  },
+  {
+    "id": "ev_legitimize",
+    "name": "正当化する",
+    "yomi": "legitimize",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The government is trying to legitimize its actions."
+  },
+  {
+    "id": "ev_matrices",
+    "name": "行列",
+    "yomi": "matrices",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Matrices are fundamental in linear algebra."
+  },
+  {
+    "id": "ev_ardor",
+    "name": "情熱、熱意",
+    "yomi": "ardor",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His ardor for the project was evident."
+  },
+  {
+    "id": "ev_mitigation",
+    "name": "緩和",
+    "yomi": "mitigation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Mitigation of the risks involved in the project is essential."
+  },
+  {
+    "id": "ev_inhibition",
+    "name": "抑制",
+    "yomi": "inhibition",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The drug caused an inhibition of the enzyme's activity."
+  },
+  {
+    "id": "ev_optimization",
+    "name": "最適化",
+    "yomi": "optimization",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company is focused on optimization of its processes."
+  },
+  {
+    "id": "ev_reverie",
+    "name": "夢想、空想",
+    "yomi": "reverie",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She was lost in a reverie, gazing out the window."
+  },
+  {
+    "id": "ev_intricacies",
+    "name": "複雑さ",
+    "yomi": "intricacies",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He struggled to understand the intricacies of the system."
+  },
+  {
+    "id": "ev_locus",
+    "name": "場所、軌跡",
+    "yomi": "locus",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The locus of the gene is on chromosome 1."
+  },
+  {
+    "id": "ev_cede",
+    "name": "譲る、明け渡す",
+    "yomi": "cede",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company was forced to cede control of the project."
+  },
+  {
+    "id": "ev_reticent",
+    "name": "口数が少ない",
+    "yomi": "reticent",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was reticent about his past."
+  },
+  {
+    "id": "ev_incalculable",
+    "name": "計り知れない",
+    "yomi": "incalculable",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The benefits of this project are incalculable."
+  },
+  {
+    "id": "ev_stratagem",
+    "name": "策略、計略",
+    "yomi": "stratagem",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The general devised a clever stratagem to win the battle."
+  },
+  {
+    "id": "ev_avers",
+    "name": "断言する",
+    "yomi": "avers",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She avers that she has never been to that place."
+  },
+  {
+    "id": "ev_coefficients",
+    "name": "係数",
+    "yomi": "coefficients",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The equation has several coefficients that need to be calculated."
+  },
+  {
+    "id": "ev_appraises",
+    "name": "評価する",
+    "yomi": "appraises",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The expert appraises the value of the antique."
+  },
+  {
+    "id": "ev_osteoporosis",
+    "name": "骨粗鬆症",
+    "yomi": "osteoporosis",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "Osteoporosis is a common condition among elderly women."
+  },
+  {
+    "id": "ev_felonious",
+    "name": "重罪の",
+    "yomi": "felonious",
+    "category": "C1",
+    "imageUrl": "⚖️",
+    "example": "He was charged with felonious assault."
+  },
+  {
+    "id": "ev_feckless",
+    "name": "無責任な",
+    "yomi": "feckless",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was a feckless and unreliable employee."
+  },
+  {
+    "id": "ev_neb",
+    "name": "ネブ",
+    "yomi": "neb",
+    "category": "C2",
+    "imageUrl": "📗",
+    "example": "The neb of the bird was sharp."
+  },
+  {
+    "id": "ev_unequivocal",
+    "name": "明白な、疑いのない",
+    "yomi": "unequivocal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Her answer was an unequivocal yes."
+  },
+  {
+    "id": "ev_assuage",
+    "name": "和らげる、鎮める",
+    "yomi": "assuage",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The kind words helped to assuage his grief."
+  },
+  {
+    "id": "ev_sacrosanct",
+    "name": "神聖不可侵な",
+    "yomi": "sacrosanct",
+    "category": "C1",
+    "imageUrl": "✝️",
+    "example": "The constitution is considered sacrosanct."
+  },
+  {
+    "id": "ev_ata",
+    "name": "ata",
+    "yomi": "ata",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "ATA (Ataxia telangiectasia mutated) is a protein kinase."
+  },
+  {
+    "id": "ev_inexorable",
+    "name": "冷酷な",
+    "yomi": "inexorable",
+    "category": "C2",
+    "imageUrl": "⏳",
+    "example": "The inexorable march of time cannot be stopped."
+  },
+  {
+    "id": "ev_deft",
+    "name": "器用な",
+    "yomi": "deft",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She has deft hands when it comes to playing the piano."
+  },
+  {
+    "id": "ev_paraphrasing",
+    "name": "言い換え",
+    "yomi": "paraphrasing",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Paraphrasing is a useful skill for summarizing information."
+  },
+  {
+    "id": "ev_microcosm",
+    "name": "小宇宙",
+    "yomi": "microcosm",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The village was a microcosm of the larger society."
+  },
+  {
+    "id": "ev_immutable",
+    "name": "不変の",
+    "yomi": "immutable",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Some believe that the laws of nature are immutable."
+  },
+  {
+    "id": "ev_appeasement",
+    "name": "宥和, なだめ",
+    "yomi": "appeasement",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The policy of appeasement failed to prevent war."
+  },
+  {
+    "id": "ev_annexation",
+    "name": "併合",
+    "yomi": "annexation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The annexation of the territory was met with international condemnation."
+  },
+  {
+    "id": "ev_modulators",
+    "name": "調節因子",
+    "yomi": "modulators",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The drug acts as a modulator of the immune system."
+  },
+  {
+    "id": "ev_broadside",
+    "name": "側面攻撃",
+    "yomi": "broadside",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The article was a broadside against government policy."
+  },
+  {
+    "id": "ev_incontrovertible",
+    "name": "議論の余地のない、明白な",
+    "yomi": "incontrovertible",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The evidence was incontrovertible."
+  },
+  {
+    "id": "ev_dilettante",
+    "name": "好事家、アマチュア",
+    "yomi": "dilettante",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was a dilettante in the art world."
+  },
+  {
+    "id": "ev_womanizing",
+    "name": "女たらし",
+    "yomi": "womanizing",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was known for his womanizing ways."
+  },
+  {
+    "id": "ev_libertarian",
+    "name": "自由至上主義者",
+    "yomi": "libertarian",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He is a libertarian who believes in minimal government."
+  },
+  {
+    "id": "ev_duplicity",
+    "name": "二心",
+    "yomi": "duplicity",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was known for his duplicity."
+  },
+  {
+    "id": "ev_inextricably",
+    "name": "不可分に",
+    "yomi": "inextricably",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The two concepts are inextricably linked."
+  },
+  {
+    "id": "ev_immobilize",
+    "name": "固定する、動けなくする",
+    "yomi": "immobilize",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The injury immobilized his leg."
+  },
+  {
+    "id": "ev_biosphere",
+    "name": "生物圏",
+    "yomi": "biosphere",
+    "category": "C1",
+    "imageUrl": "🔬",
+    "example": "The biosphere is the part of the earth where life exists."
+  },
+  {
+    "id": "ev_desiccated",
+    "name": "乾燥した",
+    "yomi": "desiccated",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The desiccated leaves crumbled easily in his hand."
+  },
+  {
+    "id": "ev_prosaic",
+    "name": "ありふれた",
+    "yomi": "prosaic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Her writing style was rather prosaic and lacked imagination."
+  },
+  {
+    "id": "ev_homeopathic",
+    "name": "ホメオパシーの",
+    "yomi": "homeopathic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Homeopathic remedies are based on the principle of 'like cures like'."
+  },
+  {
+    "id": "ev_erudite",
+    "name": "博学な",
+    "yomi": "erudite",
+    "category": "C2",
+    "imageUrl": "📚",
+    "example": "The professor was an erudite scholar of ancient history."
+  },
+  {
+    "id": "ev_senility",
+    "name": "老衰",
+    "yomi": "senility",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Senility can be characterized by memory loss and cognitive decline."
+  },
+  {
+    "id": "ev_weightlessness",
+    "name": "無重力",
+    "yomi": "weightlessness",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Astronauts experience weightlessness in space."
+  },
+  {
+    "id": "ev_gravitas",
+    "name": "重み",
+    "yomi": "gravitas",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The speaker had a great deal of gravitas in her voice."
+  },
+  {
+    "id": "ev_limbic",
+    "name": "辺縁系の",
+    "yomi": "limbic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The limbic system is involved in emotions and memory."
+  },
+  {
+    "id": "ev_endemic",
+    "name": "風土病の",
+    "yomi": "endemic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The disease is endemic to that region."
+  },
+  {
+    "id": "ev_sprague",
+    "name": "スプレーグ",
+    "yomi": "sprague",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Sprague-Dawley rats are commonly used in research."
+  },
+  {
+    "id": "ev_inducted",
+    "name": "就任した",
+    "yomi": "inducted",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was inducted into the hall of fame."
+  },
+  {
+    "id": "ev_scion",
+    "name": "後継者",
+    "yomi": "scion",
+    "category": "C2",
+    "imageUrl": "🌱",
+    "example": "He is the scion of a wealthy family."
+  },
+  {
+    "id": "ev_dissonance",
+    "name": "不協和音",
+    "yomi": "dissonance",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The argument created dissonance in the team."
+  },
+  {
+    "id": "ev_ignoble",
+    "name": "卑劣な",
+    "yomi": "ignoble",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His actions were considered ignoble."
+  },
+  {
+    "id": "ev_beleaguered",
+    "name": "苦境に立たされた",
+    "yomi": "beleaguered",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company was beleaguered by financial problems."
+  },
+  {
+    "id": "ev_personage",
+    "name": "著名人",
+    "yomi": "personage",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The queen is an important personage."
+  },
+  {
+    "id": "ev_catharsis",
+    "name": "カタルシス",
+    "yomi": "catharsis",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The play provided a catharsis for the audience."
+  },
+  {
+    "id": "ev_jurisprudence",
+    "name": "法学",
+    "yomi": "jurisprudence",
+    "category": "C1",
+    "imageUrl": "⚖️",
+    "example": "Jurisprudence is the theory and philosophy of law."
+  },
+  {
+    "id": "ev_inroads",
+    "name": "進出、侵入",
+    "yomi": "inroads",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company made inroads into the new market."
+  },
+  {
+    "id": "ev_basal",
+    "name": "基礎の",
+    "yomi": "basal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The basal level of activity is important for proper function."
+  },
+  {
+    "id": "ev_linchpin",
+    "name": "要、かなめ",
+    "yomi": "linchpin",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The linchpin of the project was the database."
+  },
+  {
+    "id": "ev_hoving",
+    "name": "旋回している、漂っている",
+    "yomi": "hoving",
+    "category": "C1",
+    "imageUrl": "🏃",
+    "example": "The bird was hoving over the field, searching for prey."
+  },
+  {
+    "id": "ev_unpredictability",
+    "name": "予測不能性",
+    "yomi": "unpredictability",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The unpredictability of the stock market makes it risky."
+  },
+  {
+    "id": "ev_secrete",
+    "name": "分泌する",
+    "yomi": "secrete",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The pancreas secretes insulin to regulate blood sugar levels."
+  },
+  {
+    "id": "ev_cornucopia",
+    "name": "豊富さ",
+    "yomi": "cornucopia",
+    "category": "C1",
+    "imageUrl": "💰",
+    "example": "The market offered a cornucopia of fresh produce."
+  },
+  {
+    "id": "ev_indigent",
+    "name": "貧困な",
+    "yomi": "indigent",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The city provides shelters for indigent families."
+  },
+  {
+    "id": "ev_interloper",
+    "name": "侵入者",
+    "yomi": "interloper",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He felt like an interloper at the family gathering."
+  }
+]

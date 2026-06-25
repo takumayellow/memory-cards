@@ -33,10 +33,25 @@
     return Number.isFinite(stage) && stage > 0 && stage <= 100 ? stage : null;
   }
 
-  // → { stage, tier, icon, cls, level, totalLevels } または null
+  // → { stage, tier, icon, cls, level, totalLevels, isC2 } または null
   function getStageInfo(label) {
     const stage = parseStage(label);
     if (stage === null) return null;
+
+    // C2 シリーズ（"... C2単語 Vol.N"）は CEFR 最上位。C1 の進行(1〜25)とは別系列で、
+    // 常に最難関ティア（💎）として表示する。Vol 番号は C2 系列内のステージ番号。
+    if (/C2/i.test(label)) {
+      return {
+        stage,
+        tier: 'C2',
+        icon: '💎',
+        cls: 'c2',
+        level: TOTAL_LEVELS,   // メーター満点（最難関）
+        totalLevels: TOTAL_LEVELS,
+        isC2: true,
+      };
+    }
+
     const idx = TIERS.findIndex((t) => stage <= t.max);
     const tier = TIERS[idx];
     return {
@@ -46,6 +61,7 @@
       cls: tier.cls,
       level: idx + 1,          // 1..5（難易度メーターの点灯数）
       totalLevels: TOTAL_LEVELS,
+      isC2: false,
     };
   }
 

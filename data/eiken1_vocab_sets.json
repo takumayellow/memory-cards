@@ -98,5 +98,25 @@
   {
     "file": "data/eiken1_vocab_v25.json",
     "label": "英検1級 英単語 Vol.25"
+  },
+  {
+    "file": "data/eiken1_vocab_c2_v1.json",
+    "label": "英検1級 C2単語 Vol.1"
+  },
+  {
+    "file": "data/eiken1_vocab_c2_v2.json",
+    "label": "英検1級 C2単語 Vol.2"
+  },
+  {
+    "file": "data/eiken1_vocab_c2_v3.json",
+    "label": "英検1級 C2単語 Vol.3"
+  },
+  {
+    "file": "data/eiken1_vocab_c2_v4.json",
+    "label": "英検1級 C2単語 Vol.4"
+  },
+  {
+    "file": "data/eiken1_vocab_c2_v5.json",
+    "label": "英検1級 C2単語 Vol.5"
   }
 ]

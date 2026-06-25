@@ -184,7 +184,10 @@ function renderCard(){
   const back = document.createElement('div'); back.className = 'card-back';
 
   const caption = document.createElement('div'); caption.className='caption';
-  caption.innerHTML = `<div class="name">${c.name}</div><div class="yomi">${c.yomi||''}</div><div class="cat">${c.category||''}</div>`;
+  const nameEl = document.createElement('div'); nameEl.className='name'; nameEl.textContent = c.name;
+  const yomiEl = document.createElement('div'); yomiEl.className='yomi'; yomiEl.textContent = c.yomi||'';
+  const catEl  = document.createElement('div'); catEl.className='cat';  catEl.textContent = c.category||'';
+  caption.append(nameEl, yomiEl, catEl);
 
   const cr = document.createElement('div'); cr.className='credit';
   const a = state.meta[c.id];
@@ -253,7 +256,9 @@ function applyFilter(){
 function populateCategories(cards){
   const sel = document.querySelector('#cat');
   const cats = Array.from(new Set(cards.map(c=>c.category).filter(Boolean))).sort();
-  sel.innerHTML = '<option value="__ALL__">すべてのカテゴリ</option>' + cats.map(c=>`<option>${c}</option>`).join('');
+  sel.innerHTML = '';
+  const allOpt = document.createElement('option'); allOpt.value='__ALL__'; allOpt.textContent='すべてのカテゴリ'; sel.appendChild(allOpt);
+  cats.forEach(c => { const opt = document.createElement('option'); opt.textContent = c; sel.appendChild(opt); });
 }
 
 // SRS answer handlers — called when user presses "わかった" or "あとで".
@@ -389,6 +394,8 @@ function srsAnswerAgain(cardId) {
     state.i = 0;
     document.querySelector('#q').value = '';
     document.querySelector('#cat').value = '__ALL__';
+    const srsEl = document.querySelector('#srs-filter');
+    if (srsEl) srsEl.checked = false;
     renderCard();
   });
 })();

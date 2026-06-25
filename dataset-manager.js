@@ -12,7 +12,11 @@
     catch { return []; }
   }
   function saveDecks(decks) {
-    localStorage.setItem(DECKS_KEY, JSON.stringify(decks));
+    try {
+      localStorage.setItem(DECKS_KEY, JSON.stringify(decks));
+    } catch (e) {
+      throw new Error('ストレージ容量が不足しています。不要なデッキを削除してください。');
+    }
   }
 
   // ── Parsing helpers ──
@@ -151,6 +155,10 @@
     },
 
     importFromFile(file) {
+      const MAX_BYTES = 5 * 1024 * 1024;
+      if (file.size > MAX_BYTES) {
+        return Promise.reject(new Error('ファイルが大きすぎます（上限 5MB）'));
+      }
       return new Promise((resolve, reject) => {
         const ext = file.name.split('.').pop().toLowerCase();
         const reader = new FileReader();
@@ -183,7 +191,7 @@
       if (!label) throw new Error('ラベルが必要です');
       if (!Array.isArray(cards) || cards.length === 0) throw new Error('カードが空です');
       const decks = loadDecks();
-      const id = 'deck_' + Date.now();
+      const id = 'deck_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
       const newDeck = { id, label, cards, createdAt: new Date().toISOString() };
       const updated = [...decks, newDeck];
       saveDecks(updated);
@@ -197,6 +205,9 @@
       const decks = loadDecks();
       const updated = decks.filter(d => d.id !== id);
       saveDecks(updated);
+      if (localStorage.getItem(ACTIVE_KEY) === id) {
+        localStorage.setItem(ACTIVE_KEY, BUILTIN_ID);
+      }
     },
   };
 
@@ -209,9 +220,14 @@
     const decks = window.DatasetManager.getDecks();
     const activeId = window.DatasetManager.getActiveDeckId();
 
-    picker.innerHTML = decks
-      .map(d => `<option value="${d.id}"${d.id === activeId ? ' selected' : ''}>${d.label}${d.id !== BUILTIN_ID ? ' (' + d.cardCount + '枚)' : ''}</option>`)
-      .join('');
+    picker.innerHTML = '';
+    for (const d of decks) {
+      const opt = document.createElement('option');
+      opt.value = d.id;
+      opt.textContent = d.label + (d.id !== BUILTIN_ID ? ` (${d.cardCount}枚)` : '');
+      opt.selected = (d.id === activeId);
+      picker.appendChild(opt);
+    }
 
     if (deleteBtn) {
       deleteBtn.disabled = (activeId === BUILTIN_ID);

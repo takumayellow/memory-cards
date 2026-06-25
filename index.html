@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>芸能人 暗記カード</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="srs.css" />
+  <link rel="stylesheet" href="style.css?v=20260625" />
+  <link rel="stylesheet" href="srs.css?v=20260625" />
   <style>
 .deck-bar {
   display: flex;
@@ -103,10 +103,13 @@
   </section>
 </main>
 
-<script src="dataset-manager.js"></script>
-<script src="srs.js"></script>
-<script src="app.js"></script>
-<script src="vocab-deck-init.js"></script>
-<script src="keyboard.js"></script>
+<!-- ?v=YYYYMMDD はキャッシュバスティング用。JS/CSS を変更してデプロイするたび
+     この日付（APP_VERSION 相当）を更新すると、新しい index.html が読まれた時点で
+     ブラウザが古い JS/CSS を掴み続けず確実に最新を取得する。 -->
+<script src="dataset-manager.js?v=20260625"></script>
+<script src="srs.js?v=20260625"></script>
+<script src="app.js?v=20260625"></script>
+<script src="vocab-deck-init.js?v=20260625"></script>
+<script src="keyboard.js?v=20260625"></script>
 </body>
 </html>

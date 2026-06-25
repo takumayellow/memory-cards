@@ -550,3 +550,28 @@ body {
   margin-bottom: 6px;
   letter-spacing: 0.02em;
 }
+
+/* One-time discoverability hint for the English vocab deck (vocab-deck-init.js) */
+.vocab-deck-hint {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 7px 12px;
+  font-size: 13px;
+  color: #3730a3;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+}
+.vocab-deck-hint-text { flex: 1; }
+.vocab-deck-hint-close {
+  border: none;
+  background: transparent;
+  color: #6366f1;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}

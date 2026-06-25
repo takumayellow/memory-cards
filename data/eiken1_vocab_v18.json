@@ -1,0 +1,802 @@
+[
+  {
+    "id": "ev_derogatory",
+    "name": "軽蔑的な、中傷的な",
+    "yomi": "derogatory",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He used derogatory language toward his opponent."
+  },
+  {
+    "id": "ev_redress",
+    "name": "救済、補償",
+    "yomi": "redress",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The court ordered redress for the damages caused."
+  },
+  {
+    "id": "ev_pall",
+    "name": "覆い隠す、陰気にする",
+    "yomi": "pall",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The gloom cast a pall over the gathering."
+  },
+  {
+    "id": "ev_injurious",
+    "name": "有害な",
+    "yomi": "injurious",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Smoking is injurious to your health."
+  },
+  {
+    "id": "ev_translucent",
+    "name": "半透明の",
+    "yomi": "translucent",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The curtains were made of translucent material."
+  },
+  {
+    "id": "ev_thence",
+    "name": "そこから",
+    "yomi": "thence",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He came from London, and thence to Paris."
+  },
+  {
+    "id": "ev_dissipate",
+    "name": "消散する",
+    "yomi": "dissipate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The fog will dissipate as the sun rises."
+  },
+  {
+    "id": "ev_instigating",
+    "name": "扇動する",
+    "yomi": "instigating",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was accused of instigating violence."
+  },
+  {
+    "id": "ev_syntax",
+    "name": "構文",
+    "yomi": "syntax",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The sentence had a complex syntax."
+  },
+  {
+    "id": "ev_fortifications",
+    "name": "要塞",
+    "yomi": "fortifications",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The city was surrounded by strong fortifications."
+  },
+  {
+    "id": "ev_seamlessly",
+    "name": "シームレスに、円滑に",
+    "yomi": "seamlessly",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The new software integrates seamlessly with existing systems."
+  },
+  {
+    "id": "ev_acclaim",
+    "name": "称賛",
+    "yomi": "acclaim",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The actor received much acclaim for his performance."
+  },
+  {
+    "id": "ev_systemic",
+    "name": "構造的な",
+    "yomi": "systemic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The problem is systemic, not just individual."
+  },
+  {
+    "id": "ev_retrospective",
+    "name": "回顧的な",
+    "yomi": "retrospective",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The exhibition was a retrospective of his work."
+  },
+  {
+    "id": "ev_logistically",
+    "name": "物流的に",
+    "yomi": "logistically",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The project was challenging, logistically speaking."
+  },
+  {
+    "id": "ev_inconsequential",
+    "name": "重要でない、取るに足りない",
+    "yomi": "inconsequential",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The details are inconsequential to the main issue."
+  },
+  {
+    "id": "ev_bygone",
+    "name": "過ぎ去った、昔の",
+    "yomi": "bygone",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He often reminisces about the bygone days of his youth."
+  },
+  {
+    "id": "ev_assertion",
+    "name": "主張",
+    "yomi": "assertion",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His assertion was met with skepticism."
+  },
+  {
+    "id": "ev_ventricular",
+    "name": "心室の",
+    "yomi": "ventricular",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Ventricular fibrillation can be fatal."
+  },
+  {
+    "id": "ev_inclusions",
+    "name": "包含物",
+    "yomi": "inclusions",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The inclusions in the diamond gave it a unique appearance."
+  },
+  {
+    "id": "ev_obtuse",
+    "name": "鈍い、愚鈍な",
+    "yomi": "obtuse",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was being obtuse and not understanding the point."
+  },
+  {
+    "id": "ev_regalia",
+    "name": "（王権などの）象徴、装飾",
+    "yomi": "regalia",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The king arrived in full regalia."
+  },
+  {
+    "id": "ev_fantastical",
+    "name": "空想的な",
+    "yomi": "fantastical",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The story was filled with fantastical creatures."
+  },
+  {
+    "id": "ev_coercing",
+    "name": "強要する",
+    "yomi": "coercing",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The police were accused of coercing a confession from the suspect."
+  },
+  {
+    "id": "ev_ostentatious",
+    "name": "見せびらかす、派手な",
+    "yomi": "ostentatious",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The billionaire's lifestyle was ostentatious and extravagant."
+  },
+  {
+    "id": "ev_razed",
+    "name": "破壊された",
+    "yomi": "razed",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The entire village was razed to the ground."
+  },
+  {
+    "id": "ev_bax",
+    "name": "Bax",
+    "yomi": "bax",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Bax is a protein that promotes apoptosis."
+  },
+  {
+    "id": "ev_obstetrician",
+    "name": "産科医",
+    "yomi": "obstetrician",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "The obstetrician delivered the baby."
+  },
+  {
+    "id": "ev_archeological",
+    "name": "考古学の",
+    "yomi": "archeological",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The museum features many archeological finds."
+  },
+  {
+    "id": "ev_cava",
+    "name": "大静脈",
+    "yomi": "cava",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The inferior vena cava carries blood back to the heart."
+  },
+  {
+    "id": "ev_herein",
+    "name": "ここに、本稿では",
+    "yomi": "herein",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The results discussed herein will provide valuable insights."
+  },
+  {
+    "id": "ev_substantiate",
+    "name": "立証する",
+    "yomi": "substantiate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Can you substantiate your claims?"
+  },
+  {
+    "id": "ev_recoup",
+    "name": "取り戻す",
+    "yomi": "recoup",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company hopes to recoup its losses next year."
+  },
+  {
+    "id": "ev_disavowed",
+    "name": "否認した、拒絶した",
+    "yomi": "disavowed",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The politician disavowed any knowledge of the scandal."
+  },
+  {
+    "id": "ev_carpal",
+    "name": "手根骨の",
+    "yomi": "carpal",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "The carpal bones are located in the wrist."
+  },
+  {
+    "id": "ev_lurid",
+    "name": "けばけばしい、ぞっとする",
+    "yomi": "lurid",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The lurid details of the crime shocked the public."
+  },
+  {
+    "id": "ev_bewitching",
+    "name": "魅惑的な",
+    "yomi": "bewitching",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Her bewitching smile captivated everyone in the room."
+  },
+  {
+    "id": "ev_symbiotic",
+    "name": "共生的な",
+    "yomi": "symbiotic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "They have a symbiotic relationship."
+  },
+  {
+    "id": "ev_collagen",
+    "name": "コラーゲン",
+    "yomi": "collagen",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Collagen is an important structural protein in the body."
+  },
+  {
+    "id": "ev_magnification",
+    "name": "拡大",
+    "yomi": "magnification",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The microscope provides magnification for viewing small objects."
+  },
+  {
+    "id": "ev_pursuant",
+    "name": "～に従って",
+    "yomi": "pursuant",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Pursuant to the agreement, the company will provide the necessary support."
+  },
+  {
+    "id": "ev_paralytic",
+    "name": "麻痺性の",
+    "yomi": "paralytic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The disease had a paralytic effect on his legs."
+  },
+  {
+    "id": "ev_jaundiced",
+    "name": "黄疸の",
+    "yomi": "jaundiced",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His skin looked jaundiced, suggesting a liver problem."
+  },
+  {
+    "id": "ev_barbarous",
+    "name": "野蛮な",
+    "yomi": "barbarous",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The treatment of prisoners was described as barbarous."
+  },
+  {
+    "id": "ev_cortical",
+    "name": "皮質の",
+    "yomi": "cortical",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The cortical areas of the brain are responsible for higher functions."
+  },
+  {
+    "id": "ev_juggernaut",
+    "name": "圧倒的な力",
+    "yomi": "juggernaut",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company became a juggernaut in the industry."
+  },
+  {
+    "id": "ev_permissible",
+    "name": "許容される",
+    "yomi": "permissible",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Such behavior is not permissible."
+  },
+  {
+    "id": "ev_enthralled",
+    "name": "魅了された",
+    "yomi": "enthralled",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The audience was enthralled by the performance."
+  },
+  {
+    "id": "ev_degenerative",
+    "name": "変性的な",
+    "yomi": "degenerative",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The disease is a degenerative condition."
+  },
+  {
+    "id": "ev_prostrate",
+    "name": "ひれ伏した",
+    "yomi": "prostrate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was lying prostrate on the floor."
+  },
+  {
+    "id": "ev_egomaniac",
+    "name": "自己中心的な人",
+    "yomi": "egomaniac",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He is an egomaniac who thinks he is the best."
+  },
+  {
+    "id": "ev_indisputable",
+    "name": "議論の余地のない、明白な",
+    "yomi": "indisputable",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The facts are indisputable."
+  },
+  {
+    "id": "ev_foggiest",
+    "name": "最も不明瞭な",
+    "yomi": "foggiest",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "I don't have the foggiest idea what you are talking about."
+  },
+  {
+    "id": "ev_incestuous",
+    "name": "近親相姦の",
+    "yomi": "incestuous",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The family had an incestuous relationship."
+  },
+  {
+    "id": "ev_sgcs",
+    "name": "SGCS",
+    "yomi": "sgcs",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "SGCS is a type of enzyme."
+  },
+  {
+    "id": "ev_dorsal",
+    "name": "背側の",
+    "yomi": "dorsal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The dorsal fin of the fish was damaged."
+  },
+  {
+    "id": "ev_utopian",
+    "name": "理想郷の",
+    "yomi": "utopian",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The idea of a utopian society is often debated."
+  },
+  {
+    "id": "ev_troubadour",
+    "name": "吟遊詩人",
+    "yomi": "troubadour",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The troubadour sang songs of love and chivalry."
+  },
+  {
+    "id": "ev_reclusive",
+    "name": "隠遁した",
+    "yomi": "reclusive",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The author was known for being reclusive and rarely gave interviews."
+  },
+  {
+    "id": "ev_mitigate",
+    "name": "緩和する",
+    "yomi": "mitigate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The new regulations are designed to mitigate the environmental impact."
+  },
+  {
+    "id": "ev_preferential",
+    "name": "優先的な、えこひいきの",
+    "yomi": "preferential",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company offered preferential treatment to its long-term clients."
+  },
+  {
+    "id": "ev_chaff",
+    "name": "もみがら",
+    "yomi": "chaff",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The farmer separated the wheat from the chaff."
+  },
+  {
+    "id": "ev_menstruation",
+    "name": "月経",
+    "yomi": "menstruation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Menstruation is a normal part of the female reproductive cycle."
+  },
+  {
+    "id": "ev_repository",
+    "name": "保管場所",
+    "yomi": "repository",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The library serves as a repository of information."
+  },
+  {
+    "id": "ev_uninhabitable",
+    "name": "居住不可能な",
+    "yomi": "uninhabitable",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The building was declared uninhabitable."
+  },
+  {
+    "id": "ev_expunged",
+    "name": "削除された",
+    "yomi": "expunged",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His criminal record was expunged after a long legal battle."
+  },
+  {
+    "id": "ev_understated",
+    "name": "控えめな",
+    "yomi": "understated",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His style of writing is understated."
+  },
+  {
+    "id": "ev_repeal",
+    "name": "撤廃する",
+    "yomi": "repeal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The government decided to repeal the law."
+  },
+  {
+    "id": "ev_indelible",
+    "name": "消せない、忘れられない",
+    "yomi": "indelible",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The experience left an indelible mark on her memory."
+  },
+  {
+    "id": "ev_downtrodden",
+    "name": "虐げられた、抑圧された",
+    "yomi": "downtrodden",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The downtrodden people rose up against their oppressors."
+  },
+  {
+    "id": "ev_vitro",
+    "name": "試験管内",
+    "yomi": "vitro",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The experiment was conducted in vitro."
+  },
+  {
+    "id": "ev_swank",
+    "name": "気取る",
+    "yomi": "swank",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He tends to swank about his accomplishments."
+  },
+  {
+    "id": "ev_testicular",
+    "name": "精巣の",
+    "yomi": "testicular",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Testicular cancer is a relatively rare form of cancer."
+  },
+  {
+    "id": "ev_flabbergasted",
+    "name": "びっくり仰天した",
+    "yomi": "flabbergasted",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She was flabbergasted by the news of her promotion."
+  },
+  {
+    "id": "ev_totalitarian",
+    "name": "全体主義の",
+    "yomi": "totalitarian",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The country was under a totalitarian regime."
+  },
+  {
+    "id": "ev_beholder",
+    "name": "見る人",
+    "yomi": "beholder",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Beauty is in the eye of the beholder."
+  },
+  {
+    "id": "ev_undertook",
+    "name": "着手した",
+    "yomi": "undertook",
+    "category": "C2",
+    "imageUrl": "🗂️",
+    "example": "She undertook a research project to study the effects of climate change."
+  },
+  {
+    "id": "ev_egregious",
+    "name": "言語道断な",
+    "yomi": "egregious",
+    "category": "C1",
+    "imageUrl": "💬",
+    "example": "He made an egregious error in his calculations."
+  },
+  {
+    "id": "ev_exorbitant",
+    "name": "法外な",
+    "yomi": "exorbitant",
+    "category": "C1",
+    "imageUrl": "⚖️",
+    "example": "The prices at that shop are exorbitant."
+  },
+  {
+    "id": "ev_redefined",
+    "name": "再定義された",
+    "yomi": "redefined",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The concept of success has been redefined."
+  },
+  {
+    "id": "ev_redefining",
+    "name": "再定義する",
+    "yomi": "redefining",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company is redefining its mission to focus on sustainability."
+  },
+  {
+    "id": "ev_opaque",
+    "name": "不透明な",
+    "yomi": "opaque",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The glass is opaque."
+  },
+  {
+    "id": "ev_gratuitous",
+    "name": "無償の",
+    "yomi": "gratuitous",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The movie included gratuitous violence that was unnecessary."
+  },
+  {
+    "id": "ev_exhumation",
+    "name": "発掘",
+    "yomi": "exhumation",
+    "category": "C2",
+    "imageUrl": "⛏️",
+    "example": "The exhumation of the body was ordered by the court."
+  },
+  {
+    "id": "ev_irrevocable",
+    "name": "取り消し不能の",
+    "yomi": "irrevocable",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The decision was irrevocable."
+  },
+  {
+    "id": "ev_ignoramus",
+    "name": "無知な人",
+    "yomi": "ignoramus",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was an ignoramus when it came to technology."
+  },
+  {
+    "id": "ev_bovine",
+    "name": "牛のような",
+    "yomi": "bovine",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His bovine expression suggested a lack of understanding."
+  },
+  {
+    "id": "ev_prospectus",
+    "name": "目論見書",
+    "yomi": "prospectus",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company issued a prospectus to attract investors."
+  },
+  {
+    "id": "ev_altruistic",
+    "name": "利他的な",
+    "yomi": "altruistic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He made an altruistic donation to the charity."
+  },
+  {
+    "id": "ev_autoimmune",
+    "name": "自己免疫の",
+    "yomi": "autoimmune",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "An autoimmune disease occurs when the body's immune system attacks its own tissues."
+  },
+  {
+    "id": "ev_noxious",
+    "name": "有害な",
+    "yomi": "noxious",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The chemical fumes were noxious and should not be inhaled."
+  },
+  {
+    "id": "ev_ensuing",
+    "name": "結果として起こる",
+    "yomi": "ensuing",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The ensuing conflict resulted in many casualties."
+  },
+  {
+    "id": "ev_unwarranted",
+    "name": "不当な",
+    "yomi": "unwarranted",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The criticism was unwarranted, and he felt unfairly targeted."
+  },
+  {
+    "id": "ev_uterine",
+    "name": "子宮の",
+    "yomi": "uterine",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The uterine lining thickens during the menstrual cycle."
+  },
+  {
+    "id": "ev_whimsy",
+    "name": "気まぐれ",
+    "yomi": "whimsy",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Her personality was known for its whimsy."
+  },
+  {
+    "id": "ev_constrained",
+    "name": "制約された",
+    "yomi": "constrained",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company's growth is constrained by financial limitations."
+  },
+  {
+    "id": "ev_treatise",
+    "name": "論文",
+    "yomi": "treatise",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He wrote a treatise on quantum mechanics."
+  },
+  {
+    "id": "ev_contentious",
+    "name": "議論を呼ぶ",
+    "yomi": "contentious",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The issue of abortion is a very contentious topic in many countries."
+  },
+  {
+    "id": "ev_intangible",
+    "name": "無形の",
+    "yomi": "intangible",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The value of loyalty is intangible."
+  },
+  {
+    "id": "ev_penitent",
+    "name": "悔い改める",
+    "yomi": "penitent",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He seemed truly penitent for his wrongdoings."
+  }
+]

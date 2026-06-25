@@ -1,0 +1,802 @@
+[
+  {
+    "id": "ev_atone",
+    "name": "償う、埋め合わせをする",
+    "yomi": "atone",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He wanted to atone for his past mistakes."
+  },
+  {
+    "id": "ev_albany",
+    "name": "アルバニー",
+    "yomi": "albany",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Albany is the capital of New York State."
+  },
+  {
+    "id": "ev_pathology",
+    "name": "病理学",
+    "yomi": "pathology",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The pathology report confirmed that the tumor was benign."
+  },
+  {
+    "id": "ev_prudence",
+    "name": "慎重さ",
+    "yomi": "prudence",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He always acts with great prudence."
+  },
+  {
+    "id": "ev_wannabes",
+    "name": "～になりたがる人",
+    "yomi": "wannabes",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The internet is full of celebrity wannabes."
+  },
+  {
+    "id": "ev_homicidal",
+    "name": "殺人的な",
+    "yomi": "homicidal",
+    "category": "C1",
+    "imageUrl": "⚔️",
+    "example": "He had homicidal tendencies."
+  },
+  {
+    "id": "ev_confiscate",
+    "name": "没収する",
+    "yomi": "confiscate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The police had the right to confiscate the illegal goods."
+  },
+  {
+    "id": "ev_mandate",
+    "name": "委任",
+    "yomi": "mandate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The president received a clear mandate from the voters."
+  },
+  {
+    "id": "ev_inflict",
+    "name": "（苦痛を）与える",
+    "yomi": "inflict",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The dictator inflicted great suffering on his people."
+  },
+  {
+    "id": "ev_exemplary",
+    "name": "模範的な",
+    "yomi": "exemplary",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His conduct was exemplary throughout his career."
+  },
+  {
+    "id": "ev_replicate",
+    "name": "複製する",
+    "yomi": "replicate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The cell replicates its DNA before dividing."
+  },
+  {
+    "id": "ev_reproach",
+    "name": "非難",
+    "yomi": "reproach",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She looked at him with reproach in her eyes."
+  },
+  {
+    "id": "ev_adversaries",
+    "name": "敵",
+    "yomi": "adversaries",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "They faced many adversaries in the competition."
+  },
+  {
+    "id": "ev_extradition",
+    "name": "身柄引き渡し",
+    "yomi": "extradition",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The country agreed to the extradition of the suspect."
+  },
+  {
+    "id": "ev_visionaries",
+    "name": "先見の明のある人",
+    "yomi": "visionaries",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company was founded by a team of visionaries who saw the potential in the technology."
+  },
+  {
+    "id": "ev_pegged",
+    "name": "固定された",
+    "yomi": "pegged",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The exchange rate was pegged to the dollar."
+  },
+  {
+    "id": "ev_vetoed",
+    "name": "拒否権を行使した",
+    "yomi": "vetoed",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The president vetoed the bill."
+  },
+  {
+    "id": "ev_diabolical",
+    "name": "悪魔のような",
+    "yomi": "diabolical",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The plan was diabolical in its complexity."
+  },
+  {
+    "id": "ev_neurological",
+    "name": "神経学的な",
+    "yomi": "neurological",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "Neurological research is exploring the complexities of the brain."
+  },
+  {
+    "id": "ev_startlingly",
+    "name": "驚くほど",
+    "yomi": "startlingly",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The results were startlingly different from what was expected."
+  },
+  {
+    "id": "ev_reconciliation",
+    "name": "和解",
+    "yomi": "reconciliation",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Reconciliation between the two parties is difficult."
+  },
+  {
+    "id": "ev_induce",
+    "name": "誘発する",
+    "yomi": "induce",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The experiment was designed to induce a specific response."
+  },
+  {
+    "id": "ev_demented",
+    "name": "精神錯乱の、狂気の",
+    "yomi": "demented",
+    "category": "C1",
+    "imageUrl": "✝️",
+    "example": "His behavior became increasingly demented."
+  },
+  {
+    "id": "ev_apprehend",
+    "name": "逮捕する",
+    "yomi": "apprehend",
+    "category": "C1",
+    "imageUrl": "⚖️",
+    "example": "The police apprehended the suspect."
+  },
+  {
+    "id": "ev_hierarchies",
+    "name": "階層構造",
+    "yomi": "hierarchies",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Traditional business hierarchies are being challenged."
+  },
+  {
+    "id": "ev_munitions",
+    "name": "軍需品",
+    "yomi": "munitions",
+    "category": "C1",
+    "imageUrl": "⚔️",
+    "example": "The factory produces munitions for the national army."
+  },
+  {
+    "id": "ev_revoked",
+    "name": "取り消した",
+    "yomi": "revoked",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The license was revoked after several violations."
+  },
+  {
+    "id": "ev_cinematography",
+    "name": "映画撮影術",
+    "yomi": "cinematography",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The cinematography in the movie was breathtaking."
+  },
+  {
+    "id": "ev_shrewd",
+    "name": "抜け目のない",
+    "yomi": "shrewd",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She is a shrewd negotiator, always able to get the best deal."
+  },
+  {
+    "id": "ev_ingenuity",
+    "name": "創意工夫",
+    "yomi": "ingenuity",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Her ingenuity in problem-solving is remarkable."
+  },
+  {
+    "id": "ev_visualized",
+    "name": "視覚化した",
+    "yomi": "visualized",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He visualized the scene in his mind before drawing it."
+  },
+  {
+    "id": "ev_enigma",
+    "name": "謎",
+    "yomi": "enigma",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The meaning of the painting remains an enigma to art critics."
+  },
+  {
+    "id": "ev_contraband",
+    "name": "密輸品、禁制品",
+    "yomi": "contraband",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The police confiscated the contraband at the border."
+  },
+  {
+    "id": "ev_writ",
+    "name": "令状",
+    "yomi": "writ",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The court issued a writ for his arrest."
+  },
+  {
+    "id": "ev_deities",
+    "name": "神々",
+    "yomi": "deities",
+    "category": "C1",
+    "imageUrl": "✝️",
+    "example": "Ancient cultures worshiped many deities."
+  },
+  {
+    "id": "ev_explicitly",
+    "name": "明確に、はっきりと",
+    "yomi": "explicitly",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The rules were explicitly stated."
+  },
+  {
+    "id": "ev_bitchy",
+    "name": "意地悪な、嫌味な",
+    "yomi": "bitchy",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She can be a bit bitchy sometimes."
+  },
+  {
+    "id": "ev_infidelities",
+    "name": "不貞行為",
+    "yomi": "infidelities",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The divorce was a result of his infidelities."
+  },
+  {
+    "id": "ev_dialysis",
+    "name": "透析",
+    "yomi": "dialysis",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Patients with kidney failure often require dialysis."
+  },
+  {
+    "id": "ev_lineages",
+    "name": "系統",
+    "yomi": "lineages",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The lineages of the family can be traced back centuries."
+  },
+  {
+    "id": "ev_polygraph",
+    "name": "ポリグラフ、うそ発見器",
+    "yomi": "polygraph",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The police used a polygraph during the interrogation."
+  },
+  {
+    "id": "ev_hemorrhage",
+    "name": "出血",
+    "yomi": "hemorrhage",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "The patient suffered a severe hemorrhage after the accident."
+  },
+  {
+    "id": "ev_consort",
+    "name": "配偶者, 連れ",
+    "yomi": "consort",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The queen and her consort attended the ceremony."
+  },
+  {
+    "id": "ev_unorthodox",
+    "name": "型破りな",
+    "yomi": "unorthodox",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His methods were unorthodox, but effective."
+  },
+  {
+    "id": "ev_meticulously",
+    "name": "細心の注意を払って",
+    "yomi": "meticulously",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The work was done meticulously."
+  },
+  {
+    "id": "ev_prodigies",
+    "name": "神童",
+    "yomi": "prodigies",
+    "category": "C1",
+    "imageUrl": "✝️",
+    "example": "The school was known for producing musical prodigies."
+  },
+  {
+    "id": "ev_harks",
+    "name": "〜を思い起こさせる",
+    "yomi": "harks",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The architecture harks back to the Roman era."
+  },
+  {
+    "id": "ev_wielding",
+    "name": "操る",
+    "yomi": "wielding",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was wielding a sword skillfully."
+  },
+  {
+    "id": "ev_factions",
+    "name": "派閥",
+    "yomi": "factions",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The political party was divided into several competing factions."
+  },
+  {
+    "id": "ev_aesthetic",
+    "name": "美的",
+    "yomi": "aesthetic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The building has a pleasing aesthetic."
+  },
+  {
+    "id": "ev_pulmonary",
+    "name": "肺の",
+    "yomi": "pulmonary",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Pulmonary disease can severely affect breathing."
+  },
+  {
+    "id": "ev_compel",
+    "name": "強いる、強制する",
+    "yomi": "compel",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He felt compelled to help those in need."
+  },
+  {
+    "id": "ev_stronghold",
+    "name": "拠点",
+    "yomi": "stronghold",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The castle was a stronghold during the war."
+  },
+  {
+    "id": "ev_depraved",
+    "name": "堕落した",
+    "yomi": "depraved",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He lived a depraved life of crime and violence."
+  },
+  {
+    "id": "ev_contemplate",
+    "name": "熟考する",
+    "yomi": "contemplate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He sat down to contemplate the meaning of life."
+  },
+  {
+    "id": "ev_cognitively",
+    "name": "認知的に",
+    "yomi": "cognitively",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The study examines how children develop cognitively."
+  },
+  {
+    "id": "ev_biologists",
+    "name": "生物学者",
+    "yomi": "biologists",
+    "category": "C1",
+    "imageUrl": "🔬",
+    "example": "Biologists study living organisms and their interactions."
+  },
+  {
+    "id": "ev_conspicuously",
+    "name": "目立って",
+    "yomi": "conspicuously",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The red dress stood out conspicuously in the crowd."
+  },
+  {
+    "id": "ev_cipher",
+    "name": "暗号、記号",
+    "yomi": "cipher",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The message was written in a complex cipher."
+  },
+  {
+    "id": "ev_denounce",
+    "name": "非難する",
+    "yomi": "denounce",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The politician denounced the corruption in the government."
+  },
+  {
+    "id": "ev_affidavit",
+    "name": "宣誓供述書",
+    "yomi": "affidavit",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She submitted an affidavit to the court."
+  },
+  {
+    "id": "ev_premeditated",
+    "name": "計画的な",
+    "yomi": "premeditated",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The crime was premeditated."
+  },
+  {
+    "id": "ev_glosses",
+    "name": "注釈、説明",
+    "yomi": "glosses",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The professor provided helpful glosses on the difficult text."
+  },
+  {
+    "id": "ev_papal",
+    "name": "ローマ教皇の",
+    "yomi": "papal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The papal visit was a major event."
+  },
+  {
+    "id": "ev_carping",
+    "name": "けちをつける、文句を言う",
+    "yomi": "carping",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She is always carping about something."
+  },
+  {
+    "id": "ev_hearsay",
+    "name": "うわさ、伝聞",
+    "yomi": "hearsay",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The evidence presented was based on hearsay."
+  },
+  {
+    "id": "ev_illicit",
+    "name": "違法な",
+    "yomi": "illicit",
+    "category": "C1",
+    "imageUrl": "⚖️",
+    "example": "They were involved in the illicit trade of drugs."
+  },
+  {
+    "id": "ev_stasis",
+    "name": "停滞",
+    "yomi": "stasis",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The project is in a state of stasis."
+  },
+  {
+    "id": "ev_implicated",
+    "name": "関与した",
+    "yomi": "implicated",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was implicated in the crime."
+  },
+  {
+    "id": "ev_maverick",
+    "name": "一匹狼",
+    "yomi": "maverick",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He is a maverick in the industry."
+  },
+  {
+    "id": "ev_manifesto",
+    "name": "声明、宣言",
+    "yomi": "manifesto",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The political party published its manifesto."
+  },
+  {
+    "id": "ev_unholy",
+    "name": "不浄な、神聖でない",
+    "yomi": "unholy",
+    "category": "C1",
+    "imageUrl": "✝️",
+    "example": "The alliance between them was unholy."
+  },
+  {
+    "id": "ev_utopia",
+    "name": "理想郷、ユートピア",
+    "yomi": "utopia",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The vision of a perfect utopia has always fascinated mankind."
+  },
+  {
+    "id": "ev_tribune",
+    "name": "護民官",
+    "yomi": "tribune",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The tribune spoke out against injustice."
+  },
+  {
+    "id": "ev_vaginal",
+    "name": "膣の",
+    "yomi": "vaginal",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She experienced some discomfort in the vaginal area."
+  },
+  {
+    "id": "ev_rigors",
+    "name": "厳しさ、困難",
+    "yomi": "rigors",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "They experienced the rigors of the training program."
+  },
+  {
+    "id": "ev_scrutiny",
+    "name": "精査、綿密な調査",
+    "yomi": "scrutiny",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The project was under close scrutiny."
+  },
+  {
+    "id": "ev_mimes",
+    "name": "模倣する、まねる",
+    "yomi": "mimes",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The child mimes the actions of adults."
+  },
+  {
+    "id": "ev_alms",
+    "name": "施し",
+    "yomi": "alms",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The beggar asked for alms."
+  },
+  {
+    "id": "ev_garnered",
+    "name": "集めた",
+    "yomi": "garnered",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The campaign garnered significant support from the public."
+  },
+  {
+    "id": "ev_bipolar",
+    "name": "双極性の",
+    "yomi": "bipolar",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "Bipolar disorder is characterized by mood swings."
+  },
+  {
+    "id": "ev_devoutly",
+    "name": "敬虔に",
+    "yomi": "devoutly",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "She devoutly believed in the power of prayer."
+  },
+  {
+    "id": "ev_architecturally",
+    "name": "建築学的に",
+    "yomi": "architecturally",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The building is architecturally significant."
+  },
+  {
+    "id": "ev_tenured",
+    "name": "終身在職権のある",
+    "yomi": "tenured",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He is a tenured professor at the university."
+  },
+  {
+    "id": "ev_superiority",
+    "name": "優越",
+    "yomi": "superiority",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He felt a sense of superiority over his colleagues."
+  },
+  {
+    "id": "ev_suture",
+    "name": "縫合",
+    "yomi": "suture",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The doctor used sutures to close the wound."
+  },
+  {
+    "id": "ev_gloating",
+    "name": "ほくそ笑む, さも得意げにする",
+    "yomi": "gloating",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He was gloating over his victory."
+  },
+  {
+    "id": "ev_forsake",
+    "name": "見捨てる",
+    "yomi": "forsake",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He promised he would never forsake his friends."
+  },
+  {
+    "id": "ev_gothic",
+    "name": "ゴシック様式の",
+    "yomi": "gothic",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The cathedral was built in the Gothic style."
+  },
+  {
+    "id": "ev_shroud",
+    "name": "覆い隠す、包む",
+    "yomi": "shroud",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The fog shrouded the mountains, making them invisible."
+  },
+  {
+    "id": "ev_justification",
+    "name": "正当化",
+    "yomi": "justification",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "There is no justification for such behavior."
+  },
+  {
+    "id": "ev_statistically",
+    "name": "統計的に",
+    "yomi": "statistically",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The results were statistically significant."
+  },
+  {
+    "id": "ev_odyssey",
+    "name": "長い放浪の旅、冒険",
+    "yomi": "odyssey",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "His journey was an odyssey of self-discovery."
+  },
+  {
+    "id": "ev_fathom",
+    "name": "理解する",
+    "yomi": "fathom",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "I can't fathom why she did that."
+  },
+  {
+    "id": "ev_intricate",
+    "name": "複雑な",
+    "yomi": "intricate",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The design was intricate and full of detail."
+  },
+  {
+    "id": "ev_robustly",
+    "name": "頑強に、強く",
+    "yomi": "robustly",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The system performed robustly under different conditions."
+  },
+  {
+    "id": "ev_injunction",
+    "name": "差し止め命令",
+    "yomi": "injunction",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The court issued an injunction to prevent the company from selling the product."
+  },
+  {
+    "id": "ev_dismantling",
+    "name": "解体",
+    "yomi": "dismantling",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "The company is dismantling the old factory."
+  },
+  {
+    "id": "ev_claustrophobic",
+    "name": "閉所恐怖症の",
+    "yomi": "claustrophobic",
+    "category": "C1",
+    "imageUrl": "🏥",
+    "example": "The small room made her feel claustrophobic."
+  },
+  {
+    "id": "ev_jest",
+    "name": "冗談",
+    "yomi": "jest",
+    "category": "C1",
+    "imageUrl": "📗",
+    "example": "He said it in jest, not seriously."
+  }
+]

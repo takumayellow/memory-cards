@@ -1,52 +1,77 @@
-// vocab-deck-init.js — registers the built-in English vocab deck on first run
-(function() {
-  const VOCAB_LABEL = '英検1級 英単語';
+// vocab-deck-init.js — registers all built-in English vocab sets on first run
+(function () {
+  'use strict';
 
-  async function initVocabDeck() {
+  const MANIFEST = 'data/eiken1_vocab_sets.json';
+
+  async function initVocabDecks() {
     if (!window.DatasetManager) return;
 
-    // Skip if already registered
-    if (window.DatasetManager.getDecks().some(d => d.label === VOCAB_LABEL)) return;
+    const v = window.APP_VERSION || '1';
 
+    // Fetch manifest listing all sets
+    let sets;
     try {
-      const resp = await fetch('data/eiken1_vocab.json?v=' + (window.APP_VERSION || '1'), { cache: 'no-store' });
-      if (!resp.ok) throw new Error('HTTP ' + resp.status);
-      const data = await resp.json();
-
-      if (!Array.isArray(data) || data.length === 0) throw new Error('empty data');
-      if (data.length > 500) throw new Error(`エントリ数が多すぎます: ${data.length}`);
-
-      const cards = data.map(w => ({
-        id: 'ev_' + (w.word || '').toLowerCase().replace(/[^a-z0-9]/g, '_'),
-        name: typeof w.meaning_ja === 'string' ? w.meaning_ja : '',
-        yomi: typeof w.word === 'string' ? w.word : '',
-        category: typeof w.cefr === 'string' ? w.cefr : 'C1',
-        imageUrl: typeof w.emoji === 'string' ? w.emoji : '',
-        example: typeof w.example_en === 'string' ? w.example_en : '',
-      }));
-
-      // Register without activating (activate: false) so active deck doesn't change
-      window.DatasetManager.saveCustomDeck(VOCAB_LABEL, cards, 'vocab', { activate: false });
-
-      // Refresh the picker via the shared DatasetManager helper
-      window.DatasetManager.refreshDeckPicker?.();
-
-      // Discoverability: pulse deck bar and show toast on first-time registration
-      const bar = document.querySelector('.deck-bar');
-      if (bar) {
-        bar.classList.add('deck-bar--highlight');
-        setTimeout(() => bar.classList.remove('deck-bar--highlight'), 4000);
-      }
-      setTimeout(() => {
-        window.showToast?.(
-          '✨ 英検1級 英単語デッキが使えます！「デッキ」セレクタから切り替えてみてください',
-          5000
-        );
-      }, 800);
+      const r = await fetch(MANIFEST + '?v=' + v, { cache: 'no-store' });
+      if (!r.ok) throw new Error('manifest HTTP ' + r.status);
+      sets = await r.json();
+      if (!Array.isArray(sets) || sets.length === 0) throw new Error('empty manifest');
     } catch (e) {
-      console.warn('[vocab-deck-init] 英単語デッキの読み込みをスキップ:', e.message);
+      console.warn('[vocab-init] マニフェスト読み込み失敗:', e.message);
+      return;
     }
+
+    // Only fetch sets that are not yet registered
+    const existingLabels = new Set(window.DatasetManager.getDecks().map(d => d.label));
+    const newSets = sets.filter(s => !existingLabels.has(s.label));
+    if (newSets.length === 0) return;
+
+    let registeredCount = 0;
+
+    // Register sequentially to avoid localStorage race conditions
+    for (const s of newSets) {
+      try {
+        const r = await fetch(s.file + '?v=' + v, { cache: 'no-store' });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const data = await r.json();
+
+        if (!Array.isArray(data) || data.length === 0) throw new Error('empty');
+        if (data.length > 200) throw new Error('too large: ' + data.length);
+
+        const cards = data.map(w => ({
+          id: typeof w.id === 'string' ? w.id : 'ev_unknown',
+          name: typeof w.name === 'string' ? w.name : '',
+          yomi: typeof w.yomi === 'string' ? w.yomi : '',
+          category: typeof w.category === 'string' ? w.category : 'C1',
+          imageUrl: typeof w.imageUrl === 'string' ? w.imageUrl : '',
+          example: typeof w.example === 'string' ? w.example : '',
+        }));
+
+        window.DatasetManager.saveCustomDeck(s.label, cards, 'vocab', { activate: false });
+        registeredCount++;
+      } catch (e) {
+        console.warn('[vocab-init] スキップ:', s.label, e.message);
+      }
+    }
+
+    if (registeredCount === 0) return;
+
+    window.DatasetManager.refreshDeckPicker?.();
+
+    // Discoverability hint (deck bar pulse + toast)
+    const bar = document.querySelector('.deck-bar');
+    if (bar) {
+      bar.classList.add('deck-bar--highlight');
+      setTimeout(() => bar.classList.remove('deck-bar--highlight'), 4000);
+    }
+    const totalWords = registeredCount * 100;
+    setTimeout(() => {
+      window.showToast?.(
+        `✨ 英検1級 英単語 ${registeredCount}セット（約${totalWords}語）を追加しました！「デッキ」セレクタから選べます`,
+        6000
+      );
+    }, 800);
   }
 
-  document.addEventListener('DOMContentLoaded', initVocabDeck);
+  document.addEventListener('DOMContentLoaded', initVocabDecks);
 })();

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "田中太郎",
+    "yomi": "たなか たろう",
+    "category": "俳優",
+    "imageUrl": "https://example.com/images/tanaka.jpg"
+  },
+  {
+    "name": "鈴木花子",
+    "yomi": "すずき はなこ",
+    "category": "歌手"
+  },
+  {
+    "name": "佐藤一郎",
+    "yomi": "さとう いちろう"
+  },
+  {
+    "name": "山田さくら",
+    "yomi": "やまだ さくら",
+    "category": "モデル",
+    "imageUrl": "https://example.com/images/yamada.jpg"
+  },
+  {
+    "name": "伊藤健二",
+    "yomi": "いとう けんじ",
+    "category": "アスリート"
+  }
+]

@@ -23,11 +23,15 @@
         break;
 
       case 'ArrowUp':
+      case 'k':
+      case 'K':
         e.preventDefault();
         document.querySelector('#prev')?.click();
         break;
 
       case 'ArrowDown':
+      case 'j':
+      case 'J':
         e.preventDefault();
         document.querySelector('#next')?.click();
         break;

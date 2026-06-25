@@ -2,6 +2,9 @@
 (function () {
   'use strict';
 
+  const BUILTIN = '__builtin__';
+
+  // ── open / close ──────────────────────────────────────
   function openDeckScreen() {
     const screen = document.querySelector('#deck-screen');
     if (!screen) return;
@@ -23,109 +26,142 @@
     closeDeckScreen();
   }
 
+  // ── build grid ────────────────────────────────────────
   function buildDeckGrid() {
     const grid = document.querySelector('#deck-screen-grid');
     if (!grid || !window.DatasetManager) return;
-
     const decks = window.DatasetManager.getDecks();
     const activeId = window.DatasetManager.getActiveDeckId();
-
     grid.innerHTML = '';
     for (const deck of decks) {
       grid.appendChild(buildDeckCard(deck, deck.id === activeId));
     }
   }
 
+  // ── build one deck card ───────────────────────────────
   function buildDeckCard(deck, isActive) {
-    const BUILTIN = '__builtin__';
-    const card = document.createElement('div');
-    card.className = 'deck-card' + (isActive ? ' deck-card--active' : '');
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'ds-card' + (isActive ? ' ds-card--active' : '');
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 
-    // Title
-    const title = document.createElement('div');
-    title.className = 'deck-card__title';
-    title.textContent = deck.label;
+    const mode = deck.id === BUILTIN
+      ? 'image'
+      : (window.DatasetManager.getDeckMode?.(deck.id) || 'image');
 
-    // Meta row: count + mode badge
-    const meta = document.createElement('div');
-    meta.className = 'deck-card__meta';
+    // Get sample card data for preview
+    let preview = null;
+    if (deck.id !== BUILTIN) {
+      const cards = window.DatasetManager.getDeckCards?.(deck.id);
+      if (cards && cards.length > 0) preview = cards[0];
+    }
 
-    const count = document.createElement('span');
-    count.className = 'deck-card__count';
-
-    const mode = deck.id === BUILTIN ? 'image' : (window.DatasetManager.getDeckMode?.(deck.id) || 'image');
+    // ── Emoji / visual area ──
+    const visual = document.createElement('div');
+    visual.className = 'ds-card__visual';
 
     if (deck.id === BUILTIN) {
-      count.textContent = '組み込み';
+      visual.textContent = '🎭';
+    } else if (mode === 'vocab' && preview?.imageUrl) {
+      visual.textContent = preview.imageUrl;
+    } else if (mode === 'image') {
+      visual.textContent = '🗂️';
     } else {
-      count.textContent = deck.cardCount + '語';
+      visual.textContent = '📖';
+    }
+
+    // ── Main word / name ──
+    const word = document.createElement('div');
+    word.className = 'ds-card__word';
+    if (deck.id === BUILTIN) {
+      word.textContent = '芸能人カード';
+    } else if (mode === 'vocab' && preview?.yomi) {
+      word.textContent = preview.yomi;
+    } else {
+      word.textContent = deck.label;
+    }
+
+    // ── Sub-text (meaning or description) ──
+    const sub = document.createElement('div');
+    sub.className = 'ds-card__sub';
+    if (deck.id === BUILTIN) {
+      sub.textContent = '日本の芸能人を覚える';
+    } else if (mode === 'vocab' && preview?.name) {
+      sub.textContent = preview.name;
+    } else {
+      sub.textContent = deck.cardCount + '枚のカード';
+    }
+
+    // ── Footer: deck name + count + mode badge ──
+    const footer = document.createElement('div');
+    footer.className = 'ds-card__footer';
+
+    const label = document.createElement('span');
+    label.className = 'ds-card__label';
+    label.textContent = deck.label;
+
+    const badges = document.createElement('span');
+    badges.className = 'ds-card__badges';
+
+    if (deck.id !== BUILTIN) {
+      const cnt = document.createElement('span');
+      cnt.className = 'ds-badge ds-badge--count';
+      cnt.textContent = deck.cardCount + '語';
+      badges.appendChild(cnt);
     }
 
     const modeBadge = document.createElement('span');
-    modeBadge.className = 'deck-card__mode deck-card__mode--' + mode;
+    modeBadge.className = 'ds-badge ds-badge--mode ds-badge--' + mode;
     modeBadge.textContent = mode === 'vocab' ? 'EN→JA' : '画像';
+    badges.appendChild(modeBadge);
 
-    meta.appendChild(count);
-    meta.appendChild(modeBadge);
+    footer.appendChild(label);
+    footer.appendChild(badges);
 
-    card.appendChild(title);
-    card.appendChild(meta);
-
-    // Sample words preview (vocab decks only)
-    if (deck.id !== BUILTIN && mode === 'vocab') {
-      const cards = window.DatasetManager.getDeckCards?.(deck.id);
-      if (cards && cards.length > 0) {
-        const preview = document.createElement('div');
-        preview.className = 'deck-card__preview';
-        const samples = cards.slice(0, 3);
-        for (const c of samples) {
-          const tag = document.createElement('span');
-          tag.className = 'deck-card__word';
-          tag.textContent = c.yomi || c.name || '';
-          preview.appendChild(tag);
-        }
-        card.appendChild(preview);
-      }
-    }
-
-    // "学習中" badge
+    // ── Active badge ──
     if (isActive) {
-      const badge = document.createElement('div');
-      badge.className = 'deck-card__active-badge';
-      badge.textContent = '学習中';
-      card.appendChild(badge);
+      const active = document.createElement('div');
+      active.className = 'ds-card__active';
+      active.textContent = '学習中';
+      btn.appendChild(active);
     }
 
-    card.addEventListener('click', () => selectDeck(deck.id));
-    return card;
+    btn.appendChild(visual);
+    btn.appendChild(word);
+    btn.appendChild(sub);
+    btn.appendChild(footer);
+
+    btn.addEventListener('click', () => selectDeck(deck.id));
+    return btn;
   }
 
+  // ── init ──────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', () => {
-    const openBtn = document.querySelector('#deck-screen-open-btn');
-    if (openBtn) openBtn.addEventListener('click', openDeckScreen);
+    document.querySelector('#deck-screen-open-btn')
+      ?.addEventListener('click', openDeckScreen);
 
-    const closeBtn = document.querySelector('#deck-screen-close-btn');
-    if (closeBtn) closeBtn.addEventListener('click', closeDeckScreen);
+    document.querySelector('#deck-screen-close-btn')
+      ?.addEventListener('click', closeDeckScreen);
 
-    // Click backdrop to close
     const screen = document.querySelector('#deck-screen');
     if (screen) {
+      // Tap backdrop to close
       screen.addEventListener('click', (e) => {
         if (e.target === screen) closeDeckScreen();
       });
     }
 
-    // Esc to close
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && document.querySelector('#deck-screen')?.classList.contains('open')) {
+      if (e.key === 'Escape' &&
+          document.querySelector('#deck-screen')?.classList.contains('open')) {
         closeDeckScreen();
       }
     });
 
-    // Refresh grid when decks change (e.g., new deck imported)
     document.addEventListener('dataset:change', () => {
-      const screen = document.querySelector('#deck-screen');
-      if (screen?.classList.contains('open')) buildDeckGrid();
+      if (document.querySelector('#deck-screen')?.classList.contains('open')) {
+        buildDeckGrid();
+      }
     });
   });
 })();

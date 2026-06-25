@@ -4,7 +4,7 @@
   "name": "供給者、業者",
   "yomi": "purveyors",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🏪",
   "example": "These companies are purveyors of fine goods."
  },
  {
@@ -12,7 +12,7 @@
   "name": "敵意、悪意",
   "yomi": "animus",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "😠",
   "example": "He has a deep animus toward his former colleague."
  },
  {
@@ -20,7 +20,7 @@
   "name": "避けた、慎んだ",
   "yomi": "eschewed",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🚫",
   "example": "He eschewed the limelight and lived a private life."
  },
  {
@@ -28,7 +28,7 @@
   "name": "言い回し、語法",
   "yomi": "locution",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🗣️",
   "example": "That's an unusual locution."
  },
  {
@@ -36,7 +36,7 @@
   "name": "現存する、残っている",
   "yomi": "extant",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📜",
   "example": "The original manuscript is no longer extant."
  },
  {
@@ -44,7 +44,7 @@
   "name": "勝利主義",
   "yomi": "triumphalism",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🏆",
   "example": "The president's speech was filled with triumphalism."
  },
  {
@@ -52,7 +52,7 @@
   "name": "～を動かす",
   "yomi": "molego",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔄",
   "example": "Molego is a rare Latin verb meaning to set in motion."
  },
  {
@@ -60,7 +60,7 @@
   "name": "昔、古",
   "yomi": "yore",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⏳",
   "example": "In days of yore, travel was much more difficult."
  },
  {
@@ -68,7 +68,7 @@
   "name": "不道徳",
   "yomi": "immorality",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "😈",
   "example": "His behavior was seen as a sign of immorality."
  },
  {
@@ -76,7 +76,7 @@
   "name": "デキサメタゾン",
   "yomi": "dexamethasone",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "💊",
   "example": "Dexamethasone is a potent anti-inflammatory steroid."
  },
  {
@@ -84,7 +84,7 @@
   "name": "大麻たばこ",
   "yomi": "reefers",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌿",
   "example": "He was caught with a couple of reefers."
  },
  {
@@ -92,7 +92,7 @@
   "name": "自己顕示欲の強い",
   "yomi": "selfaggrandizing",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🤩",
   "example": "His selfaggrandizing behavior annoyed his colleagues."
  },
  {
@@ -100,7 +100,7 @@
   "name": "細胞内共生生物",
   "yomi": "endosymbionts",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🦠",
   "example": "Mitochondria are thought to have originated as endosymbionts."
  },
  {
@@ -108,7 +108,7 @@
   "name": "初潮の",
   "yomi": "menarcheal",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🩸",
   "example": "The menarcheal age varies among different populations."
  },
  {
@@ -116,7 +116,7 @@
   "name": "熱核の",
   "yomi": "thermonuclear",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "☢️",
   "example": "Thermonuclear weapons are incredibly destructive."
  },
  {
@@ -124,7 +124,7 @@
   "name": "長さ依存性",
   "yomi": "lengthdependence",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📏",
   "example": "The length dependence of muscle contraction is well documented."
  },
  {
@@ -132,7 +132,7 @@
   "name": "真実らしさ、リアリティ",
   "yomi": "verisimilitude",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🎭",
   "example": "The novel has a high degree of verisimilitude."
  },
  {
@@ -140,7 +140,7 @@
   "name": "殺ウイルス性の",
   "yomi": "virucidal",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧪",
   "example": "The agent has virucidal properties."
  },
  {
@@ -148,7 +148,7 @@
   "name": "征服、服従",
   "yomi": "subjugation",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⛓️",
   "example": "The subjugation of the native population was brutal."
  },
  {
@@ -156,7 +156,7 @@
   "name": "快楽主義的な、贅沢な",
   "yomi": "sybaritic",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🛁",
   "example": "He led a sybaritic life of indulgence."
  },
  {
@@ -164,7 +164,7 @@
   "name": "トロツキー派",
   "yomi": "trotskyites",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "☭",
   "example": "The Trotskyites were critical of Stalin's policies."
  },
  {
@@ -172,7 +172,7 @@
   "name": "ミツワー（ユダヤ教の戒律）",
   "yomi": "mitzvah",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "✡️",
   "example": "Performing a mitzvah is considered a good deed in Judaism."
  },
  {
@@ -180,7 +180,7 @@
   "name": "背教、離脱",
   "yomi": "apostasy",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🚪",
   "example": "His apostasy from the church caused a scandal."
  },
  {
@@ -188,7 +188,7 @@
   "name": "グルタチオン",
   "yomi": "glutathione",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧬",
   "example": "Glutathione is a powerful antioxidant."
  },
  {
@@ -196,7 +196,7 @@
   "name": "言葉にできない、言い表せない",
   "yomi": "ineffable",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "😶",
   "example": "The beauty of the sunset was ineffable."
  },
  {
@@ -204,7 +204,7 @@
   "name": "迷路のような、複雑な",
   "yomi": "labyrinthine",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌀",
   "example": "The building had a labyrinthine design."
  },
  {
@@ -212,7 +212,7 @@
   "name": "自己触媒的な",
   "yomi": "autocatalytic",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⚗️",
   "example": "The reaction is autocatalytic, meaning it is accelerated by its product."
  },
  {
@@ -220,7 +220,7 @@
   "name": "非線形動的システム",
   "yomi": "nonlds",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📊",
   "example": "The dynamics of this system are described by nonlds."
  },
  {
@@ -228,7 +228,7 @@
   "name": "キアズマを形成しない",
   "yomi": "achiasmatic",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔬",
   "example": "Achiasmatic meiosis is common in some species."
  },
  {
@@ -236,7 +236,7 @@
   "name": "偏愛",
   "yomi": "predilection",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "❤️",
   "example": "He has a predilection for classical music."
  },
  {
@@ -244,7 +244,7 @@
   "name": "甘言",
   "yomi": "blandishments",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🍬",
   "example": "They tried to persuade him with blandishments."
  },
  {
@@ -252,7 +252,7 @@
   "name": "後期",
   "yomi": "anaphase",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔬",
   "example": "During anaphase, sister chromatids separate."
  },
  {
@@ -260,7 +260,7 @@
   "name": "軽視する",
   "yomi": "trivializing",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "👇",
   "example": "He was accused of trivializing the problem."
  },
  {
@@ -268,7 +268,7 @@
   "name": "去勢された",
   "yomi": "emasculated",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "✂️",
   "example": "The king felt emasculated by the loss of power."
  },
  {
@@ -276,7 +276,7 @@
   "name": "Gタンパク質共役受容体",
   "yomi": "gpcrs",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧬",
   "example": "GPCRs are involved in many physiological processes."
  },
  {
@@ -284,7 +284,7 @@
   "name": "超越的でない",
   "yomi": "untranscendent",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌍",
   "example": "The artwork was described as untranscendent and mundane."
  },
  {
@@ -292,7 +292,7 @@
   "name": "歯がでこぼこした",
   "yomi": "snaggletoothed",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🦷",
   "example": "The old man had a snaggletoothed grin."
  },
  {
@@ -300,7 +300,7 @@
   "name": "曖昧化",
   "yomi": "obfuscation",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌫️",
   "example": "The politician used obfuscation to avoid answering the question."
  },
  {
@@ -308,7 +308,7 @@
   "name": "匍匐性の",
   "yomi": "prostrata",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌱",
   "example": "The plant has a prostrata growth habit."
  },
  {
@@ -316,7 +316,7 @@
   "name": "ヤトロファ",
   "yomi": "jatropha",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌾",
   "example": "Jatropha is used as a biofuel crop."
  },
  {
@@ -324,7 +324,7 @@
   "name": "突出",
   "yomi": "minence",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⛰️",
   "example": "The minence of the mountain was breathtaking."
  },
  {
@@ -332,7 +332,7 @@
   "name": "ナス属",
   "yomi": "solanum",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🍆",
   "example": "Solanum is a large genus of flowering plants."
  },
  {
@@ -340,7 +340,7 @@
   "name": "二変量の",
   "yomi": "bivariate",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📉",
   "example": "A bivariate analysis was used to explore the relationship."
  },
  {
@@ -348,7 +348,7 @@
   "name": "タカサブロウ",
   "yomi": "eclipta",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌼",
   "example": "Eclipta is a genus of plants in the sunflower family."
  },
  {
@@ -356,7 +356,7 @@
   "name": "クレード",
   "yomi": "clades",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌳",
   "example": "Clades represent groups of organisms descended from a common ancestor."
  },
  {
@@ -364,7 +364,7 @@
   "name": "ワイン醸造業者",
   "yomi": "vintner",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🍷",
   "example": "The vintner carefully tended to the grapes."
  },
  {
@@ -372,7 +372,7 @@
   "name": "軸索の",
   "yomi": "axonal",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧠",
   "example": "Axonal transport is crucial for neuronal function."
  },
  {
@@ -380,7 +380,7 @@
   "name": "明確さ",
   "yomi": "explicitness",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📋",
   "example": "Explicitness is important for clear communication."
  },
  {
@@ -388,7 +388,7 @@
   "name": "直観主義者",
   "yomi": "intuitionist",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "💡",
   "example": "The intuitionist believes in innate knowledge."
  },
  {
@@ -396,7 +396,7 @@
   "name": "屈しない",
   "yomi": "unbowed",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "💪",
   "example": "He remained unbowed despite the adversity."
  },
  {
@@ -404,7 +404,7 @@
   "name": "解体",
   "yomi": "unmaking",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔨",
   "example": "The unmaking of the old regime was necessary for progress."
  },
  {
@@ -412,7 +412,7 @@
   "name": "構成的な",
   "yomi": "constitutive",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧱",
   "example": "The constitutive activity of the promoter is always present."
  },
  {
@@ -420,7 +420,7 @@
   "name": "抗血清",
   "yomi": "antisera",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "💉",
   "example": "Antisera are used for passive immunization."
  },
  {
@@ -428,7 +428,7 @@
   "name": "デコヒーレンス",
   "yomi": "decoherence",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⚛️",
   "example": "Decoherence is a key concept in quantum mechanics."
  },
  {
@@ -436,7 +436,7 @@
   "name": "系統",
   "yomi": "phylogenies",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌲",
   "example": "Phylogenies are used to understand evolutionary relationships."
  },
  {
@@ -444,7 +444,7 @@
   "name": "透明帯のない",
   "yomi": "zonafree",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🥚",
   "example": "Zonafree embryos can be created by removing the zona pellucida."
  },
  {
@@ -452,7 +452,7 @@
   "name": "4パラメータ",
   "yomi": "fourparameter",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔢",
   "example": "The fourparameter model was used to fit the data."
  },
  {
@@ -460,7 +460,7 @@
   "name": "内側",
   "yomi": "interna",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔽",
   "example": "The tunica interna is the innermost layer of an artery."
  },
  {
@@ -468,7 +468,7 @@
   "name": "同語反復の",
   "yomi": "tautological",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔁",
   "example": "The statement was tautological and provided no new information."
  },
  {
@@ -476,7 +476,7 @@
   "name": "押し付ける",
   "yomi": "foist",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🫷",
   "example": "They tried to foist their ideas on the rest of the group."
  },
  {
@@ -484,7 +484,7 @@
   "name": "卵形成",
   "yomi": "oogenesis",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🥚",
   "example": "Oogenesis is the process of female gamete production."
  },
  {
@@ -492,7 +492,7 @@
   "name": "フルタミド",
   "yomi": "flutamide",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "💊",
   "example": "Flutamide is an anti-androgen medication."
  },
  {
@@ -500,7 +500,7 @@
   "name": "前胞状の",
   "yomi": "preantral",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔬",
   "example": "Preantral follicles are in an early stage of development."
  },
  {
@@ -508,7 +508,7 @@
   "name": "酸化LDL",
   "yomi": "oxldl",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🩺",
   "example": "OxLDL plays a role in the development of atherosclerosis."
  },
  {
@@ -516,7 +516,7 @@
   "name": "マロンジアルデヒド",
   "yomi": "malondialdehyde",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧪",
   "example": "Malondialdehyde is a marker of lipid peroxidation."
  },
  {
@@ -524,7 +524,7 @@
   "name": "下にある",
   "yomi": "subjacent",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⬇️",
   "example": "The layer was subjacent to the epidermis."
  },
  {
@@ -532,7 +532,7 @@
   "name": "キアズマ",
   "yomi": "chiasmata",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "✖️",
   "example": "Chiasmata are points of crossover during meiosis."
  },
  {
@@ -540,7 +540,7 @@
   "name": "卵胞形成",
   "yomi": "folliculogenesis",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔬",
   "example": "Folliculogenesis is the process of follicle development."
  },
  {
@@ -548,7 +548,7 @@
   "name": "ケロイド",
   "yomi": "keloid",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🩹",
   "example": "A keloid is a type of raised scar."
  },
  {
@@ -556,7 +556,7 @@
   "name": "求心性神経",
   "yomi": "afferents",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "➡️",
   "example": "Afferents carry sensory information to the central nervous system."
  },
  {
@@ -564,7 +564,7 @@
   "name": "結紮",
   "yomi": "ligature",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🪢",
   "example": "The surgeon used a ligature to stop the bleeding."
  },
  {
@@ -572,7 +572,7 @@
   "name": "開腹術",
   "yomi": "laparotomy",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔪",
   "example": "A laparotomy was performed to examine the abdominal organs."
  },
  {
@@ -580,7 +580,7 @@
   "name": "圧着する",
   "yomi": "swedge",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔧",
   "example": "The metal parts were swedged together to form a tight seal."
  },
  {
@@ -588,7 +588,7 @@
   "name": "頑迷な",
   "yomi": "hidebound",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧱",
   "example": "He was hidebound and unwilling to change his opinions."
  },
  {
@@ -596,7 +596,7 @@
   "name": "モクマオウ",
   "yomi": "casuarina",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌲",
   "example": "Casuarina trees are commonly used as windbreaks."
  },
  {
@@ -604,7 +604,7 @@
   "name": "語源的に",
   "yomi": "etymologically",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📖",
   "example": "Etymologically, the word comes from Latin."
  },
  {
@@ -612,7 +612,7 @@
   "name": "商品化",
   "yomi": "commoditization",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🏷️",
   "example": "Commoditization has led to lower prices for the product."
  },
  {
@@ -620,7 +620,7 @@
   "name": "機構的に",
   "yomi": "mechanistically",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⚙️",
   "example": "The process was mechanistically explained in the paper."
  },
  {
@@ -628,7 +628,7 @@
   "name": "古くさい",
   "yomi": "fusty",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🕰️",
   "example": "The old house smelled fusty and damp."
  },
  {
@@ -636,7 +636,7 @@
   "name": "混血",
   "yomi": "miscegenation",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🤝",
   "example": "The term miscegenation is now considered offensive."
  },
  {
@@ -644,7 +644,7 @@
   "name": "扇動宣伝",
   "yomi": "agitprop",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📢",
   "example": "The government used agitprop to spread its ideology."
  },
  {
@@ -652,7 +652,7 @@
   "name": "法令上",
   "yomi": "statutorily",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⚖️",
   "example": "The company is statutorily required to report its emissions."
  },
  {
@@ -660,7 +660,7 @@
   "name": "超文",
   "yomi": "supersentence",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📝",
   "example": "The researcher analyzed the supersentence to understand the discourse structure."
  },
  {
@@ -668,7 +668,7 @@
   "name": "拡散者",
   "yomi": "proliferator",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "💣",
   "example": "He is known as a nuclear proliferator for his work in weapons development."
  },
  {
@@ -676,7 +676,7 @@
   "name": "機知に富んだ言葉",
   "yomi": "witticism",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "😄",
   "example": "His speech was full of witticisms, which kept the audience entertained."
  },
  {
@@ -684,7 +684,7 @@
   "name": "存在論的な",
   "yomi": "ontological",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌐",
   "example": "The question of the meaning of existence is an ontological one."
  },
  {
@@ -692,7 +692,7 @@
   "name": "時代錯誤的な",
   "yomi": "anachronistic",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "⏰",
   "example": "His views on women were anachronistic and unacceptable."
  },
  {
@@ -700,7 +700,7 @@
   "name": "不快な",
   "yomi": "invidious",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "😒",
   "example": "The task of choosing a winner from among such talented candidates was invidious."
  },
  {
@@ -708,7 +708,7 @@
   "name": "アセチルコリン結合タンパク質",
   "yomi": "achbp",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🧬",
   "example": "The experiment focused on the binding of ligands to achbp."
  },
  {
@@ -716,7 +716,7 @@
   "name": "博学な",
   "yomi": "erudite",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🎓",
   "example": "The professor was an erudite scholar of ancient history."
  },
  {
@@ -724,7 +724,7 @@
   "name": "汚染されていない",
   "yomi": "uncontaminated",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "✅",
   "example": "The water source was tested to ensure it was uncontaminated."
  },
  {
@@ -732,7 +732,7 @@
   "name": "修正",
   "yomi": "rectification",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔧",
   "example": "Rectification of the error was completed quickly."
  },
  {
@@ -740,7 +740,7 @@
   "name": "自慰行為",
   "yomi": "masturbation",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🙈",
   "example": "Masturbation is a normal and healthy sexual activity."
  },
  {
@@ -748,7 +748,7 @@
   "name": "文法学者",
   "yomi": "grammarian",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "📚",
   "example": "The grammarian studied the structure of the language."
  },
  {
@@ -756,7 +756,7 @@
   "name": "男らしい",
   "yomi": "virile",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "💪",
   "example": "He was a virile young man with great ambition."
  },
  {
@@ -764,7 +764,7 @@
   "name": "共同体主義の",
   "yomi": "communitarian",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "👥",
   "example": "The communitarian approach emphasizes the importance of community."
  },
  {
@@ -772,7 +772,7 @@
   "name": "洞察力",
   "yomi": "acumen",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🎯",
   "example": "Her business acumen led to the success of the company."
  },
  {
@@ -780,7 +780,7 @@
   "name": "畳み込み",
   "yomi": "convolution",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🌀",
   "example": "The convolutions of the brain provide increased surface area."
  },
  {
@@ -788,7 +788,7 @@
   "name": "反響の",
   "yomi": "echoic",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔊",
   "example": "The echoic sound made it difficult to understand the speaker."
  },
  {
@@ -796,7 +796,7 @@
   "name": "同綴異音異義語",
   "yomi": "heteronyms",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "🔤",
   "example": "The English language has many heteronyms."
  },
  {
@@ -804,7 +804,7 @@
   "name": "求心性の",
   "yomi": "afferent",
   "category": "C2",
-  "imageUrl": "",
+  "imageUrl": "➡️",
   "example": "Afferent neurons carry signals towards the central nervous system."
  }
 ]

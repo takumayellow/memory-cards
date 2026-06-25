@@ -137,6 +137,31 @@
       return [builtin, ...customEntries];
     },
 
+    // 組み込みデッキの同期に使う。保存済みデッキ（cards 含む全フィールド）をそのまま返す。
+    listRawDecks() {
+      return loadDecks();
+    },
+
+    // 組み込み（マニフェスト由来）デッキを label をキーに作成/更新する。
+    // 既存があれば **同じ deck id のまま cards を差し替える**（id 依存の SRS 進捗・
+    // アクティブ選択を保持）。rev はコンテンツ版数で、差分検知に使う。
+    upsertBuiltinDeck(label, cards, mode = 'vocab', rev = 1) {
+      if (!label) throw new Error('ラベルが必要です');
+      if (!Array.isArray(cards) || cards.length === 0) throw new Error('カードが空です');
+      const decks = loadDecks();
+      const i = decks.findIndex(d => d.label === label);
+      if (i >= 0) {
+        const existed = decks[i];
+        decks[i] = { ...existed, cards, mode, builtin: true, rev };
+        saveDecks(decks);
+        return { id: existed.id, created: false };
+      }
+      const id = 'deck_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
+      decks.push({ id, label, cards, mode, builtin: true, rev, createdAt: new Date().toISOString() });
+      saveDecks(decks);
+      return { id, created: true };
+    },
+
     getActiveDeckId() {
       return localStorage.getItem(ACTIVE_KEY) || BUILTIN_ID;
     },

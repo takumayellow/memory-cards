@@ -67,7 +67,7 @@
 .srs-badge {
   display: inline-block;
   font-size: 11px;
-  padding: 3px 12px;
+  padding: 4px 14px;
   border-radius: 999px;
   text-align: center;
   font-weight: 600;
@@ -90,6 +90,7 @@
 }
 
 @media (max-width: 600px) {
-  .srs-stats-bar { gap: 10px; padding: 6px 12px; }
+  .srs-stats-bar { gap: 8px; padding: 6px 12px; }
+  .srs-stats-text { gap: 10px; min-width: 0; }
   .srs-progress-track { flex: 0 0 100%; }
 }

@@ -53,6 +53,7 @@ function showToast(msg, duration = 2500){
   clearTimeout(t._timer);
   t._timer = setTimeout(()=>t.classList.remove('show'), duration);
 }
+window.showToast = showToast;
 
 // ── Progress persistence (sessionStorage) ──
 const SS_KEY = 'jpCelebsCardId';
@@ -65,7 +66,9 @@ function saveProgress(){
 const state = { all:[], filtered:[], i:0, map:{}, meta:{}, srsMode:false };
 
 function imgUrlFor(id){
-  const file = state.map[id] || (id + '.jpg');
+  const file = state.map[id];
+  if (!file) return null;
+  if (/^https?:\/\//.test(file)) return file;
   return 'images/' + encodeURIComponent(file);
 }
 function renderCounters(){
@@ -133,6 +136,8 @@ const imgCache = new Map();
 
 function preloadImg(id) {
   if (imgCache.has(id)) return imgCache.get(id);
+  const url = imgUrlFor(id);
+  if (!url) return Promise.resolve(null);
   const promise = new Promise(resolve => {
     const img = new Image();
     let timer;
@@ -149,7 +154,7 @@ function preloadImg(id) {
       imgCache.delete(id); // タイムアウト時もキャッシュ削除
       cleanup(null);
     }, 20000);
-    img.src = imgUrlFor(id);
+    img.src = url;
   });
   imgCache.set(id, promise);
   return promise;
@@ -157,8 +162,12 @@ function preloadImg(id) {
 
 function renderCard(){
   const wrap = document.querySelector('#card'); wrap.innerHTML = '';
+  wrap.dataset.flipped = 'false';
   if(state.i >= state.filtered.length){ wrap.textContent = '該当カードがありません'; return; }
   const c = state.filtered[state.i];
+
+  // card-front
+  const front = document.createElement('div'); front.className = 'card-front';
 
   // スケルトンローダー
   const skeleton = document.createElement('div');
@@ -167,14 +176,26 @@ function renderCard(){
 
   const ph = document.createElement('div'); ph.className='placeholder'; ph.textContent='画像なし'; ph.style.display='none';
 
+  const flipHint = document.createElement('div'); flipHint.className = 'flip-hint'; flipHint.textContent = 'タップして答えを見る ▼';
+
+  front.append(skeleton, ph, flipHint);
+
+  // card-back
+  const back = document.createElement('div'); back.className = 'card-back';
+
   const caption = document.createElement('div'); caption.className='caption';
-  caption.innerHTML = `<div class="name">${c.name}</div><div class="yomi">${c.yomi||''}</div><div class="cat">${c.category||''}</div>`;
+  const nameEl = document.createElement('div'); nameEl.className='name'; nameEl.textContent = c.name;
+  const yomiEl = document.createElement('div'); yomiEl.className='yomi'; yomiEl.textContent = c.yomi||'';
+  const catEl  = document.createElement('div'); catEl.className='cat';  catEl.textContent = c.category||'';
+  caption.append(nameEl, yomiEl, catEl);
 
   const cr = document.createElement('div'); cr.className='credit';
   const a = state.meta[c.id];
   if(a){ cr.innerHTML = `Source: ${a.source} / License: ${a.license||'Unknown'} ${a.artist?(' / © '+a.artist):''}`; }
 
-  wrap.append(skeleton, ph, caption, cr);
+  back.append(caption, cr);
+
+  wrap.append(front, back);
   renderCounters();
   renderSrsBadge(c.id);
   renderSrsStats();
@@ -183,19 +204,26 @@ function renderCard(){
 
   // 画像ロード（キャッシュ使用）
   const cardId = c.id;
-  preloadImg(cardId).then(img => {
-    if (!wrap.isConnected || state.filtered[state.i]?.id !== cardId) return;
+  const url = imgUrlFor(cardId);
+  if (!url) {
+    // custom card with no image
     skeleton.remove();
-    if (img && img.naturalWidth > 0) {
-      img.alt = c.name;
-      img.style.opacity = '0';
-      img.style.transition = 'opacity 0.3s ease';
-      wrap.insertBefore(img, ph);
-      requestAnimationFrame(() => { img.style.opacity = '1'; });
-    } else {
-      ph.style.display = 'block';
-    }
-  });
+    ph.style.display = 'block';
+  } else {
+    preloadImg(cardId).then(img => {
+      if (!wrap.isConnected || state.filtered[state.i]?.id !== cardId) return;
+      skeleton.remove();
+      if (img && img.naturalWidth > 0) {
+        img.alt = c.name;
+        img.style.opacity = '0';
+        img.style.transition = 'opacity 0.3s ease';
+        front.insertBefore(img, ph);
+        requestAnimationFrame(() => { img.style.opacity = '1'; });
+      } else {
+        ph.style.display = 'block';
+      }
+    });
+  }
 
   // 次の2枚をバックグラウンドでプリロード
   for (let offset = 1; offset <= 2; offset++) {
@@ -228,7 +256,9 @@ function applyFilter(){
 function populateCategories(cards){
   const sel = document.querySelector('#cat');
   const cats = Array.from(new Set(cards.map(c=>c.category).filter(Boolean))).sort();
-  sel.innerHTML = '<option value="__ALL__">すべてのカテゴリ</option>' + cats.map(c=>`<option>${c}</option>`).join('');
+  sel.innerHTML = '';
+  const allOpt = document.createElement('option'); allOpt.value='__ALL__'; allOpt.textContent='すべてのカテゴリ'; sel.appendChild(allOpt);
+  cats.forEach(c => { const opt = document.createElement('option'); opt.textContent = c; sel.appendChild(opt); });
 }
 
 // SRS answer handlers — called when user presses "わかった" or "あとで".
@@ -245,9 +275,20 @@ function srsAnswerAgain(cardId) {
 
 // Initialize
 (async ()=>{
-  const {cards, map, meta} = await loadData();
+  // Determine active deck
+  const activeDeckId = window.DatasetManager?.getActiveDeckId() ?? '__builtin__';
+
+  let cards, map, meta;
+  if (!window.DatasetManager || activeDeckId === '__builtin__') {
+    ({ cards, map, meta } = await loadData());
+  } else {
+    const customCards = window.DatasetManager.getActiveDeckCards();
+    cards = customCards;
+    map = Object.fromEntries(customCards.filter(c => c.imageUrl).map(c => [c.id, c.imageUrl]));
+    meta = {};
+  }
   state.all = cards; state.map = map; state.meta = meta;
-  populateCategories(cards);
+  populateCategories(state.all);
   state.filtered = [...cards];
 
   // ── リロード位置復元 ──
@@ -327,4 +368,34 @@ function srsAnswerAgain(cardId) {
   }
 
   renderSrsStats();
+
+  // ── Card flip handler ──
+  document.querySelector('#card').addEventListener('click', () => {
+    const card = document.querySelector('#card');
+    card.dataset.flipped = card.dataset.flipped === 'true' ? 'false' : 'true';
+  });
+
+  // ── Dataset change handler ──
+  document.addEventListener('dataset:change', async () => {
+    imgCache.clear();
+    const deckId = window.DatasetManager?.getActiveDeckId() ?? '__builtin__';
+    let cards, map, meta;
+    if (deckId === '__builtin__') {
+      ({ cards, map, meta } = await loadData());
+    } else {
+      const customCards = window.DatasetManager.getActiveDeckCards();
+      cards = customCards;
+      map = Object.fromEntries(customCards.filter(c => c.imageUrl).map(c => [c.id, c.imageUrl]));
+      meta = {};
+    }
+    state.all = cards; state.map = map; state.meta = meta;
+    populateCategories(state.all);
+    state.filtered = [...state.all];
+    state.i = 0;
+    document.querySelector('#q').value = '';
+    document.querySelector('#cat').value = '__ALL__';
+    const srsEl = document.querySelector('#srs-filter');
+    if (srsEl) srsEl.checked = false;
+    renderCard();
+  });
 })();

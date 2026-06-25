@@ -6,6 +6,45 @@
   <title>芸能人 暗記カード</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="srs.css" />
+  <style>
+.deck-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: #f7f8fc;
+  border-bottom: 1px solid #dde1f0;
+  flex-wrap: wrap;
+}
+.deck-bar-label { font-size: 13px; color: #6b7280; font-weight: 600; }
+.deck-bar select {
+  border: 1px solid #dde1f0;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 13px;
+  background: #fff;
+  color: #1e1b4b;
+}
+.deck-btn {
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.deck-btn:hover { background: #4f46e5; color: #fff; }
+.deck-btn-danger { border-color: #fca5a5; background: #fff1f2; color: #dc2626; }
+.deck-btn-danger:hover { background: #dc2626; color: #fff; }
+.deck-btn-danger:disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+.deck-btn-link { border-color: #86efac; background: #f0fdf4; color: #16a34a; }
+.deck-btn-link:hover { background: #16a34a; color: #fff; }
+  </style>
 </head>
 <body>
 <header class="topbar">
@@ -24,6 +63,15 @@
     </label>
   </div>
 </header>
+
+<div class="deck-bar">
+  <span class="deck-bar-label">デッキ</span>
+  <select id="deck-picker"></select>
+  <button id="deck-import-btn" class="deck-btn">＋ インポート</button>
+  <input id="deck-file-input" type="file" accept=".tsv,.csv,.json" style="display:none" />
+  <button id="deck-delete-btn" class="deck-btn deck-btn-danger" disabled>🗑 削除</button>
+  <a id="template-dl-tsv" class="deck-btn deck-btn-link" download="template.tsv">↓ テンプレ</a>
+</div>
 
 <!-- SRS 統計バー -->
 <div class="srs-stats-bar">
@@ -55,7 +103,9 @@
   </section>
 </main>
 
+<script src="dataset-manager.js"></script>
 <script src="srs.js"></script>
 <script src="app.js"></script>
+<script src="keyboard.js"></script>
 </body>
 </html>
